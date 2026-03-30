@@ -10,6 +10,70 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom colors from tailwind.config.ts */
+  --color-on-primary: #ffffff;
+  --color-on-secondary-container: #fffbff;
+  --color-tertiary-fixed-dim: #cfc4c6;
+  --color-on-tertiary-fixed: #201a1c;
+  --color-on-error-container: #93000a;
+  --color-surface-container-highest: #ece0e2;
+  --color-secondary-container: #dd2f33;
+  --color-surface-container: #f7ebed;
+  --color-surface-bright: #fff8f8;
+  --color-secondary: #b90d1d;
+  --color-inverse-surface: #352f31;
+  --color-on-secondary-fixed-variant: #930012;
+  --color-inverse-primary: #c0c1ff;
+  --color-surface: #fff8f8;
+  --color-surface-container-high: #f1e5e8;
+  --color-on-background: #201a1c;
+  --color-on-tertiary-container: #faedf0;
+  --color-on-secondary: #ffffff;
+  --color-on-surface-variant: #464554;
+  --color-tertiary-container: #746b6d;
+  --color-inverse-on-surface: #faeef0;
+  --color-surface-tint: #484dd1;
+  --color-on-primary-container: #f1efff;
+  --color-outline: #767686;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-tertiary: #5b5355;
+  --color-error: #ba1a1a;
+  --color-on-surface: #201a1c;
+  --color-tertiary-fixed: #ece0e2;
+  --color-on-secondary-fixed: #410004;
+  --color-surface-variant: #ece0e2;
+  --color-on-primary-fixed: #04006d;
+  --color-on-tertiary-fixed-variant: #4c4547;
+  --color-outline-variant: #c6c5d6;
+  --color-on-primary-fixed-variant: #2e31b9;
+  --color-secondary-fixed-dim: #ffb3ad;
+  --color-surface-container-lowest: #ffffff;
+  --color-background: #fff8f8;
+  --color-primary: #3e42c7;
+  --color-secondary-fixed: #ffdad7;
+  --color-on-tertiary: #ffffff;
+  --color-primary-container: #585de1;
+  --color-surface-container-low: #fdf1f3;
+  --color-primary-fixed-dim: #c0c1ff;
+  --color-primary-fixed: #e1e0ff;
+  --color-surface-dim: #e3d7da;
+
+  /* Font families */
+  --font-headline: var(--font-inter), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+  --font-label: var(--font-inter), sans-serif;
+
+  /* Border radius */
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  /* Breakpoints */
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +87,23 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom text styles */
+.text-editorial-lg {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+.text-editorial-md {
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: 700;
 }

@@ -64,6 +64,10 @@ const config: Config = {
         "label": ["Inter", "sans-serif"]
       },
       borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+      screens: {
+        'tablet': '768px',
+        'desktop': '1024px',
+      },
     },
   },
   plugins: [],

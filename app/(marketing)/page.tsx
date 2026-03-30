@@ -2,8 +2,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      This is my home page
+    <div className='flex-1 w-full h-full text-red-400'>
+      <h1>This is my home page</h1>
     </div>
   )
 }
