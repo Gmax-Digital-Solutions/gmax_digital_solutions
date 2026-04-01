@@ -29,57 +29,69 @@ const Navbar = () => {
           : "bg-transparent py-3"
       }`}
     >
-      <div className=" max-w-[90vw] mx-auto flex items-center justify-between">
-      <div className="flex items-center gap-3 px-3 text-on-surface">
-        <button
-          aria-label="Toggle menu"
-          className="p-2 rounded-md hover:bg-surface-variant lg:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-        <Image
-          src={Logo}
-          alt="Gmax Digital Logo"
-          width={32}
-          height={32}
-          className="rounded-xl"
-        />
-      </div>
-      <div className="flex items-center justify-end mr-6 gap-4">
-        <nav className="hidden lg:flex items-center gap-4">
-          <Link href="/about" className="text-on-surface hover:text-primary">
-            About
-          </Link>
-          <Link href="/services" className="text-on-surface hover:text-primary">
-            Services
-          </Link>
-          <Link
-            href="/case-studies"
-            className="text-on-surface hover:text-primary"
+      <div className=" max-w-7xl mx-auto flex items-center justify-between">
+        <div className="flex items-center gap-3 px-3 text-on-surface">
+          <button
+            aria-label="Toggle menu"
+            className="p-2 rounded-md hover:bg-surface-variant lg:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            Case Studies
-          </Link>
-          <Link href="/blog" className="text-on-surface hover:text-primary">
-            Blog
-          </Link>
-          <Link href="/insights" className="text-on-surface hover:text-primary">
-            Insights
-          </Link>
-          <Link href="/process" className="text-on-surface hover:text-primary">
-            Process
-          </Link>
-          <Link href="/faq" className="text-on-surface hover:text-primary">
-            FAQ
-          </Link>
-          <Link href="/contact" className="text-on-surface hover:text-primary">
-            Contact
-          </Link>
-        </nav>
-        <RequestProposalButton />
-      </div>
-      {/* Mobile Menu */}
-      {isMenuOpen && <MobileMenu />}
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+          <Image
+            src={Logo}
+            alt="Gmax Digital Logo"
+            width={32}
+            height={32}
+            className="rounded-xl"
+          />
+        </div>
+        <div className="flex items-center justify-end mr-6 gap-4">
+          <nav className="hidden lg:flex items-center gap-4">
+            <Link href="/about" className="text-on-surface hover:text-primary">
+              About
+            </Link>
+            <Link
+              href="/services"
+              className="text-on-surface hover:text-primary"
+            >
+              Services
+            </Link>
+            <Link
+              href="/case-studies"
+              className="text-on-surface hover:text-primary"
+            >
+              Case Studies
+            </Link>
+            <Link href="/blog" className="text-on-surface hover:text-primary">
+              Blog
+            </Link>
+            <Link
+              href="/insights"
+              className="text-on-surface hover:text-primary"
+            >
+              Insights
+            </Link>
+            <Link
+              href="/process"
+              className="text-on-surface hover:text-primary"
+            >
+              Process
+            </Link>
+            <Link href="/faq" className="text-on-surface hover:text-primary">
+              FAQ
+            </Link>
+            <Link
+              href="/contact"
+              className="text-on-surface hover:text-primary"
+            >
+              Contact
+            </Link>
+          </nav>
+          <RequestProposalButton />
+        </div>
+        {/* Mobile Menu */}
+        {isMenuOpen && <MobileMenu />}
       </div>
     </div>
   );

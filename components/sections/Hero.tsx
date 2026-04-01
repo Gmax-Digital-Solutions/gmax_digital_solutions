@@ -35,17 +35,20 @@ const Hero = () => {
           className="h-full"
         />
       </div>
-      <div className="px-4 sm:px-6 lg:px-8 w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center z-10">
+      <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center z-10">
         <div className="z-10 order-2 md:order-1">
           <span className="inline-block px-3 py-1 bg-surface-container-low text-primary font-bold text-[10px] uppercase tracking-widest mb-6">
             Small Businesses. Big Solutions.
           </span>
           <h1 className="text-editorial-lg text-[#241E20] mb-8">
-            Small Businesses, {" "}
-            <span className="text-primary-container">Smart Growth Solutions</span>
+            Small Businesses,{" "}
+            <span className="text-primary-container">
+              Smart Growth Solutions
+            </span>
           </h1>
           <p className="text-lg text-on-surface-variant max-w-lg mb-10 leading-relaxed">
-            Help businesses grow with strategies that combine Marketing, Psychology & Sales Strategies.
+            Help businesses grow with strategies that combine Marketing,
+            Psychology & Sales Strategies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <RequestProposalButton />

@@ -9,7 +9,7 @@ import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col h-full w-[100%] text-red-200">
+    <div className="flex flex-1 flex-col h-full w-[100%] text-on-surface">
       <Hero />
       <StatHook />
       <Services />
