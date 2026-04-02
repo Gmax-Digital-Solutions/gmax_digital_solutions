@@ -1,0 +1,46 @@
+// components/ContactHero.tsx
+
+"use client";
+import React from "react";
+
+const ContactHero: React.FC = () => {
+  return (
+    <section className="relative px-8 py-24 md:py-32 overflow-hidden bg-white">
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-3xl">
+          <span className="inline-block px-3 py-1 mb-6 text-[10px] uppercase tracking-[0.2em] font-bold bg-surface-container text-primary border-l-2 border-primary">
+            Strategic Advisory
+          </span>
+
+          <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter leading-[1.05] mb-8">
+            Start the conversation that may clarify what your business needs
+            next
+          </h1>
+
+          <p className="text-xl text-on-surface-variant leading-relaxed mb-10 max-w-2xl font-light">
+            Whether refining an idea, improving digital credibility, or
+            strengthening market visibility, some decisions become easier with
+            the right perspective.
+          </p>
+
+          <div className="flex flex-wrap gap-4">
+            <button
+              className="bg-primary text-white px-8 py-4 font-bold rounded shadow-sm hover:bg-primary-container transition-all active:scale-95 flex items-center gap-2"
+              onClick={() => alert("Book a strategy call clicked!")} // placeholder for now
+            >
+              Book a Strategy Call
+              <span className="material-symbols-outlined text-sm">
+                arrow_forward
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Decorative background element */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-primary -skew-x-12 translate-x-1/2 opacity-70 hidden lg:block"></div>
+    </section>
+  );
+};
+
+export default ContactHero;
