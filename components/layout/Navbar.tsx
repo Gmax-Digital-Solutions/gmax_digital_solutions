@@ -48,6 +48,9 @@ const Navbar = () => {
         </div>
         <div className="flex items-center justify-end mr-6 gap-4">
           <nav className="hidden lg:flex items-center gap-4">
+            <Link href="/" className="text-on-surface hover:text-primary">
+              Home
+            </Link>
             <Link href="/about" className="text-on-surface hover:text-primary">
               About
             </Link>
@@ -63,20 +66,11 @@ const Navbar = () => {
             >
               Case Studies
             </Link>
-            <Link href="/blog" className="text-on-surface hover:text-primary">
-              Blog
-            </Link>
             <Link
               href="/insights"
               className="text-on-surface hover:text-primary"
             >
               Insights
-            </Link>
-            <Link
-              href="/process"
-              className="text-on-surface hover:text-primary"
-            >
-              Process
             </Link>
             <Link href="/faq" className="text-on-surface hover:text-primary">
               FAQ

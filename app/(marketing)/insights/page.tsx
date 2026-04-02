@@ -4,6 +4,8 @@ import ArchiveSection from "@/components/insights/ArchiveSection";
 import CategoriesSection from "@/components/insights/CategoriesSection";
 import CTABanner from "@/components/sections/CTABanner";
 import Footer from "@/components/sections/Footer";
+import CtaClose from "@/components/insights/CtaClose";
+import QuotesSection from "@/components/insights/QuotesSection";
 
 export default function page() {
   return (
@@ -12,7 +14,8 @@ export default function page() {
       <FeaturedPerspective />
       <ArchiveSection />
       <CategoriesSection />
-      <CTABanner />
+      <QuotesSection />
+      <CtaClose />
       <Footer />
     </main>
   );
