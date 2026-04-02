@@ -37,7 +37,10 @@ const ContactFullSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-surface-container-low py-24 px-8 text-on-surface-variant">
+    <section
+      id="proposal"
+      className="bg-surface-container-low py-24 px-8 text-on-surface-variant"
+    >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         {/* Left: Direct Contact & Info */}
         <div className="lg:col-span-4 space-y-12">

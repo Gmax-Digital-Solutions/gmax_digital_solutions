@@ -6,6 +6,7 @@ import SolutionBridge from "@/components/sections/SolutionBridge";
 import CaseStudies from "@/components/sections/CaseStudies";
 import CTABanner from "@/components/sections/CTABanner";
 import Footer from "@/components/sections/Footer";
+import Newsletter from "@/components/sections/Newsletter";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <SolutionBridge />
       <CaseStudies />
+      <Newsletter />
       <CTABanner />
       <Footer />
     </div>
