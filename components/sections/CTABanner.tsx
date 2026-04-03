@@ -1,5 +1,7 @@
+"use client";
+
 import FloatingLines from "../FloatingLines";
-import Threads from "../Threads";
+import posthog from "posthog-js";
 
 const CTABanner = () => {
   return (
@@ -13,9 +15,19 @@ const CTABanner = () => {
           Gmax Digital.
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center">
-          <button className="bg-[#F84343] text-white px-10 py-5 rounded-lg font-black text-lg shadow-xl shadow-black/10">
-            Get Your Free Strategy Call
-          </button>
+          <a
+            href="https://calendly.com/gmax-digital/strategy-call"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() =>
+              posthog.capture("Clicked Strategy Call", {
+                source: "homepage-hero",
+              })
+            }
+            className="bg-[#F84343] text-white px-10 py-5 rounded-lg font-black text-lg shadow-xl shadow-black/10"
+          >
+            Book A Free Strategy Call
+          </a>
           <button className="bg-white text-[#241E20] px-10 py-5 rounded-lg font-black text-lg">
             Download Services Guide
           </button>

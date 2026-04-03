@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import Link from "next/link";
 
 const SolutionBridge = () => {
   return (
@@ -94,10 +95,7 @@ const SolutionBridge = () => {
                   Refine positioning so your offer becomes easier to trust
                 </span>
               </li>
-              {/* <li className="flex items-center gap-3">
-                <CheckCircle size={24} className="text-[#F84343] flex-shrink-0" />
-                <span className="font-medium"></span>
-              </li> */}
+
               <li className="flex items-center gap-3">
                 <CheckCircle
                   size={24}
@@ -117,10 +115,13 @@ const SolutionBridge = () => {
                 </span>
               </li>
             </ul>
-            <button className="bg-[#241E20] text-white px-8 py-4 rounded-lg font-bold flex items-center gap-3">
+            <Link
+              href="contact#proposal"
+              className="bg-[#241E20] text-white px-8 py-4 rounded-lg font-bold flex items-center gap-3 w-max hover:bg-[#241E20]/90 transition-all active:scale-95"
+            >
               Secure Your Blueprint
               <span className="material-symbols-outlined">trending_up</span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

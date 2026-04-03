@@ -1,5 +1,5 @@
-import React from "react";
-
+import Image from "next/image";
+import Beauty from "@/public/images/BeautyProfile.jpg";
 const CtaClose = () => {
   return (
     <section className="py-24 px-6 bg-surface">
@@ -25,9 +25,10 @@ const CtaClose = () => {
 
           {/* Visual */}
           <div className="hidden md:block w-72 h-72 rounded-2xl overflow-hidden relative bg-surface-container">
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-31eM1tez-y8TDpKbBTe1puQOYeFmuFhR85x3MeEYzTLxLtIPvOcnj_XhaQjlThpFynGLTkyNdQhx4No0nThOQ8Wid0hs28hU240gv4afuLTaXOlDGagY7nPIdMAFLEDJmM6RN7jXWod3xpIL4Kf1EXwsdREFSd0Aqm6LKXWhNSrK7xjbFW63i0FosUalFgojEJoiy6HiQif8npZRbLEHyEJb2L0VYeSgfuT6lWtoX3SguGAjAtXNpWqvUv7u_0u_3-jRGXv506E"
+            <Image
+              src={Beauty}
               alt="Strategic discussion"
+              fill
               className="w-full h-full object-cover grayscale contrast-125 opacity-80"
             />
             <div className="absolute inset-0 bg-primary/10" />

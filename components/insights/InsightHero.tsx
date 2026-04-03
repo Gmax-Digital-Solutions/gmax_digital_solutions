@@ -1,5 +1,5 @@
-import React from "react";
-
+import HeroImage from "@/public/images/insights_hero.jpg";
+import Image from "next/image";
 const InsightHero = () => {
   return (
     <section className="relative min-h-[716px] flex items-center px-6 overflow-hidden bg-surface text-on-surface">
@@ -34,9 +34,12 @@ const InsightHero = () => {
         <div className="lg:col-span-4 relative hidden lg:block">
           <div className="aspect-square bg-surface-container-high rounded-full overflow-hidden flex items-center justify-center border-8 border-white shadow-2xl">
             <div className="w-full h-full bg-gradient-to-br from-primary-container/20 to-secondary-container/20 flex items-center justify-center">
-              <div className="text-6xl font-black text-primary/10 tracking-tight">
-                GMAX
-              </div>
+              <Image
+                src={HeroImage}
+                alt="Insight Hero"
+                className="w-full h-full object-cover"
+                // fill
+              />
             </div>
           </div>
 
