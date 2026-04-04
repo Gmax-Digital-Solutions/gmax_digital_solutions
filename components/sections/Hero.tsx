@@ -1,8 +1,7 @@
 import Image from "next/image";
-import AnimatedBackground from "@/components/ui/AnimatedBackground";
 import RequestProposalButton from "../ui/RequestProposalButton";
 import SubscribeBtn from "../ui/SubscribeBtn";
-import HeroImage from "@/public/images/hero_image.png";
+import HomeHero from "@/public/images/BusinessGathering.jpg";
 import Grainient from "../Grainient";
 
 const Hero = () => {
@@ -60,7 +59,7 @@ const Hero = () => {
             <Image
               alt="Digital Agency Team Work"
               className="w-full h-full object-cover"
-              src={HeroImage}
+              src={HomeHero}
               width={400}
               height={400}
             />

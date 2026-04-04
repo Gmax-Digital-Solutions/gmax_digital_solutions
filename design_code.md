@@ -1728,3 +1728,1440 @@ Services section
 </div>
 </footer>
 </body></html>
+
+Insights section design
+
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Insights | Gmax Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#c0c1ff",
+              "on-surface": "#201a1c",
+              "on-error-container": "#93000a",
+              "on-primary-container": "#f1efff",
+              "on-surface-variant": "#464554",
+              "outline": "#767686",
+              "on-error": "#ffffff",
+              "surface": "#fff8f8",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "surface-bright": "#fff8f8",
+              "on-background": "#201a1c",
+              "inverse-on-surface": "#faeef0",
+              "surface-container-high": "#f1e5e8",
+              "secondary-fixed": "#ffdad7",
+              "tertiary-fixed": "#ece0e2",
+              "primary-container": "#585de1",
+              "background": "#fff8f8",
+              "on-tertiary-container": "#faedf0",
+              "primary-fixed": "#e1e0ff",
+              "inverse-primary": "#c0c1ff",
+              "tertiary": "#5b5355",
+              "on-tertiary-fixed-variant": "#4c4547",
+              "secondary": "#b90d1d",
+              "on-tertiary": "#ffffff",
+              "primary": "#3e42c7",
+              "on-tertiary-fixed": "#201a1c",
+              "tertiary-fixed-dim": "#cfc4c6",
+              "tertiary-container": "#746b6d",
+              "surface-tint": "#484dd1",
+              "surface-container-low": "#fdf1f3",
+              "error": "#ba1a1a",
+              "surface-variant": "#ece0e2",
+              "surface-container": "#f7ebed",
+              "on-secondary-fixed-variant": "#930012",
+              "error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#2e31b9",
+              "outline-variant": "#c6c5d6",
+              "on-secondary-container": "#fffbff",
+              "surface-container-highest": "#ece0e2",
+              "on-secondary-fixed": "#410004",
+              "secondary-fixed-dim": "#ffb3ad",
+              "on-primary-fixed": "#04006d",
+              "inverse-surface": "#352f31",
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#dd2f33",
+              "surface-dim": "#e3d7da"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #fff8f8; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .text-editorial-balance { text-wrap: balance; }
+    </style>
+</head>
+<body class="text-on-background antialiased overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm font-['Inter'] antialiased tracking-tight">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-xl font-black tracking-tighter text-zinc-900">Gmax Digital</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-zinc-600 font-medium hover:text-zinc-900 transition-colors" href="#">Solutions</a>
+<a class="text-zinc-600 font-medium hover:text-zinc-900 transition-colors" href="#">Process</a>
+<a class="text-zinc-600 font-medium hover:text-zinc-900 transition-colors" href="#">Case Studies</a>
+<a class="text-zinc-600 font-medium hover:text-zinc-900 transition-colors" href="#">About</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ease-in-out active:scale-95">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8">
+<span class="inline-block py-1 px-3 bg-surface-container text-primary text-xs font-bold tracking-widest uppercase mb-6 rounded">Editorial &amp; Strategy</span>
+<h1 class="text-5xl md:text-7xl font-black text-on-surface tracking-tighter leading-[0.9] mb-8 text-editorial-balance">
+                        Insights for founders building products that need trust, relevance, and market clarity
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+                        Perspectives on positioning and digital credibility. We decode the mechanics of how small businesses transform into market authorities.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-on-primary px-8 py-4 rounded-lg font-bold transition-transform hover:-translate-y-1 active:scale-95">
+                            Subscribe for Insights
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-4 relative hidden lg:block">
+<div class="aspect-square bg-surface-container-high rounded-full overflow-hidden flex items-center justify-center border-8 border-white shadow-2xl">
+<div class="w-full h-full bg-gradient-to-br from-primary-container/20 to-secondary-container/20" data-alt="Abstract minimalist geometric pattern with soft gradients"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl rounded-xl max-w-[200px]">
+<p class="text-sm font-medium italic">"Strategy is the art of sacrifice for the sake of clarity."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Perspective: Solution Bridge Pattern -->
+<section class="py-24 px-6 bg-inverse-surface">
+<div class="max-w-7xl mx-auto">
+<div class="relative grid grid-cols-1 lg:grid-cols-2 items-center gap-0">
+<div class="h-full min-h-[400px] bg-zinc-800 relative overflow-hidden order-2 lg:order-1">
+<img alt="Founders discussing strategy" class="absolute inset-0 w-full h-full object-cover opacity-50 grayscale" data-alt="Black and white high contrast image of people in a meeting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJuNpC4AG9HHOVSXgWPy833239F84eOq5dNgrbTfhN2VIey9b_DyMAFu07Ar-WvcycNlie4eTQ5C8yA0TL4gEhrFzYjUapt6_0EMsI7UrcrBShv3nWUQJFX5l8iYKiPK35wLbb7GpgYhAOertbWJp1E2SLjqHKSWU4wDyc5-8SOVPnlkYxzrSqThbbGHQC37uYojK3o88fxaN4ck165achKqA6dz4J2S1nfrWXHo_KVf2Cip_PTdsQpBToL7OuDDRIW7e4tdGlKXA"/>
+</div>
+<div class="bg-surface-container-lowest p-12 lg:p-20 order-1 lg:order-2 lg:-ml-12 relative z-10 shadow-2xl">
+<span class="text-secondary font-bold text-xs tracking-[0.2em] uppercase mb-4 block">Long Form Insight</span>
+<h2 class="text-3xl md:text-5xl font-black tracking-tight text-on-surface mb-6 leading-tight">
+                            90% of startups fail — often because markets never clearly understand their value
+                        </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            Technical excellence is no longer a moat. In a crowded digital landscape, the winner isn't the one with the best code, but the one who communicates relevance fastest. We explore why clarity is the ultimate competitive advantage.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group" href="#">
+                            Read Insight
+                            <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest Insights Grid -->
+<section class="py-24 px-6 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-4xl font-black tracking-tight mb-2">The Archive</h2>
+<p class="text-on-surface-variant">Continuous perspective on digital market authority.</p>
+</div>
+<div class="hidden md:block">
+<span class="text-sm font-medium text-zinc-400">Sort by: Date</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px]">
+<div>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-black mb-4 block">Trust Mechanics</span>
+<h3 class="text-xl font-bold leading-snug mb-4 group-hover:text-primary transition-colors">Why strong software products still struggle to gain trust</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">Founders often focus on feature lists, forgetting that trust is built through consistent narrative and social proof architecture.</p>
+</div>
+<a class="text-xs font-bold uppercase tracking-tighter border-b-2 border-transparent group-hover:border-primary inline-block w-fit pb-1 transition-all" href="#">Read More</a>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px]">
+<div>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-black mb-4 block">Market Readiness</span>
+<h3 class="text-xl font-bold leading-snug mb-4 group-hover:text-primary transition-colors">Positioning mistakes founders make before launch</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">The danger of "generic excellence" and how to niche down without losing your future scalability.</p>
+</div>
+<a class="text-xs font-bold uppercase tracking-tighter border-b-2 border-transparent group-hover:border-primary inline-block w-fit pb-1 transition-all" href="#">Read More</a>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px]">
+<div>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-black mb-4 block">Growth Strategy</span>
+<h3 class="text-xl font-bold leading-snug mb-4 group-hover:text-primary transition-colors">Why digital credibility matters before traffic</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">Spending on ads before fixing your landing page's authority signals is a fast way to burn capital.</p>
+</div>
+<a class="text-xs font-bold uppercase tracking-tighter border-b-2 border-transparent group-hover:border-primary inline-block w-fit pb-1 transition-all" href="#">Read More</a>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px]">
+<div>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-black mb-4 block">Product Design</span>
+<h3 class="text-xl font-bold leading-snug mb-4 group-hover:text-primary transition-colors">Designing for the 'Enterprise Skeptic'</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">Tactics for moving upmarket and convincing high-stakes decision makers through UI clarity.</p>
+</div>
+<a class="text-xs font-bold uppercase tracking-tighter border-b-2 border-transparent group-hover:border-primary inline-block w-fit pb-1 transition-all" href="#">Read More</a>
+</div>
+<!-- Card 5 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px]">
+<div>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-black mb-4 block">Digital Trust</span>
+<h3 class="text-xl font-bold leading-snug mb-4 group-hover:text-primary transition-colors">The Invisible Leak: Is your brand losing users at checkout?</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">Analyzing micro-moments of friction that destroy the credibility you worked so hard to build.</p>
+</div>
+<a class="text-xs font-bold uppercase tracking-tighter border-b-2 border-transparent group-hover:border-primary inline-block w-fit pb-1 transition-all" href="#">Read More</a>
+</div>
+<!-- Card 6 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px]">
+<div>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-black mb-4 block">Founder Marketing</span>
+<h3 class="text-xl font-bold leading-snug mb-4 group-hover:text-primary transition-colors">Building Authority without being an Influencer</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">Founders don't need to post daily selfies to build a credible professional digital presence.</p>
+</div>
+<a class="text-xs font-bold uppercase tracking-tighter border-b-2 border-transparent group-hover:border-primary inline-block w-fit pb-1 transition-all" href="#">Read More</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="py-24 px-6 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-sm font-black uppercase tracking-[0.3em] mb-12 text-center text-on-surface-variant">Focus Domains</h2>
+<div class="flex flex-wrap justify-center gap-4">
+<div class="px-8 py-10 bg-white shadow-sm border border-outline-variant/10 min-w-[240px] flex-1 text-center hover:bg-primary hover:text-white transition-all duration-500 cursor-pointer">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="layers">layers</span>
+<h4 class="font-bold">Product Positioning</h4>
+</div>
+<div class="px-8 py-10 bg-white shadow-sm border border-outline-variant/10 min-w-[240px] flex-1 text-center hover:bg-primary hover:text-white transition-all duration-500 cursor-pointer">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="record_voice_over">record_voice_over</span>
+<h4 class="font-bold">Founder Marketing</h4>
+</div>
+<div class="px-8 py-10 bg-white shadow-sm border border-outline-variant/10 min-w-[240px] flex-1 text-center hover:bg-primary hover:text-white transition-all duration-500 cursor-pointer">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="verified">verified</span>
+<h4 class="font-bold">Digital Trust</h4>
+</div>
+<div class="px-8 py-10 bg-white shadow-sm border border-outline-variant/10 min-w-[240px] flex-1 text-center hover:bg-primary hover:text-white transition-all duration-500 cursor-pointer">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="trending_up">trending_up</span>
+<h4 class="font-bold">Growth Strategy</h4>
+</div>
+<div class="px-8 py-10 bg-white shadow-sm border border-outline-variant/10 min-w-[240px] flex-1 text-center hover:bg-primary hover:text-white transition-all duration-500 cursor-pointer">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="rocket_launch">rocket_launch</span>
+<h4 class="font-bold">Market Readiness</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Strategic Quote -->
+<section class="py-32 px-6 bg-zinc-900 text-white relative overflow-hidden">
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<span class="material-symbols-outlined text-6xl text-secondary mb-8 opacity-50" data-icon="format_quote">format_quote</span>
+<p class="text-3xl md:text-5xl font-light italic leading-tight mb-12 text-editorial-balance">
+                    "Growth often slows long before businesses notice it — usually where clarity, trust, and relevance were never fully built."
+                </p>
+<div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+<p class="text-sm tracking-widest uppercase font-bold text-zinc-500">Gmax Digital Perspective</p>
+</div>
+<!-- Ambient Pattern -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute -top-1/2 -left-1/4 w-full h-full bg-primary-container rounded-full blur-[120px]"></div>
+<div class="absolute -bottom-1/2 -right-1/4 w-full h-full bg-secondary-container rounded-full blur-[120px]"></div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-24 px-6">
+<div class="max-w-4xl mx-auto bg-primary p-12 lg:p-16 rounded-2xl shadow-2xl relative overflow-hidden">
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-10">
+<div class="flex-1 text-center md:text-left">
+<h2 class="text-3xl font-black text-white mb-4">Get strategic insights directly</h2>
+<p class="text-on-primary-container/80 text-lg">No spam. Only high-conviction perspectives for builders.</p>
+</div>
+<form class="flex-1 w-full flex flex-col sm:flex-row gap-3">
+<input class="flex-1 bg-white/10 border-white/20 text-white placeholder:text-white/50 px-6 py-4 rounded-lg focus:ring-2 focus:ring-white/30 focus:border-white transition-all" placeholder="Email Address" type="email"/>
+<button class="bg-white text-primary font-bold px-8 py-4 rounded-lg hover:bg-secondary hover:text-white transition-all" type="submit">Subscribe</button>
+</form>
+</div>
+<!-- Glass accents -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-white/5 blur-3xl rounded-full"></div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 px-6 border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-4xl md:text-6xl font-black tracking-tighter text-on-surface mb-8">Need strategic clarity for your business?</h2>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto mb-12">Let's discuss how we can build your brand's authority and market relevance through structured digital strategy.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-secondary text-on-primary px-10 py-5 rounded-lg font-bold text-lg shadow-xl hover:shadow-secondary/20 hover:-translate-y-1 transition-all">
+                        Book a Strategy Call
+                    </button>
+<button class="bg-zinc-100 text-zinc-900 px-10 py-5 rounded-lg font-bold text-lg hover:bg-zinc-200 transition-all border border-zinc-200">
+                        Send a Message
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#241E20] w-full py-12 px-6 mt-auto font-['Inter'] text-sm tracking-wide">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="text-lg font-bold text-white">Gmax Digital</div>
+<div class="flex gap-8">
+<a class="text-zinc-400 hover:text-[#F84343] transition-colors hover:underline decoration-[#F84343] underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-zinc-400 hover:text-[#F84343] transition-colors hover:underline decoration-[#F84343] underline-offset-4" href="#">Terms of Service</a>
+<a class="text-zinc-400 hover:text-[#F84343] transition-colors hover:underline decoration-[#F84343] underline-offset-4" href="#">LinkedIn</a>
+<a class="text-zinc-400 hover:text-[#F84343] transition-colors hover:underline decoration-[#F84343] underline-offset-4" href="#">Contact</a>
+</div>
+<div class="text-zinc-400">
+                © 2024 Gmax Digital. Architectural Advocacy for Small Businesses.
+            </div>
+</div>
+</footer>
+</body></html>
+
+Contact page:
+
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Gmax Digital | Strategic Digital Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#201a1c",
+              "inverse-on-surface": "#faeef0",
+              "inverse-primary": "#c0c1ff",
+              "surface-tint": "#484dd1",
+              "on-primary-fixed": "#04006d",
+              "on-secondary-fixed-variant": "#930012",
+              "error-container": "#ffdad6",
+              "surface-container": "#f7ebed",
+              "primary": "#3e42c7",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#ffb3ad",
+              "on-surface-variant": "#464554",
+              "on-primary-fixed-variant": "#2e31b9",
+              "background": "#fff8f8",
+              "surface-container-high": "#f1e5e8",
+              "surface-bright": "#fff8f8",
+              "outline-variant": "#c6c5d6",
+              "on-secondary-container": "#fffbff",
+              "secondary-fixed": "#ffdad7",
+              "surface-container-highest": "#ece0e2",
+              "on-tertiary-fixed": "#201a1c",
+              "tertiary-container": "#746b6d",
+              "inverse-surface": "#352f31",
+              "surface-variant": "#ece0e2",
+              "primary-container": "#585de1",
+              "outline": "#767686",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed": "#410004",
+              "tertiary-fixed": "#ece0e2",
+              "on-primary-container": "#f1efff",
+              "on-background": "#201a1c",
+              "tertiary": "#5b5355",
+              "on-secondary": "#ffffff",
+              "secondary-container": "#dd2f33",
+              "on-error-container": "#93000a",
+              "tertiary-fixed-dim": "#cfc4c6",
+              "surface-container-low": "#fdf1f3",
+              "on-primary": "#ffffff",
+              "on-tertiary-container": "#faedf0",
+              "primary-fixed": "#e1e0ff",
+              "primary-fixed-dim": "#c0c1ff",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "secondary": "#b90d1d",
+              "surface": "#fff8f8",
+              "on-tertiary-fixed-variant": "#4c4547",
+              "surface-dim": "#e3d7da"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 8px 60px -12px rgba(32, 26, 28, 0.06);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- TopAppBar Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-black tracking-tighter text-[#241E20] dark:text-white">
+                Gmax Digital
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-['Inter'] font-medium tracking-tight">
+<a class="text-zinc-500 hover:text-[#585DE1] transition-colors" href="#">Solutions</a>
+<a class="text-zinc-500 hover:text-[#585DE1] transition-colors" href="#">Case Studies</a>
+<a class="text-zinc-500 hover:text-[#585DE1] transition-colors" href="#">Process</a>
+<a class="text-zinc-500 hover:text-[#585DE1] transition-colors" href="#">About</a>
+<a class="text-[#585DE1] border-b-2 border-[#585DE1] pb-1" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-white px-6 py-2.5 font-bold rounded hover:opacity-80 active:scale-95 transition-all duration-200">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Section 1: Hero Section -->
+<section class="relative px-8 py-24 md:py-32 overflow-hidden bg-white">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 mb-6 text-[10px] uppercase tracking-[0.2em] font-bold bg-surface-container text-primary border-l-2 border-primary">Strategic Advisory</span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter leading-[1.05] mb-8">
+                        Start the conversation that may clarify what your business needs next
+                    </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-10 max-w-2xl font-light">
+                        Whether refining an idea, improving digital credibility, or strengthening market visibility, some decisions become easier with the right perspective.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-4 font-bold rounded shadow-sm hover:bg-primary-container transition-all active:scale-95 flex items-center gap-2">
+                            Book a Strategy Call
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -skew-x-12 translate-x-1/2 opacity-50 hidden lg:block"></div>
+</section>
+<!-- Section 2: Contact Form & Section 3: Direct Contact (Solution Bridge Pattern) -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Left: Direct Contact & Info -->
+<div class="lg:col-span-4 space-y-12">
+<div>
+<h2 class="text-3xl font-bold tracking-tight mb-6">Prefer direct contact?</h2>
+<div class="space-y-6">
+<a class="group flex items-start gap-4" href="mailto:hello@gmaxdigital.com">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary editorial-shadow group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-wider text-outline mb-1">Email</p>
+<p class="text-lg font-medium">hello@gmaxdigital.com</p>
+</div>
+</a>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary editorial-shadow">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-wider text-outline mb-1">Global Presence</p>
+<p class="text-on-surface-variant leading-relaxed">Serving clients globally, with strategic focus on founders and growing businesses.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Who This Is For Section -->
+<div class="pt-8 border-t border-outline-variant/30">
+<h3 class="text-xs font-black uppercase tracking-[0.2em] text-outline mb-8">We usually hear from</h3>
+<div class="space-y-4">
+<div class="p-6 bg-white rounded-lg border-l-4 border-primary editorial-shadow">
+<h4 class="font-bold text-lg mb-1">Founders building software products</h4>
+<p class="text-sm text-on-surface-variant">Translating vision into scalable technical architecture.</p>
+</div>
+<div class="p-6 bg-white rounded-lg border-l-4 border-secondary editorial-shadow">
+<h4 class="font-bold text-lg mb-1">Startups refining market direction</h4>
+<p class="text-sm text-on-surface-variant">Aligning digital presence with commercial strategy.</p>
+</div>
+<div class="p-6 bg-white rounded-lg border-l-4 border-on-surface editorial-shadow">
+<h4 class="font-bold text-lg mb-1">Businesses improving visibility</h4>
+<p class="text-sm text-on-surface-variant">Strengthening digital authority in competitive markets.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: The "Solution Bridge" Form Card -->
+<div class="lg:col-span-8 bg-white p-8 md:p-12 editorial-shadow rounded-xl">
+<h2 class="text-3xl font-bold tracking-tight mb-4">Tell us what you are working on</h2>
+<p class="text-on-surface-variant mb-10 font-light">Your message helps us understand where your business is and what may be worth discussing first.</p>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative">
+<label class="text-xs font-bold uppercase tracking-widest text-outline absolute -top-2.5 left-0 bg-white px-1">Full Name</label>
+<input class="w-full bg-transparent border-b-2 border-surface-container py-4 focus:outline-none focus:border-primary transition-colors text-on-surface" placeholder="e.g. Julian Anderson" type="text"/>
+</div>
+<div class="relative">
+<label class="text-xs font-bold uppercase tracking-widest text-outline absolute -top-2.5 left-0 bg-white px-1">Email Address</label>
+<input class="w-full bg-transparent border-b-2 border-surface-container py-4 focus:outline-none focus:border-primary transition-colors text-on-surface" placeholder="e.g. julian@company.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative">
+<label class="text-xs font-bold uppercase tracking-widest text-outline absolute -top-2.5 left-0 bg-white px-1">Company / Project Name</label>
+<input class="w-full bg-transparent border-b-2 border-surface-container py-4 focus:outline-none focus:border-primary transition-colors text-on-surface" placeholder="e.g. Gmax Labs" type="text"/>
+</div>
+<div class="relative">
+<label class="text-xs font-bold uppercase tracking-widest text-outline absolute -top-2.5 left-0 bg-white px-1">What do you need help with?</label>
+<select class="w-full bg-transparent border-b-2 border-surface-container py-4 focus:outline-none focus:border-primary transition-colors text-on-surface appearance-none">
+<option>Strategic Consultation</option>
+<option>Product Development</option>
+<option>Market Positioning</option>
+<option>Scaling Infrastructure</option>
+</select>
+</div>
+</div>
+<div class="relative">
+<label class="text-xs font-bold uppercase tracking-widest text-outline absolute -top-2.5 left-0 bg-white px-1">Message</label>
+<textarea class="w-full bg-transparent border-b-2 border-surface-container py-4 focus:outline-none focus:border-primary transition-colors text-on-surface resize-none" placeholder="Tell us about your current challenges and goals..." rows="4"></textarea>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pt-4">
+<p class="text-xs text-on-surface-variant italic max-w-xs">
+                                All conversations are treated with professional discretion and strategic confidentiality.
+                            </p>
+<button class="bg-primary text-white px-12 py-4 font-bold rounded hover:bg-primary-container transition-all active:scale-95">
+                                Send Message
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Section 6: Response Expectation -->
+<section class="py-24 px-8 bg-white">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-bold tracking-tight mb-16 text-center">What happens after you reach out</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/30 rounded-xl overflow-hidden">
+<div class="p-12 bg-white flex flex-col items-center text-center border-b md:border-b-0 md:border-r border-outline-variant/30">
+<span class="text-6xl font-black text-surface-container mb-6">01</span>
+<h4 class="text-xl font-bold mb-4">We review your message</h4>
+<p class="text-on-surface-variant font-light">A strategist reviews your input to understand the context and urgency of your project.</p>
+</div>
+<div class="p-12 bg-surface-container-low flex flex-col items-center text-center border-b md:border-b-0 md:border-r border-outline-variant/30">
+<span class="text-6xl font-black text-surface-container-highest mb-6">02</span>
+<h4 class="text-xl font-bold mb-4">We understand what you may need</h4>
+<p class="text-on-surface-variant font-light">We identify potential blockers and opportunities before our first conversation.</p>
+</div>
+<div class="p-12 bg-white flex flex-col items-center text-center">
+<span class="text-6xl font-black text-surface-container mb-6">03</span>
+<h4 class="text-xl font-bold mb-4">We suggest the best next conversation</h4>
+<p class="text-on-surface-variant font-light">We propose a focused call or a specific workshop to move your priorities forward.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Strategic Quote -->
+<section class="bg-[#241E20] py-32 px-8 text-center">
+<div class="max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-primary text-5xl mb-8" data-icon="format_quote">format_quote</span>
+<blockquote class="text-3xl md:text-5xl font-extralight text-white leading-tight tracking-tight italic">
+                    "Good decisions often begin when the right questions are asked early."
+                </blockquote>
+</div>
+</section>
+<!-- Section 4: Consultation Section (Call to Action) -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-5xl mx-auto rounded-3xl bg-gradient-to-br from-primary to-[#585DE1] p-1 md:p-1.5 shadow-2xl">
+<div class="bg-white rounded-[1.4rem] p-8 md:p-16 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Book a focused strategy conversation</h2>
+<p class="text-lg text-on-surface-variant mb-8 font-light">
+                            A short conversation can help identify what matters most before deciding how to move. No pressure — just clarity around your current priorities.
+                        </p>
+<button class="bg-secondary text-white px-8 py-4 font-bold rounded shadow-lg hover:opacity-90 transition-all flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+                            Schedule a Call
+                        </button>
+</div>
+<div class="hidden md:block w-72 h-72 bg-surface-container rounded-2xl overflow-hidden relative">
+<img alt="Consultant in meeting" class="w-full h-full object-cover grayscale contrast-125 mix-blend-multiply opacity-80" data-alt="Professional strategic consultant looking at data" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-31eM1tez-y8TDpKbBTe1puQOYeFmuFhR85x3MeEYzTLxLtIPvOcnj_XhaQjlThpFynGLTkyNdQhx4No0nThOQ8Wid0hs28hU240gv4afuLTaXOlDGagY7nPIdMAFLEDJmM6RN7jXWod3xpIL4Kf1EXwsdREFSd0Aqm6LKXWhNSrK7xjbFW63i0FosUalFgojEJoiy6HiQif8npZRbLEHyEJb2L0VYeSgfuT6lWtoX3SguGAjAtXNpWqvUv7u_0u_3-jRGXv506E"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#241E20] text-white">
+<div class="max-w-7xl mx-auto px-8 py-20">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+<div>
+<h2 class="text-2xl font-black tracking-tighter mb-4">Gmax Digital</h2>
+<p class="text-zinc-400 max-w-xs font-light">Small Businesses. Big Solutions. Strategic consulting for the modern era.</p>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div>
+<h4 class="text-xs font-bold uppercase tracking-[0.2em] mb-6 text-zinc-500">Navigation</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="text-zinc-400 hover:text-white transition-colors" href="#">Solutions</a></li>
+<li><a class="text-zinc-400 hover:text-white transition-colors" href="#">Case Studies</a></li>
+<li><a class="text-zinc-400 hover:text-white transition-colors" href="#">Process</a></li>
+<li><a class="text-white font-bold" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-[0.2em] mb-6 text-zinc-500">Connect</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="text-zinc-400 hover:text-white transition-colors" href="#">LinkedIn</a></li>
+<li><a class="text-zinc-400 hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="text-zinc-400 hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-zinc-400 hover:text-white transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4 text-zinc-500 text-xs font-['Inter'] tracking-wide uppercase">
+<p>© 2024 Gmax Digital. Small Businesses. Big Solutions.</p>
+<div class="flex gap-6">
+<a class="hover:text-[#F84343] transition-all" href="#">Privacy Policy</a>
+<a class="hover:text-[#F84343] transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
+
+<!-- Case studies -->
+
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Case Studies | Gmax Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#746b6d",
+              "tertiary-fixed": "#ece0e2",
+              "primary-fixed-dim": "#c0c1ff",
+              "primary": "#3e42c7",
+              "on-primary-fixed": "#04006d",
+              "secondary-container": "#dd2f33",
+              "on-tertiary-container": "#faedf0",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#fffbff",
+              "on-primary-fixed-variant": "#2e31b9",
+              "inverse-surface": "#352f31",
+              "surface-bright": "#fff8f8",
+              "secondary": "#b90d1d",
+              "background": "#fff8f8",
+              "surface-container-high": "#f1e5e8",
+              "on-secondary-fixed-variant": "#930012",
+              "outline": "#767686",
+              "on-primary": "#ffffff",
+              "on-surface-variant": "#464554",
+              "surface-container-highest": "#ece0e2",
+              "surface-container": "#f7ebed",
+              "surface": "#fff8f8",
+              "outline-variant": "#c6c5d6",
+              "inverse-on-surface": "#faeef0",
+              "on-tertiary": "#ffffff",
+              "inverse-primary": "#c0c1ff",
+              "tertiary": "#5b5355",
+              "tertiary-fixed-dim": "#cfc4c6",
+              "on-tertiary-fixed": "#201a1c",
+              "surface-variant": "#ece0e2",
+              "surface-tint": "#484dd1",
+              "primary-container": "#585de1",
+              "on-background": "#201a1c",
+              "secondary-fixed-dim": "#ffb3ad",
+              "on-primary-container": "#f1efff",
+              "secondary-fixed": "#ffdad7",
+              "on-surface": "#201a1c",
+              "on-secondary-fixed": "#410004",
+              "primary-fixed": "#e1e0ff",
+              "on-error-container": "#93000a",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#e3d7da",
+              "on-secondary": "#ffffff",
+              "error-container": "#ffdad6",
+              "error": "#ba1a1a",
+              "surface-container-low": "#fdf1f3",
+              "on-tertiary-fixed-variant": "#4c4547"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-mask {
+            mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-[#241E20]/70 backdrop-blur-xl shadow-[0_8px_40px_-12px_rgba(32,26,28,0.06)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-xl font-bold tracking-tighter text-[#241E20] dark:text-white uppercase">
+                Gmax Digital
+            </div>
+<div class="hidden md:flex items-center space-x-10 font-['Inter'] font-medium tracking-tight">
+<a class="text-[#241E20] dark:text-gray-300 hover:text-[#585DE1] transition-colors" href="#">Solutions</a>
+<a class="text-[#585DE1] border-b-2 border-[#585DE1] pb-1" href="#">Case Studies</a>
+<a class="text-[#241E20] dark:text-gray-300 hover:text-[#585DE1] transition-colors" href="#">Process</a>
+<a class="text-[#241E20] dark:text-gray-300 hover:text-[#585DE1] transition-colors" href="#">Insights</a>
+</div>
+<button class="bg-[#585DE1] text-white px-6 py-2.5 rounded-lg font-medium hover:opacity-80 transition-all duration-300 scale-95 active:scale-90">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-40 pb-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<span class="inline-block text-xs uppercase tracking-[0.2em] font-bold text-primary-container px-4 py-1.5 bg-surface-container-low rounded-full">Strategic Analysis</span>
+<h1 class="text-5xl lg:text-[4.5rem] font-bold leading-[1.05] tracking-tight text-on-background">
+                    How strategic <span class="text-primary-container">clarity</span> can change business outcomes
+                </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    Selected examples showing how positioning, trust, and digital structure influence business growth decisions.
+                </p>
+<div class="pt-4">
+<button class="bg-primary-container text-white px-8 py-4 rounded-lg font-semibold text-lg flex items-center group transition-transform active:scale-95">
+                        Discuss Your Project
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square bg-surface-container-low rounded-full absolute -top-12 -right-12 w-64 h-64 -z-10 blur-3xl opacity-50"></div>
+<div class="relative bg-surface-container border border-outline-variant/10 rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700" data-alt="Modern minimalist office interior with clean lines, architectural lighting, and a focused professional atmosphere for a consultancy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9DTt4DoviZbB5vKDSgltDzBuJ7DaywMQGUW2FTHCXaHiea1zz2SUomgpwHJ9RaVyp4Ed_i2tkTa31fUsAQGe5vfMQJzskyzOdco04LPx370S7QormweHYO3CcM2NU4KyLWo5ABIa6CUkqMuldCsNCSvjAz6qeGQ-ZcV_00nOlVGytZdyYDyahiGMIrwwN6cwErUAkFHp8HcFuYBJj6I4xy9clbSsSuKgsPmnL9wi_ZPU4TrazlNG4qJvD8ds07Rk6qzIHe9du49Q"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Case Study Section -->
+<section class="py-24 bg-on-background text-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex items-center space-x-4 mb-16">
+<div class="h-px w-12 bg-secondary-container"></div>
+<h2 class="text-sm uppercase tracking-widest font-bold text-secondary-container">Featured Case</h2>
+</div>
+<div class="relative grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-2xl overflow-hidden border border-white/5">
+<div class="bg-zinc-900 p-12 lg:p-20 flex flex-col justify-center space-y-8">
+<h3 class="text-3xl lg:text-4xl font-bold leading-tight">
+                        Helping a software business strengthen trust before scaling visibility.
+                    </h3>
+<p class="text-lg text-gray-400 leading-relaxed">
+                        A strategic review of how digital clarity, messaging, and credibility can improve early market response.
+                    </p>
+<div class="pt-4">
+<a class="inline-flex items-center text-secondary-container font-bold group" href="#">
+                            View Case Study
+                            <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">north_east</span>
+</a>
+</div>
+</div>
+<div class="relative min-h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-80" data-alt="Abstract visualization of data and architecture with deep blue and charcoal tones, reflecting technical precision and growth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx7swuKT_pVoMqWk2cudyevaIqgw84zzkdyngWi2PLjhoyqofpRV6BN5s6AflYPdLDVjs_GwA8J1nS6sHD9FI13k5HfDHbggDz0cq_cEdJMqMwnoVBLfgN6VywZL82rTB7qQ2iwZXi_m1Tb0KGsFdzTl0c7GWvpfBzyQEijtrcmqWfXtSNrp9eGaZOQZPgomHMJPeXPcqPg8nRJsdM9F-j9vxpq5FNFfTXFR7GcfyEg7jQ8NiED8oTZCYR1-HdQxH0qBodV5iA0WQ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-zinc-900 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Study Grid Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-3xl font-bold tracking-tight text-on-background">Selected Strategic Work</h2>
+<div class="h-1 w-20 bg-primary-container mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-low rounded-xl p-8 hover:bg-white transition-all duration-500 hover:shadow-xl border border-transparent hover:border-outline-variant/20">
+<div class="mb-6 overflow-hidden rounded-lg aspect-video">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="A clean professional desk setup with high-end stationery and a focus on clarity and organization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk57sNxxrvWJtYjagiXxj3AhJk2WKV8EfrrjVubzlCGwunZCY0Sluat0x4Al1_E5P78Ua7M6Lqw4Jh5M81fexZX4emY2u1mtaXh4iSJ_yQal2JTj5inEhujYzePN1LQDu0mFaZjIubGQRb0FtblffILtFhZbo8GcXjZ4v2hnGoQRCbFdUhzX8GVh4oEzhA9SPfuBHvChpkmYsrVNsn43j9KqE-4e1m2q_9CxFAONJVrwQsoz0bHfKy9SDk2tvvuvunvEdfxe9y36E"/>
+</div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary-container transition-colors">Positioning a product for stronger first-market perception</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Focusing on product clarity, refined communication strategies, and ensuring direct market relevance for early traction.</p>
+<a class="text-sm font-bold uppercase tracking-wider text-primary-container inline-flex items-center group/link" href="#">
+                        Read Case Study
+                        <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-low rounded-xl p-8 hover:bg-white transition-all duration-500 hover:shadow-xl border border-transparent hover:border-outline-variant/20">
+<div class="mb-6 overflow-hidden rounded-lg aspect-video">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Close up of architectural details reflecting structure and stability in professional business environments" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0SafVpCippFvDvVIiifRBcZk_68vOt0TRnF87VMH9lnYNpXGVuSlnXpks0y_nB-IdhF6N3LEQgHG-PlzFYv25yDHZM202iIKEujrb32IkV453_7GZRq8arjbTu2bervtIEEkmSRiouucYt9eDeDYEWQhH6sP0-rDZUdVMBoRoZY1UONfSvQ5Y458-r3dNc3_XjyLKBmvpr4OLIkKXkCeJFD5i6E_saKOPDRBd-MAqLYR-tMAnrmSiUy2MS7pyG90aQlWNscKWeQA"/>
+</div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary-container transition-colors">Improving digital credibility before growth campaigns</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Enhancing website trust through perception-driven design and building decision confidence for prospective clients.</p>
+<a class="text-sm font-bold uppercase tracking-wider text-primary-container inline-flex items-center group/link" href="#">
+                        Read Case Study
+                        <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-low rounded-xl p-8 hover:bg-white transition-all duration-500 hover:shadow-xl border border-transparent hover:border-outline-variant/20">
+<div class="mb-6 overflow-hidden rounded-lg aspect-video">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Collaborative work environment with natural lighting, symbolizing strategic communication and clarity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEgwYUeArhbvA7ocARDp8sRbAx_j-81Nxt_O0o9SZyTetm0AbNhyv3gNQSwVnQCA49yt10MF89fP2bolEXv0v--xUQJt9nrGfeFD9OYDEwvLhfuKtHJXwvl8cV251hh7kUVnhYVsJsaXNlrMHC6MjO2d1IayDLAhT4wMIkrfMZ92G8y-RYWw5J2UOOuWzo9548xXE6kGNoQwmfuVeBQQROViFIZ1mZ0tzLgsOAodhOlJ5yetRHQOhKZFcSsfnD1Q8h_H0MS0omoW4"/>
+</div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary-container transition-colors">Clarifying service value for early-stage growth</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Defining offer clarity and strategic messaging to ensure conversion readiness before significant investment.</p>
+<a class="text-sm font-bold uppercase tracking-wider text-primary-container inline-flex items-center group/link" href="#">
+                        Read Case Study
+                        <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-low rounded-xl p-8 hover:bg-white transition-all duration-500 hover:shadow-xl border border-transparent hover:border-outline-variant/20">
+<div class="mb-6 overflow-hidden rounded-lg aspect-video">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="A modern corporate lobby showing structural transparency and professional excellence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYbPAKrPl4DCZbKrW3vdXMuW9lax6_4W3imqL6m9tseyHQOMCPlXr7lN5TiMiBdywB-waMHSNUYADjUOqHS0_oIxAnFy3lA40wvNNqpZuk0WGqjfij_9uVGaz_mtV9SbpVcWquN2RsSxf50NoXZgrO86n81x-zBAYziS_KENSmBQimoShb3JoZs3NhhsEvTb2LzU41drolUDHRTxQkiE4kk3Ci27Okpr4wjjf-XMvZbzvpELUzrc6n3VxEs16_GzuuOLFtEwXEbfw"/>
+</div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary-container transition-colors">Strengthening how businesses present value online</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Building trust architecture and solid digital structure to professionalize a brand's online presence.</p>
+<a class="text-sm font-bold uppercase tracking-wider text-primary-container inline-flex items-center group/link" href="#">
+                        Read Case Study
+                        <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Inside the Process Section (The Solution Bridge) -->
+<section class="py-24 relative overflow-hidden">
+<div class="absolute inset-0 bg-on-background h-1/2"></div>
+<div class="absolute inset-0 bg-white translate-y-1/2"></div>
+<div class="relative max-w-7xl mx-auto px-8">
+<div class="mb-12">
+<h2 class="text-3xl font-bold text-white">What each engagement usually examines</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Step 01 -->
+<div class="bg-surface-container-highest p-10 rounded-xl shadow-lg transform translate-y-4 hover:-translate-y-0 transition-transform duration-500">
+<div class="text-primary-container font-black text-4xl mb-6 opacity-40">01</div>
+<h4 class="text-lg font-bold mb-4 text-on-surface leading-tight">Understanding where trust breaks</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Identifying the specific moments in the user journey where credibility is lost or questioned.</p>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-highest p-10 rounded-xl shadow-lg transform -translate-y-4 hover:translate-y-0 transition-transform duration-500">
+<div class="text-primary-container font-black text-4xl mb-6 opacity-40">02</div>
+<h4 class="text-lg font-bold mb-4 text-on-surface leading-tight">Identifying positioning gaps</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Analyzing how the business compares to market expectations and where the messaging falls short.</p>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-highest p-10 rounded-xl shadow-lg transform translate-y-4 hover:-translate-y-0 transition-transform duration-500">
+<div class="text-primary-container font-black text-4xl mb-6 opacity-40">03</div>
+<h4 class="text-lg font-bold mb-4 text-on-surface leading-tight">Structuring stronger digital clarity</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Reorganizing the digital architecture to ensure the core value proposition is impossible to miss.</p>
+</div>
+<!-- Step 04 -->
+<div class="bg-surface-container-highest p-10 rounded-xl shadow-lg transform -translate-y-4 hover:translate-y-0 transition-transform duration-500">
+<div class="text-primary-container font-black text-4xl mb-6 opacity-40">04</div>
+<h4 class="text-lg font-bold mb-4 text-on-surface leading-tight">Defining practical next moves</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Creating an actionable roadmap for growth that prioritizes high-impact strategic adjustments.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Outcomes Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h2 class="text-3xl font-bold text-on-background">What strong strategic work often improves</h2>
+<div class="h-1 w-20 bg-secondary-container mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white p-8 rounded-xl border-b-4 border-primary-container">
+<div class="mb-6 flex justify-center">
+<span class="material-symbols-outlined text-primary-container text-4xl">communication</span>
+</div>
+<p class="text-center font-bold text-on-surface">Clearer market communication</p>
+</div>
+<div class="bg-white p-8 rounded-xl border-b-4 border-primary-container">
+<div class="mb-6 flex justify-center">
+<span class="material-symbols-outlined text-primary-container text-4xl">verified_user</span>
+</div>
+<p class="text-center font-bold text-on-surface">Stronger digital credibility</p>
+</div>
+<div class="bg-white p-8 rounded-xl border-b-4 border-primary-container">
+<div class="mb-6 flex justify-center">
+<span class="material-symbols-outlined text-primary-container text-4xl">psychology</span>
+</div>
+<p class="text-center font-bold text-on-surface">Better decision confidence</p>
+</div>
+<div class="bg-white p-8 rounded-xl border-b-4 border-primary-container">
+<div class="mb-6 flex justify-center">
+<span class="material-symbols-outlined text-primary-container text-4xl">trending_up</span>
+</div>
+<p class="text-center font-bold text-on-surface">Improved readiness for growth</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Strategic Note Section -->
+<section class="py-32 bg-on-background relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<img class="w-full h-full object-cover" data-alt="Minimalist architectural shapes in low light, representing the foundational structure of a business" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0I31HqjepypZoiOXQWUNH7-9ZgbgRBjGV8HGQwbF96IHuvXFc4Vm8pSsrDlMARy-XoPJDqnJTxBf5_q926qxInb3C1-W2gMUTRCbT8oRajJwSaAAIRskKP2NqBG1zmpIlu9b7-SM2y0QEKGI5tAsIxlMl_Hjl1A_qD1ayyD3MUzdLQuiLUcVpdVgTwxXoBFAYK1r4OJG8tVUxUL1PL0bf_wk6zbdhEL_Sl416mBhBoXXRIZV2_0FXEH9GaGT2TRAytsuXJooiUwI"/>
+</div>
+<div class="max-w-5xl mx-auto px-8 relative z-10 text-center">
+<span class="material-symbols-outlined text-6xl text-secondary-container mb-8">format_quote</span>
+<blockquote class="text-3xl md:text-5xl font-light text-white leading-tight tracking-tight italic">
+                "Sometimes growth improves when businesses become easier to <span class="text-secondary-container font-semibold">understand</span>, <span class="text-secondary-container font-semibold">trust</span>, and <span class="text-secondary-container font-semibold">remember</span>."
+            </blockquote>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#241E20] dark:bg-[#1a1617] w-full py-12 px-8">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto space-y-6 md:space-y-0">
+<div class="text-lg font-black text-white uppercase">Gmax Digital</div>
+<div class="flex space-x-8 font-['Inter'] text-sm tracking-wide uppercase font-semibold">
+<a class="text-gray-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">LinkedIn</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<div class="text-[#F84343] font-['Inter'] text-sm tracking-wide uppercase font-semibold">
+                © 2024 Gmax Digital. Architecture for Growth.
+            </div>
+</div>
+</footer>
+</body></html>
+
+<!-- faq page -->
+
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ | Gmax Digital - Strategic Growth Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#ffb3ad",
+              "on-tertiary-fixed-variant": "#4c4547",
+              "on-surface": "#201a1c",
+              "tertiary-fixed-dim": "#cfc4c6",
+              "surface-container-high": "#f1e5e8",
+              "on-tertiary": "#ffffff",
+              "secondary-container": "#dd2f33",
+              "on-secondary-fixed-variant": "#930012",
+              "primary-fixed": "#e1e0ff",
+              "on-secondary-container": "#fffbff",
+              "on-primary-fixed-variant": "#2e31b9",
+              "primary-container": "#585de1",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-error": "#ffffff",
+              "outline-variant": "#c6c5d6",
+              "on-tertiary-fixed": "#201a1c",
+              "tertiary": "#5b5355",
+              "surface-tint": "#484dd1",
+              "tertiary-fixed": "#ece0e2",
+              "surface-container-highest": "#ece0e2",
+              "on-primary-container": "#f1efff",
+              "error": "#ba1a1a",
+              "primary-fixed-dim": "#c0c1ff",
+              "inverse-on-surface": "#faeef0",
+              "inverse-primary": "#c0c1ff",
+              "surface-dim": "#e3d7da",
+              "surface-container": "#f7ebed",
+              "on-error-container": "#93000a",
+              "surface-variant": "#ece0e2",
+              "surface": "#fff8f8",
+              "secondary": "#b90d1d",
+              "on-background": "#201a1c",
+              "surface-container-low": "#fdf1f3",
+              "background": "#fff8f8",
+              "tertiary-container": "#746b6d",
+              "on-secondary-fixed": "#410004",
+              "surface-container-lowest": "#ffffff",
+              "primary": "#3e42c7",
+              "outline": "#767686",
+              "on-secondary": "#ffffff",
+              "on-surface-variant": "#464554",
+              "on-primary-fixed": "#04006d",
+              "secondary-fixed": "#ffdad7",
+              "on-tertiary-container": "#faedf0",
+              "inverse-surface": "#352f31",
+              "surface-bright": "#fff8f8"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 8px 40px -12px rgba(32, 26, 28, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl transition-all duration-300 ease-in-out shadow-[0_8px_40px_-12px_rgba(32,26,28,0.06)]">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-xl font-black tracking-tighter text-zinc-900">Gmax Digital</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Inter'] tracking-tight font-medium text-zinc-600 hover:text-zinc-900 transition-colors" href="#">Solutions</a>
+<a class="font-['Inter'] tracking-tight font-medium text-zinc-600 hover:text-zinc-900 transition-colors" href="#">Case Studies</a>
+<a class="font-['Inter'] tracking-tight font-medium text-zinc-600 hover:text-zinc-900 transition-colors" href="#">Process</a>
+<a class="font-['Inter'] tracking-tight font-medium text-zinc-600 hover:text-zinc-900 transition-colors" href="#">Insights</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-md font-medium hover:brightness-110 transition-all">Get a Quote</button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-24 pb-16 px-8 max-w-7xl mx-auto">
+<div class="relative z-10 flex flex-col items-start gap-6 max-w-4xl">
+<span class="inline-block text-secondary font-bold tracking-[0.05em] uppercase text-[0.75rem]">FAQ</span>
+<h1 class="text-[3.5rem] leading-[1.1] font-extrabold tracking-[-0.02em] text-on-background">
+                    Questions businesses often ask before moving forward
+                </h1>
+<p class="text-[1.25rem] leading-relaxed text-on-surface-variant max-w-2xl">
+                    Strategic work usually begins with clarity, and these answers help explain how engagements are approached.
+                </p>
+</div>
+<div class="absolute top-0 right-0 -z-10 w-1/2 h-full opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-container to-transparent blur-3xl"></div>
+</section>
+<!-- FAQ Accordion Section -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-4xl mx-auto px-8">
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="group bg-surface-container-lowest p-8 rounded-lg editorial-shadow transition-all hover:bg-white">
+<div class="flex justify-between items-center cursor-pointer">
+<h3 class="text-xl font-bold tracking-tight">When is the right time to seek strategic digital guidance?</h3>
+<span class="material-symbols-outlined text-primary-container transition-transform group-hover:rotate-180">expand_more</span>
+</div>
+<div class="mt-4 text-on-surface-variant leading-relaxed">
+                            Typically, businesses seek our guidance when internal growth plateaus or when entering a new market phase. If your digital efforts feel fragmented or if you're making decisions based on guesswork rather than architecture, it's time for a strategic reset.
+                        </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="group bg-surface-container-lowest p-8 rounded-lg editorial-shadow transition-all hover:bg-white">
+<div class="flex justify-between items-center cursor-pointer">
+<h3 class="text-xl font-bold tracking-tight">Do you work with early-stage businesses?</h3>
+<span class="material-symbols-outlined text-primary-container">expand_more</span>
+</div>
+<div class="mt-4 text-on-surface-variant leading-relaxed">
+                            Yes, provided there is a clear product-market fit or a foundational business model. We specialize in building the "Growth Infrastructure" for companies that are ready to scale professionally rather than just experiment.
+                        </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="group bg-surface-container-lowest p-8 rounded-lg editorial-shadow transition-all hover:bg-white">
+<div class="flex justify-between items-center cursor-pointer">
+<h3 class="text-xl font-bold tracking-tight">Is every engagement execution-heavy?</h3>
+<span class="material-symbols-outlined text-primary-container">expand_more</span>
+</div>
+<div class="mt-4 text-on-surface-variant leading-relaxed">
+                            No. Some clients engage us purely for high-level advisory and roadmap architecture, while others require full-funnel execution. We tailor the intensity of implementation to your internal team's capabilities.
+                        </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="group bg-surface-container-lowest p-8 rounded-lg editorial-shadow transition-all hover:bg-white">
+<div class="flex justify-between items-center cursor-pointer">
+<h3 class="text-xl font-bold tracking-tight">What usually changes first in a strategic review?</h3>
+<span class="material-symbols-outlined text-primary-container">expand_more</span>
+</div>
+<div class="mt-4 text-on-surface-variant leading-relaxed">
+                            The first shift is often narrative and measurement. We usually find that businesses are either telling the wrong story to the right audience or tracking metrics that don't actually correlate to profit. We tighten the positioning first.
+                        </div>
+</div>
+<!-- FAQ Item 5 -->
+<div class="group bg-surface-container-lowest p-8 rounded-lg editorial-shadow transition-all hover:bg-white">
+<div class="flex justify-between items-center cursor-pointer">
+<h3 class="text-xl font-bold tracking-tight">How do projects typically begin?</h3>
+<span class="material-symbols-outlined text-primary-container">expand_more</span>
+</div>
+<div class="mt-4 text-on-surface-variant leading-relaxed">
+                            Every engagement starts with a "Deep Audit" phase—a 2-week period where we dissect your existing data, competitor landscape, and internal bottlenecks before proposing a single line of code or creative.
+                        </div>
+</div>
+<!-- FAQ Item 6 -->
+<div class="group bg-surface-container-lowest p-8 rounded-lg editorial-shadow transition-all hover:bg-white">
+<div class="flex justify-between items-center cursor-pointer">
+<h3 class="text-xl font-bold tracking-tight">Do you focus only on websites?</h3>
+<span class="material-symbols-outlined text-primary-container">expand_more</span>
+</div>
+<div class="mt-4 text-on-surface-variant leading-relaxed">
+                            Websites are just the storefront. We design the entire ecosystem: customer acquisition loops, retention automation, CRM integration, and performance marketing strategies that feed into the site.
+                        </div>
+</div>
+<!-- FAQ Item 7 -->
+<div class="group bg-surface-container-lowest p-8 rounded-lg editorial-shadow transition-all hover:bg-white">
+<div class="flex justify-between items-center cursor-pointer">
+<h3 class="text-xl font-bold tracking-tight">Can a business engage before launch?</h3>
+<span class="material-symbols-outlined text-primary-container">expand_more</span>
+</div>
+<div class="mt-4 text-on-surface-variant leading-relaxed">
+                            Absolutely. Engaging before launch is often the most cost-effective path, as it prevents "technical debt" and branding misalignments that are expensive to fix later. We help build the launchpad.
+                        </div>
+</div>
+<!-- FAQ Item 8 -->
+<div class="group bg-surface-container-lowest p-8 rounded-lg editorial-shadow transition-all hover:bg-white">
+<div class="flex justify-between items-center cursor-pointer">
+<h3 class="text-xl font-bold tracking-tight">What if growth has already started but results feel weak?</h3>
+<span class="material-symbols-outlined text-primary-container">expand_more</span>
+</div>
+<div class="mt-4 text-on-surface-variant leading-relaxed">
+                            This is the "Scaling Plateau." It usually indicates that the initial tactics that got you to $1M won't get you to $10M. We audit the friction points and optimize the conversion flow to restore efficiency.
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Strategic Note Section -->
+<section class="py-32 bg-on-background relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8" data-weight="fill">format_quote</span>
+<blockquote class="text-[2.5rem] leading-[1.2] font-extrabold tracking-tight text-white mb-8">
+                        “Most growth problems become clearer when the right questions are asked early.”
+                    </blockquote>
+<div class="w-16 h-1 bg-secondary rounded-full"></div>
+</div>
+</div>
+<div class="absolute inset-0 -z-0">
+<div class="absolute top-0 left-0 w-full h-full opacity-30 bg-[radial-gradient(circle_at_20%_30%,_#585DE1_0%,_transparent_50%)]"></div>
+</div>
+</section>
+<!-- Signature Component: Solution Bridge / CTA -->
+<section class="relative bg-surface py-24 px-8 overflow-visible">
+<div class="max-w-7xl mx-auto">
+<div class="relative flex flex-col md:flex-row items-center justify-between p-12 bg-surface-container-highest rounded-xl editorial-shadow -mt-40 z-20">
+<div class="md:w-2/3 mb-8 md:mb-0">
+<h2 class="text-3xl font-black text-on-background mb-4">Ready for a Strategic Conversation?</h2>
+<p class="text-lg text-on-surface-variant">Skip the uncertainty. Let's look at your current architecture and define the path to your next milestone.</p>
+</div>
+<div class="md:w-1/3 flex justify-end">
+<button class="bg-primary-container text-white px-10 py-5 rounded-md text-lg font-bold hover:scale-[1.02] transition-transform shadow-lg shadow-primary-container/20">
+                            Contact Gmax Digital
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Image/Visual Section (Asymmetric Bento) -->
+<section class="max-w-7xl mx-auto px-8 pb-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-7 h-[400px] relative rounded-xl overflow-hidden group">
+<img alt="modern minimalist office with large windows" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="modern minimalist glass office interior with high-end furniture, soft morning natural light, professional consulting atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpg_0Tb0hdYPwaX7VFNAFFOeQEsGTxuosrtw4qha7C5ZM8YLDEnh0GYNKnp2CITXTGchVGsrLP3AHrv_2bUeVIvZJAslV74kjPoYj0TCNplzL014qqodApAIa9zgRwhsWASw-Dl-Cp9BJyK7XLAycLVJdcTQpCzG2b7bOHzipiTn_URHvRM_ezGdUuVJlffPM9TvZrHGActp54yL4ZcymaXQQLB7u9MFdTJ-0Hz4nGmHm7Cl4HY9CQHRakJg54oh2oxs9CNVvGXUQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+<p class="text-white text-xl font-bold">Refined Environments. Defined Results.</p>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="flex-1 bg-surface-container p-10 rounded-xl">
+<h4 class="text-secondary font-bold text-sm uppercase tracking-widest mb-4">Direct Impact</h4>
+<p class="text-2xl font-bold leading-tight">Average 40% efficiency gain in first 90 days.</p>
+</div>
+<div class="flex-1 bg-on-background p-10 rounded-xl text-white">
+<h4 class="text-primary-container font-bold text-sm uppercase tracking-widest mb-4">Availability</h4>
+<p class="text-2xl font-bold leading-tight">Currently accepting 2 strategic partners for Q4.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-900 dark:bg-zinc-950 w-full py-16">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 gap-8">
+<div class="text-lg font-bold text-white">Gmax Digital</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Inter'] text-sm tracking-wide text-zinc-400 hover:text-[#585DE1] transition-colors hover:underline decoration-[#585DE1] underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-sm tracking-wide text-zinc-400 hover:text-[#585DE1] transition-colors hover:underline decoration-[#585DE1] underline-offset-4" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-sm tracking-wide text-zinc-400 hover:text-[#585DE1] transition-colors hover:underline decoration-[#585DE1] underline-offset-4" href="#">Cookie Policy</a>
+<a class="font-['Inter'] text-sm tracking-wide text-zinc-400 hover:text-[#585DE1] transition-colors hover:underline decoration-[#585DE1] underline-offset-4" href="#">Contact Support</a>
+</div>
+<div class="font-['Inter'] text-sm tracking-wide text-zinc-400">
+                © 2024 Gmax Digital. Architecting Growth for Small Business.
+            </div>
+</div>
+</footer>
+</body></html>
+
+<!-- subscribe to newsletter section -->
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gmax Digital | Strategic Insights</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#201a1c",
+              "surface-container": "#f7ebed",
+              "error": "#ba1a1a",
+              "surface-bright": "#fff8f8",
+              "secondary-fixed-dim": "#ffb3ad",
+              "primary-container": "#585de1",
+              "on-surface-variant": "#464554",
+              "tertiary-fixed-dim": "#cfc4c6",
+              "on-primary-fixed": "#04006d",
+              "inverse-on-surface": "#faeef0",
+              "surface-variant": "#ece0e2",
+              "on-primary": "#ffffff",
+              "background": "#fff8f8",
+              "secondary": "#b90d1d",
+              "on-secondary-container": "#fffbff",
+              "on-primary-container": "#f1efff",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#c0c1ff",
+              "primary-fixed": "#e1e0ff",
+              "surface": "#fff8f8",
+              "inverse-surface": "#352f31",
+              "secondary-fixed": "#ffdad7",
+              "outline-variant": "#c6c5d6",
+              "secondary-container": "#dd2f33",
+              "inverse-primary": "#c0c1ff",
+              "on-tertiary-fixed-variant": "#4c4547",
+              "surface-container-low": "#fdf1f3",
+              "error-container": "#ffdad6",
+              "on-background": "#201a1c",
+              "on-tertiary": "#ffffff",
+              "tertiary": "#5b5355",
+              "surface-container-highest": "#ece0e2",
+              "on-tertiary-fixed": "#201a1c",
+              "tertiary-container": "#746b6d",
+              "tertiary-fixed": "#ece0e2",
+              "outline": "#767686",
+              "surface-tint": "#484dd1",
+              "surface-container-high": "#f1e5e8",
+              "surface-dim": "#e3d7da",
+              "on-primary-fixed-variant": "#2e31b9",
+              "on-secondary-fixed-variant": "#930012",
+              "on-tertiary-container": "#faedf0",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#410004",
+              "on-secondary": "#ffffff",
+              "primary": "#3e42c7",
+              "on-error": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-black tracking-tighter text-zinc-900">Gmax Digital</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-zinc-600 font-medium tracking-tight hover:text-[#585DE1] transition-colors duration-300" href="#">Solutions</a>
+<a class="text-zinc-600 font-medium tracking-tight hover:text-[#585DE1] transition-colors duration-300" href="#">Case Studies</a>
+<a class="text-zinc-600 font-medium tracking-tight hover:text-[#585DE1] transition-colors duration-300" href="#">Authority</a>
+<a class="text-zinc-600 font-medium tracking-tight hover:text-[#585DE1] transition-colors duration-300" href="#">Agency</a>
+<button class="bg-primary text-white px-6 py-2 rounded-lg font-bold hover:scale-95 transition-transform duration-200">Get a Quote</button>
+</div>
+<!-- Mobile Menu Icon (Placeholder) -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</div>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Content Bridge / Hero Section Spacer -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<span class="label-md uppercase tracking-widest font-bold text-primary">Strategic Growth</span>
+<h1 class="text-6xl md:text-7xl font-extrabold tracking-tighter leading-none text-on-surface">
+                        Architecture for <br/><span class="text-primary-container">Authority.</span>
+</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-lg">
+                        Gmax Digital specializes in transforming small business potential into market-leading authority through intentional digital strategy.
+                    </p>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-surface-container-highest rounded-xl -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+<img alt="Gmax Authority" class="relative rounded-lg shadow-2xl w-full h-[500px] object-cover" data-alt="Modern high-end office interior with glass walls, minimalist furniture, and soft morning light casting long shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs7wzRLiQqrDc9cyracTylxiPqL33bkZS23Bkk7jHBcHxXLdLpbXb9ofTPr1g_eMSIk2o488Ahfdnlt5z6WhZjkUr0UtcFTiI7x3jXV4HwrzSBs_buDBGUaTGCeVe6sltFbVaz8B4GIGh85e6V8YQmWlFboo15jZWYLZ6Sa7RrfQjltfVubGWWnzoW2GhRqkv0rHQgIF_tQ666WbHEBA4r6FukavndWvbgxV6gzrcau_akIPTRDAisOIdWO3VtInrLLIpNoCmj_8w"/>
+</div>
+</div>
+</section>
+<!-- Newsletter Subscription Section (The Task) -->
+<!-- Editorial Authority Design System Implementation -->
+<section class="relative bg-white pt-32 pb-48 overflow-hidden">
+<!-- Asymmetric Background Elements -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low/50 -skew-x-12 translate-x-1/2"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="flex flex-col md:flex-row items-start justify-between gap-20">
+<!-- Left Column: Copy -->
+<div class="md:w-3/5 space-y-12">
+<div class="space-y-6">
+<span class="text-xs uppercase tracking-[0.2em] font-extrabold text-primary flex items-center gap-3">
+<span class="h-px w-8 bg-primary"></span>
+                                The Digest
+                            </span>
+<h2 class="text-5xl md:text-6xl font-black tracking-tighter text-on-surface leading-[1.1]">
+                                Strategic ideas worth receiving <br/>
+<span class="text-zinc-400 font-light italic">occasionally</span>
+</h2>
+<p class="text-2xl text-on-surface-variant font-light leading-relaxed max-w-xl">
+                                Occasional thinking on trust, positioning, digital perception, and growth for businesses building carefully.
+                            </p>
+</div>
+</div>
+<!-- Right Column: Subscription Module -->
+<div class="md:w-2/5 w-full">
+<div class="bg-surface-container-low p-10 md:p-14 rounded-xl space-y-10 relative overflow-hidden">
+<!-- Background texture / subtle tonal shift -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, #241E20 1px, transparent 0); background-size: 24px 24px;"></div>
+<div class="relative space-y-8">
+<div class="space-y-4">
+<label class="block text-sm font-bold uppercase tracking-wider text-on-surface-variant" for="email-address">
+                                        Professional Email
+                                    </label>
+<div class="relative">
+<input class="w-full bg-transparent border-b-2 border-outline-variant py-4 px-0 text-xl focus:outline-none focus:border-primary transition-colors placeholder:text-outline/50" id="email-address" placeholder="name@company.com" type="email"/>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary py-5 px-8 rounded-lg text-lg font-bold tracking-tight flex items-center justify-between group hover:shadow-xl transition-all duration-300">
+<span>Join the List</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container shrink-0" style="font-variation-settings: 'opsz' 20;">verified</span>
+<p class="text-sm text-on-surface-variant font-medium leading-tight">
+                                        No noise. Only thoughtful insights when genuinely useful.
+                                    </p>
+</div>
+</div>
+</div>
+<!-- Floating Detail -->
+<div class="mt-8 flex items-center justify-end gap-4 text-outline/40">
+<span class="text-xs font-bold uppercase tracking-widest">Gmax Digital Private List</span>
+<span class="h-px w-12 bg-outline/20"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Solution Bridge Overlap Visual -->
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-px bg-gradient-to-r from-transparent via-outline-variant to-transparent opacity-20"></div>
+</section>
+<!-- Final CTA: The "Solution Bridge" Pattern -->
+<section class="relative h-96">
+<div class="absolute inset-0 flex flex-col">
+<div class="h-1/2 bg-white"></div>
+<div class="h-1/2 bg-zinc-900"></div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center px-8">
+<div class="bg-surface-container-highest max-w-4xl w-full p-12 md:p-16 rounded-xl shadow-2xl flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="space-y-4">
+<h3 class="text-3xl font-bold tracking-tight text-on-surface">Ready to define your authority?</h3>
+<p class="text-on-surface-variant">Let's discuss how your business moves forward.</p>
+</div>
+<button class="bg-[#F84343] text-white px-10 py-5 rounded-lg font-black uppercase tracking-widest hover:brightness-110 transition-all shrink-0">
+                        Get a Quote
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-zinc-900 w-full pt-16 pb-8">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-white mb-2">Gmax Digital</div>
+<p class="text-zinc-400 text-sm font-['Inter'] leading-relaxed">© 2024 Gmax Digital. Small Businesses. Big Solutions.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-zinc-400 text-sm hover:text-[#F84343] transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-zinc-400 text-sm hover:text-[#F84343] transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-zinc-400 text-sm hover:text-[#F84343] transition-all opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-zinc-400 text-sm hover:text-[#F84343] transition-all opacity-80 hover:opacity-100" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>
