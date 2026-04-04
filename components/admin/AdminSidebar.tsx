@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import React from "react";
+import { signOut } from "next-auth/react";
 
 interface NavItem {
   label: string;
@@ -66,10 +65,13 @@ export default function Sidebar() {
         </button>
 
         <div className="mt-6 pt-6 border-t border-stone-800">
-          <div className="text-stone-400 hover:text-white hover:bg-stone-800/50 px-4 py-3 flex items-center gap-3 group cursor-pointer transition-all duration-200">
+          <button
+            onClick={() => signOut({ callbackUrl: "/admin/login" })}
+            className="text-stone-400 hover:text-white hover:bg-stone-800/50 px-4 py-3 flex items-center gap-3 group cursor-pointer transition-all duration-200"
+          >
             <span className="material-symbols-outlined">logout</span>
             <span className="font-sans text-sm tracking-wide">Logout</span>
-          </div>
+          </button>
         </div>
       </div>
     </aside>
