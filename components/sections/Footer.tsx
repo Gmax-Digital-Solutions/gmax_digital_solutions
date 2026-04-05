@@ -1,6 +1,12 @@
+"use client";
+
 import BorderGlow from "../BorderGlow";
+import { useNewsletter } from "@/hooks/useNewsletter";
 
 const Footer = () => {
+  const { formData, setFormData, errors, handleSubmit, submitted, loading } =
+    useNewsletter();
+
   return (
     <footer className="bg-[#241E20] text-white w-full relative">
       <div className="w-full px-8 py-16 flex flex-col lg:flex-row justify-between items-start gap-8 max-w-7xl mx-auto">
@@ -67,23 +73,53 @@ const Footer = () => {
           colors={["#484dd1", "#ba1a1a", "#38bdf8"]}
         >
           {/* footer newsletter */}
-          <div className="w-full max-w-sm px-8 py-12 rounded-xl">
+          <form
+            onSubmit={handleSubmit}
+            className="w-full max-w-sm px-8 py-12 rounded-xl"
+          >
             <h3 className="text-xl font-black text-white mb-3">
               Subscribe to Our Newsletter
             </h3>
+            {submitted && (
+              <div className="text-green-800 px-4 py-3 rounded mb-4">
+                Successfully subscribed to the newsletter!
+              </div>
+            )}
+            {errors.api && (
+              <div className="bg-red-100 text-red-800 px-4 py-3 rounded mb-4">
+                {errors.api[0]}
+              </div>
+            )}
             <p className="text-white/70 text-sm leading-relaxed mb-6 font-inter">
               Stay updated with our latest insights. No spam. Only
               high-conviction perspectives for builders.
             </p>
             <input
-              type="email"
-              placeholder="Enter your email"
+              type="text"
+              placeholder="Enter your first name (optional)"
+              onChange={(e) =>
+                setFormData({ ...formData, first_name: e.target.value })
+              }
+              value={formData.first_name || ""}
               className="w-full px-4 py-3 rounded-lg text-sm bg-white/10 text-white placeholder-white/40 border border-white/20 focus:border-[#F84343] focus:outline-none transition-colors mb-3"
             />
-            <button className="w-full bg-[#F84343] text-white px-4 py-3 rounded-lg text-sm font-bold hover:bg-[#F84343]/90 transition-colors">
-              Subscribe
+            <input
+              type="email"
+              placeholder="Enter your email"
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+              value={formData.email}
+              className="w-full px-4 py-3 rounded-lg text-sm bg-white/10 text-white placeholder-white/40 border border-white/20 focus:border-[#F84343] focus:outline-none transition-colors mb-3"
+            />
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full bg-[#F84343] text-white px-4 py-3 rounded-lg text-sm font-bold hover:bg-[#F84343]/90 transition-colors"
+            >
+              {loading ? "Subscribing..." : "Subscribe"}
             </button>
-          </div>
+          </form>
         </BorderGlow>
       </div>
       <div className="border-t border-white/5 px-8 py-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
