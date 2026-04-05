@@ -1,19 +1,13 @@
 import { z } from "zod";
 
 export const contactSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters").max(100),
+  fullName: z.string().min(2, "Full name must be at least 2 characters"),
 
-  email: z.string().email("Invalid email address"),
+  email: z.string().email("Enter a valid email address"),
 
-  company: z.string().max(100).optional(),
+  company: z.string().min(2, "Company name is required"),
 
-  businessCategory: z.string().min(2, "Select a business category"),
+  helpWith: z.string().min(2, "Please select what you need help with"),
 
-  companySize: z.string().min(1, "Select company size"),
-
-  service: z.string().min(2, "Select a service"),
-
-  message: z.string().min(10, "Message too short").max(1000),
+  message: z.string().min(10, "Message must be at least 10 characters"),
 });
-
-export type ContactFormData = z.infer<typeof contactSchema>;

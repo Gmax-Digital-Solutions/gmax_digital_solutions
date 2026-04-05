@@ -1,8 +1,7 @@
-// components/ContactFullSection.tsx
-
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { contactSchema } from "@/lib/validations/contact-schema";
 
 const ContactFullSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +13,17 @@ const ContactFullSection: React.FC = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string[]>>({});
+
+  useEffect(() => {
+    if (submitted) {
+      const timer = setTimeout(() => {
+        setSubmitted(false);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [submitted]);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -21,19 +31,69 @@ const ContactFullSection: React.FC = () => {
     >,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+
+    if (errors[e.target.name]) {
+      setErrors((prev) => {
+        const updated = { ...prev };
+        delete updated[e.target.name];
+        return updated;
+      });
+    }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setFormData({
-      fullName: "",
-      email: "",
-      company: "",
-      helpWith: "Strategic Consultation",
-      message: "",
-    });
+    console.log("submit event triggered");
+    setErrors({});
+    setSubmitted(false);
+    setLoading(true);
+
+    const result = contactSchema.safeParse(formData);
+
+    console.log(result);
+    if (!result.success) {
+      setErrors(result.error.flatten().fieldErrors as Record<string, string[]>);
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(result.data),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setErrors({
+          api: [data.error || "An error occurred. Please try again."],
+        });
+        setLoading(false);
+        return;
+      }
+
+      console.log(data);
+
+      setSubmitted(true);
+
+      setFormData({
+        fullName: "",
+        email: "",
+        company: "",
+        helpWith: "Strategic Consultation",
+        message: "",
+      });
+    } catch {
+      setErrors({
+        api: ["Network error. Please try again."],
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -42,13 +102,13 @@ const ContactFullSection: React.FC = () => {
       className="bg-surface-container-low py-24 px-8 text-on-surface-variant"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-        {/* Left: Direct Contact & Info */}
+        {/* Left */}
         <div className="lg:col-span-4 space-y-12">
-          {/* Direct Contact */}
           <div>
             <h2 className="text-3xl font-bold tracking-tight mb-6">
               Prefer direct contact?
             </h2>
+
             <div className="space-y-6">
               <a
                 className="group flex items-start gap-4"
@@ -57,6 +117,7 @@ const ContactFullSection: React.FC = () => {
                 <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary editorial-shadow group-hover:bg-primary group-hover:text-white transition-colors">
                   <span className="material-symbols-outlined">mail</span>
                 </div>
+
                 <div>
                   <p className="text-sm font-bold uppercase tracking-wider text-outline mb-1">
                     Email
@@ -64,10 +125,12 @@ const ContactFullSection: React.FC = () => {
                   <p className="text-lg font-medium">hello@gmaxdigital.com</p>
                 </div>
               </a>
+
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary editorial-shadow">
                   <span className="material-symbols-outlined">public</span>
                 </div>
+
                 <div>
                   <p className="text-sm font-bold uppercase tracking-wider text-outline mb-1">
                     Global Presence
@@ -81,11 +144,11 @@ const ContactFullSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Who This Is For */}
           <div className="pt-8 border-t border-outline-variant/30">
             <h3 className="text-xs font-black uppercase tracking-[0.2em] text-outline mb-8">
               We usually hear from
             </h3>
+
             <div className="space-y-4">
               <div className="p-6 bg-white rounded-lg border-l-4 border-primary editorial-shadow">
                 <h4 className="font-bold text-lg mb-1">
@@ -95,6 +158,7 @@ const ContactFullSection: React.FC = () => {
                   Translating vision into scalable technical architecture.
                 </p>
               </div>
+
               <div className="p-6 bg-white rounded-lg border-l-4 border-secondary editorial-shadow">
                 <h4 className="font-bold text-lg mb-1">
                   Startups refining market direction
@@ -103,6 +167,7 @@ const ContactFullSection: React.FC = () => {
                   Aligning digital presence with commercial strategy.
                 </p>
               </div>
+
               <div className="p-6 bg-white rounded-lg border-l-4 border-on-surface editorial-shadow">
                 <h4 className="font-bold text-lg mb-1">
                   Businesses improving visibility
@@ -115,11 +180,12 @@ const ContactFullSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Right: Solution Bridge Form */}
+        {/* Right */}
         <div className="lg:col-span-8 bg-white p-8 md:p-12 editorial-shadow rounded-xl">
           <h2 className="text-3xl font-bold tracking-tight mb-4">
             Tell us what you are working on
           </h2>
+
           <p className="text-on-surface-variant mb-10 font-light">
             Your message helps us understand where your business is and what may
             be worth discussing first.
@@ -131,35 +197,50 @@ const ContactFullSection: React.FC = () => {
             </p>
           )}
 
+          {errors.api && <p className="text-red-500 mb-6">{errors.api[0]}</p>}
+
           <form className="space-y-8" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="relative">
                 <label className="text-xs font-bold uppercase tracking-widest text-outline absolute -top-2.5 left-0 bg-white px-1">
                   Full Name
                 </label>
+
                 <input
                   type="text"
                   name="fullName"
-                  placeholder="e.g. Julian Anderson"
                   value={formData.fullName}
                   onChange={handleChange}
+                  placeholder="e.g. Julian Anderson"
                   className="w-full bg-transparent border-b-2 border-surface-container py-4 focus:outline-none focus:border-primary transition-colors text-on-surface"
-                  required
                 />
+
+                {errors.fullName && (
+                  <p className="text-secondary text-sm mt-2">
+                    {errors.fullName[0]}
+                  </p>
+                )}
               </div>
+
               <div className="relative">
                 <label className="text-xs font-bold uppercase tracking-widest text-outline absolute -top-2.5 left-0 bg-white px-1">
                   Email Address
                 </label>
+
                 <input
                   type="email"
                   name="email"
-                  placeholder="e.g. julian@company.com"
                   value={formData.email}
                   onChange={handleChange}
+                  placeholder="e.g. julian@company.com"
                   className="w-full bg-transparent border-b-2 border-surface-container py-4 focus:outline-none focus:border-primary transition-colors text-on-surface"
-                  required
                 />
+
+                {errors.email && (
+                  <p className="text-secondary text-sm mt-2">
+                    {errors.email[0]}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -168,20 +249,28 @@ const ContactFullSection: React.FC = () => {
                 <label className="text-xs font-bold uppercase tracking-widest text-outline absolute -top-2.5 left-0 bg-white px-1">
                   Company / Project Name
                 </label>
+
                 <input
                   type="text"
                   name="company"
-                  placeholder="e.g. Gmax Labs"
                   value={formData.company}
                   onChange={handleChange}
+                  placeholder="e.g. Gmax Labs"
                   className="w-full bg-transparent border-b-2 border-surface-container py-4 focus:outline-none focus:border-primary transition-colors text-on-surface"
-                  required
                 />
+
+                {errors.company && (
+                  <p className="text-secondary text-sm mt-2">
+                    {errors.company[0]}
+                  </p>
+                )}
               </div>
+
               <div className="relative">
                 <label className="text-xs font-bold uppercase tracking-widest text-outline absolute -top-2.5 left-0 bg-white px-1">
                   What do you need help with?
                 </label>
+
                 <select
                   name="helpWith"
                   value={formData.helpWith}
@@ -193,6 +282,12 @@ const ContactFullSection: React.FC = () => {
                   <option>Market Positioning</option>
                   <option>Scaling Infrastructure</option>
                 </select>
+
+                {errors.helpWith && (
+                  <p className="text-secondary text-sm mt-2">
+                    {errors.helpWith[0]}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -200,31 +295,37 @@ const ContactFullSection: React.FC = () => {
               <label className="text-xs font-bold uppercase tracking-widest text-outline absolute -top-2.5 left-0 bg-white px-1">
                 Message
               </label>
+
               <textarea
                 name="message"
-                placeholder="Tell us about your current challenges and goals..."
                 rows={4}
                 value={formData.message}
                 onChange={handleChange}
+                placeholder="Tell us about your current challenges and goals..."
                 className="w-full bg-transparent border-b-2 border-surface-container py-4 focus:outline-none focus:border-primary transition-colors text-on-surface resize-none"
-                required
               />
+
+              {errors.message && (
+                <p className="text-red-500 text-sm mt-2">{errors.message[0]}</p>
+              )}
             </div>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pt-4">
               <p className="text-xs text-on-surface-variant italic max-w-xs">
                 All conversations are treated with professional discretion and
-                confidentiality. view our{" "}
+                confidentiality. View our{" "}
                 <span className="underline hover:text-primary cursor-pointer">
                   privacy policy
                 </span>{" "}
                 for more details.
               </p>
+
               <button
                 type="submit"
-                className="bg-primary text-white px-12 py-4 font-bold rounded hover:bg-primary-container transition-all active:scale-95"
+                disabled={loading}
+                className="bg-primary text-white px-12 py-4 font-bold rounded hover:bg-primary-container transition-all active:scale-95 disabled:opacity-60"
               >
-                Send Message
+                {loading ? "Sending..." : "Send Message"}
               </button>
             </div>
           </form>

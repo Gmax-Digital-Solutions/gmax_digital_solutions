@@ -1,7 +1,12 @@
-import React from "react";
+"use client";
+
 import BorderGlow from "../BorderGlow";
+import { useNewsletter } from "@/hooks/useNewsletter";
 
 const Newsletter = () => {
+  const { formData, setFormData, errors, handleSubmit, submitted, loading } =
+    useNewsletter();
+
   return (
     <section
       id="newsletter"
@@ -57,27 +62,69 @@ const Newsletter = () => {
                   }}
                 ></div>
 
-                <div className="relative space-y-8">
+                <form onSubmit={handleSubmit} className="relative space-y-8">
+                  {submitted && (
+                    <div className="bg-green-100 text-green-800 px-4 py-3 rounded">
+                      Successfully subscribed to the newsletter!
+                    </div>
+                  )}
+                  {errors.api && (
+                    <div className="bg-red-100 text-red-800 px-4 py-3 rounded">
+                      {errors.api[0]}
+                    </div>
+                  )}
                   <div className="space-y-4">
                     <label
                       htmlFor="email-address"
                       className="block text-sm font-bold uppercase tracking-wider text-on-surface-variant"
                     >
-                      Your Email
+                      Your Info
                     </label>
 
                     <div className="relative">
                       <input
+                        id="first-name"
+                        type="text"
+                        placeholder="Enter your first name (optional)"
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            first_name: e.target.value,
+                          })
+                        }
+                        value={formData.first_name || ""}
+                        className="w-full bg-transparent border-b-2 border-outline-variant py-4 px-0 text-xl focus:outline-none focus:border-primary transition-colors placeholder:text-outline/50"
+                      />
+                      <input
                         id="email-address"
                         type="email"
+                        value={formData.email}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            email: e.target.value,
+                          })
+                        }
                         placeholder="name@company.com"
                         className="w-full bg-transparent border-b-2 border-outline-variant py-4 px-0 text-xl focus:outline-none focus:border-primary transition-colors placeholder:text-outline/50"
                       />
+                      {errors.email && (
+                        <p className="text-secondary text-sm mt-1">
+                          {errors.email[0]}
+                        </p>
+                      )}
                     </div>
                   </div>
 
-                  <button className="w-full bg-primary-container text-on-primary py-5 px-8 rounded-lg text-lg font-bold tracking-tight flex items-center justify-between group hover:shadow-xl transition-all duration-300">
-                    <span>Join the List</span>
+                  <button
+                    type="submit"
+                    className="w-full bg-primary-container text-on-primary py-5 px-8 rounded-lg text-lg font-bold tracking-tight flex items-center justify-between group hover:shadow-xl transition-all duration-300"
+                  >
+                    {loading ? (
+                      <span>Joining...</span>
+                    ) : (
+                      <span>Join the List</span>
+                    )}
                     <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                       arrow_forward
                     </span>
@@ -96,7 +143,7 @@ const Newsletter = () => {
                       genuinely worth your time.
                     </p>
                   </div>
-                </div>
+                </form>
               </div>
             </BorderGlow>
             <div className="mt-8 flex items-center justify-end gap-4 text-outline/40">
