@@ -1,59 +1,10 @@
 // components/ArchiveSection.tsx
 import React from "react";
+import { getInsights } from "@/lib/api/content";
 
-type ArchiveCard = {
-  category: string;
-  title: string;
-  description: string;
-  href: string;
-};
-
-const archiveCards: ArchiveCard[] = [
-  {
-    category: "Trust Mechanics",
-    title: "Why strong software products still struggle to gain trust",
-    description:
-      "Founders often focus on feature lists, forgetting that trust is built through consistent narrative and social proof architecture.",
-    href: "#",
-  },
-  {
-    category: "Market Readiness",
-    title: "Positioning mistakes founders make before launch",
-    description:
-      'The danger of "generic excellence" and how to niche down without losing your future scalability.',
-    href: "#",
-  },
-  {
-    category: "Growth Strategy",
-    title: "Why digital credibility matters before traffic",
-    description:
-      "Spending on ads before fixing your landing page's authority signals is a fast way to burn capital.",
-    href: "#",
-  },
-  {
-    category: "Product Design",
-    title: "Designing for the 'Enterprise Skeptic'",
-    description:
-      "Tactics for moving upmarket and convincing high-stakes decision makers through UI clarity.",
-    href: "#",
-  },
-  {
-    category: "Digital Trust",
-    title: "The Invisible Leak: Is your brand losing users at checkout?",
-    description:
-      "Analyzing micro-moments of friction that destroy the credibility you worked so hard to build.",
-    href: "#",
-  },
-  {
-    category: "Founder Marketing",
-    title: "Building Authority without being an Influencer",
-    description:
-      "Founders don't need to post daily selfies to build a credible professional digital presence.",
-    href: "#",
-  },
-];
-
-const ArchiveSection: React.FC = () => {
+const ArchiveSection: React.FC = async () => {
+  const insights = await getInsights();
+  console.log(insights);
   return (
     <section className="py-24 px-6 bg-surface text-on-surface-variant">
       <div className="max-w-7xl mx-auto">
@@ -74,7 +25,7 @@ const ArchiveSection: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {archiveCards.map((card, index) => (
+          {insights.map((card, index) => (
             <div
               key={index}
               className="group bg-surface-container-lowest p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px]"
@@ -87,12 +38,12 @@ const ArchiveSection: React.FC = () => {
                   {card.title}
                 </h3>
                 <p className="text-on-surface-variant text-sm line-clamp-3 mb-6">
-                  {card.description}
+                  {card.excerpt}
                 </p>
               </div>
               <a
                 className="text-xs font-bold uppercase tracking-tighter border-b-2 border-transparent group-hover:border-primary inline-block w-fit pb-1 transition-all"
-                href={card.href}
+                href={`/insights/${card.slug}`}
               >
                 Read More
               </a>

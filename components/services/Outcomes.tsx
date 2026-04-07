@@ -125,7 +125,7 @@ const Outcomes = (props: OutcomesProps) => {
 
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-primary-container">
-                <img src="" alt="" />
+                {/* <img src="" alt="" /> */}
               </div>
               <div>
                 <p className="font-bold">Founder</p>

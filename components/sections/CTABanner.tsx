@@ -5,8 +5,8 @@ import posthog from "posthog-js";
 
 const CTABanner = () => {
   return (
-    <section className="relative bg-[#585DE1] py-20 px-8">
-      <div className="max-w-4xl mx-auto text-center z-40 ">
+    <section className="relative flex bg-[#585DE1] py-20 px-8">
+      <div className="max-w-4xl mx-auto text-center z-10 ">
         <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
           Ready for a big solution?
         </h2>
