@@ -3165,3 +3165,325 @@ Contact page:
 </div>
 </footer>
 </body></html>
+
+<!-- case_study  -->
+
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gmax Digital | Scaling Hyper-Growth Case Study</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ece0e2",
+                        "tertiary-container": "#746b6d",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "surface": "#fff8f8",
+                        "primary-fixed": "#e1e0ff",
+                        "surface-variant": "#ece0e2",
+                        "tertiary": "#5b5355",
+                        "on-secondary-fixed": "#410004",
+                        "inverse-primary": "#c0c1ff",
+                        "tertiary-fixed-dim": "#cfc4c6",
+                        "on-surface": "#201a1c",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c6c5d6",
+                        "secondary-fixed": "#ffdad7",
+                        "on-secondary-fixed-variant": "#930012",
+                        "surface-container": "#f7ebed",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#faedf0",
+                        "on-secondary-container": "#fffbff",
+                        "error-container": "#ffdad6",
+                        "on-background": "#201a1c",
+                        "primary": "#3e42c7",
+                        "inverse-surface": "#352f31",
+                        "surface-dim": "#e3d7da",
+                        "on-tertiary-fixed-variant": "#4c4547",
+                        "on-surface-variant": "#464554",
+                        "secondary": "#b90d1d",
+                        "on-secondary": "#ffffff",
+                        "outline": "#767686",
+                        "secondary-fixed-dim": "#ffb3ad",
+                        "on-primary-fixed": "#04006d",
+                        "on-primary-container": "#f1efff",
+                        "surface-container-highest": "#ece0e2",
+                        "on-primary-fixed-variant": "#2e31b9",
+                        "on-tertiary-fixed": "#201a1c",
+                        "background": "#fff8f8",
+                        "surface-tint": "#484dd1",
+                        "primary-container": "#585de1",
+                        "surface-bright": "#fff8f8",
+                        "inverse-on-surface": "#faeef0",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#f1e5e8",
+                        "surface-container-low": "#fdf1f3",
+                        "secondary-container": "#dd2f33",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-xl font-black tracking-tighter text-[#241E20]">Gmax Digital</div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#201A1C] hover:text-[#585DE1] transition-colors duration-300 font-['Inter'] tracking-tight text-sm font-medium" href="#">Solutions</a>
+<a class="text-[#585DE1] border-b-2 border-[#585DE1] pb-1 font-['Inter'] tracking-tight text-sm font-medium" href="#">Case Studies</a>
+<a class="text-[#201A1C] hover:text-[#585DE1] transition-colors duration-300 font-['Inter'] tracking-tight text-sm font-medium" href="#">Authority</a>
+<a class="text-[#201A1C] hover:text-[#585DE1] transition-colors duration-300 font-['Inter'] tracking-tight text-sm font-medium" href="#">Agency</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block text-[#201A1C] font-['Inter'] text-sm font-medium px-4 py-2">Login</button>
+<button class="bg-primary-container text-white px-6 py-2.5 rounded-lg text-sm font-bold tracking-tight hover:opacity-90 active:scale-95 transition-all">Get a Quote</button>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="max-w-3xl">
+<span class="inline-block bg-surface-container-low text-primary font-bold text-xs uppercase tracking-[0.1em] px-3 py-1 rounded-sm mb-6">Fintech Case Study</span>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-[#241E20] leading-[1.05] mb-8">
+                    Scaling Hyper-Growth: The FinTech Infrastructure Overhaul
+                </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-12">
+                    How Gmax Digital architected a resilient, high-throughput ecosystem for a global payment provider facing critical performance bottlenecks and security vulnerability gaps.
+                </p>
+</div>
+<!-- Results Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-[#241E20] p-10 flex flex-col justify-between group">
+<span class="text-white/40 text-xs font-bold uppercase tracking-widest">Growth Velocity</span>
+<div class="mt-12">
+<div class="text-6xl font-black text-white mb-2">+142%</div>
+<div class="text-[#F84343] font-bold text-lg uppercase tracking-tight">ROI Achieved</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col justify-between">
+<span class="text-on-surface-variant text-xs font-bold uppercase tracking-widest">Efficiency Gap</span>
+<div class="mt-12">
+<div class="text-6xl font-black text-[#241E20] mb-2">-38%</div>
+<div class="text-primary font-bold text-lg uppercase tracking-tight">OpEx Reduction</div>
+</div>
+</div>
+<div class="bg-white p-10 border border-outline-variant/20 flex flex-col justify-between">
+<span class="text-on-surface-variant text-xs font-bold uppercase tracking-widest">Reliability Score</span>
+<div class="mt-12">
+<div class="text-6xl font-black text-[#241E20] mb-2">99.9%</div>
+<div class="text-primary font-bold text-lg uppercase tracking-tight">System Uptime</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Visual Hero -->
+<section class="w-full h-[614px] overflow-hidden mb-24 relative">
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
+<img class="w-full h-full object-cover grayscale brightness-50" data-alt="Modern server room with glowing blue led lights and dark metallic surfaces representing premium digital infrastructure and high-end technology" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvkYZwqIAHMO9wEsaQncBwNCr0tokZ55wxCe9ThGhdCISwp_ic3pW-oWEI7BPL9dZMN_qIZwAyr4lF95yCuUi3e6wIIVab1fgNRQqQi-gMVDrq6pC45FANfOexeBRpW2CooPocKiywPeDKM4-OhRpQtcQLPjjiAR0hlLWEmSa3870mp7REX0Nbq9hmBlm1UIbumOyO4UzxBmkw4QVBAwDPipjHDdF_PicjFoi1y2bF2eNZJG-LxXxjR6KAb8bKo_9JFG-n1ZPr7ao"/>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 text-center">
+<div class="flex items-center gap-4 text-white/60">
+<span class="h-px w-12 bg-white/30"></span>
+<span class="text-xs uppercase tracking-[0.2em]">Strategic Technical Blueprint</span>
+<span class="h-px w-12 bg-white/30"></span>
+</div>
+</div>
+</section>
+<!-- Content Narrative Section -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Sidebar Insights -->
+<aside class="lg:col-span-4 space-y-12">
+<div class="bg-surface-container-low p-8 sticky top-32">
+<h3 class="text-sm font-black uppercase tracking-widest mb-6 border-b border-outline-variant pb-4">Strategic Insights</h3>
+<ul class="space-y-6">
+<li>
+<span class="block text-primary font-bold mb-1">Decoupled Scaling</span>
+<p class="text-sm text-on-surface-variant">Architecture must be built for the traffic you want, not the traffic you have.</p>
+</li>
+<li>
+<span class="block text-primary font-bold mb-1">Security by Design</span>
+<p class="text-sm text-on-surface-variant">Financial trust is a binary state. One breach is a total failure.</p>
+</li>
+<li>
+<span class="block text-primary font-bold mb-1">Operational Agility</span>
+<p class="text-sm text-on-surface-variant">Automating the mundane unlocks your elite engineers for the extraordinary.</p>
+</li>
+</ul>
+<div class="mt-12 pt-8 border-t border-outline-variant">
+<h3 class="text-sm font-black uppercase tracking-widest mb-4">Strategic Deliverables</h3>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] bg-white px-3 py-1 border border-outline-variant font-bold uppercase tracking-tighter">Market Positioning</span>
+<span class="text-[10px] bg-white px-3 py-1 border border-outline-variant font-bold uppercase tracking-tighter">Scalable Infrastructure</span>
+<span class="text-[10px] bg-white px-3 py-1 border border-outline-variant font-bold uppercase tracking-tighter">Growth Ecosystems</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Narrative Body -->
+<div class="lg:col-span-8 space-y-24">
+<!-- 01 The Challenge -->
+<div class="relative pl-12 border-l border-outline-variant">
+<span class="absolute -left-3 top-0 bg-white text-[#241E20] font-black text-xs px-2 py-1 border border-[#241E20]">01</span>
+<h2 class="text-3xl font-extrabold text-[#241E20] mb-6">The Challenge</h2>
+<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+<p>Our client, a rapidly expanding FinTech startup, was hitting a hard ceiling. Their legacy monolithic architecture, built for rapid market entry, was now crumbling under the weight of 10x user growth. </p>
+<p>Significant latency spikes were occurring during peak trading hours, leading to a <span class="text-[#241E20] font-bold">12% customer churn rate</span> within a single quarter. Technical debt was no longer an internal frustration—it was a critical business risk.</p>
+</div>
+</div>
+<!-- 02 The Strategy -->
+<div class="relative pl-12 border-l border-outline-variant">
+<span class="absolute -left-3 top-0 bg-white text-[#241E20] font-black text-xs px-2 py-1 border border-[#241E20]">02</span>
+<h2 class="text-3xl font-extrabold text-[#241E20] mb-6">The Strategy</h2>
+<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+<p>We implemented our signature <span class="text-primary font-bold">"Architectural Advocate"</span> approach. This wasn't a simple patch job; it was a fundamental decoupling of services to ensure that failure in one node could never trigger a systemic collapse.</p>
+<p>The strategy focused on "Stateless Growth"—moving away from hardware-dependent sessions toward a cloud-native, auto-scaling mesh that could breathe with the market's volatility.</p>
+</div>
+</div>
+<!-- Solution Bridge Pattern -->
+<div class="py-12">
+<div class="relative">
+<div class="h-32 bg-[#241E20] w-full"></div>
+<div class="h-32 bg-white w-full"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5/6 bg-surface-container-highest p-12 shadow-2xl">
+<h4 class="text-xs font-black tracking-widest text-[#F84343] uppercase mb-4 text-center">Core Transformation</h4>
+<p class="text-2xl font-bold text-[#241E20] text-center italic leading-tight">"From a fragile monolith to a resilient network of distributed growth systems."</p>
+</div>
+</div>
+</div>
+<!-- 03 The Execution -->
+<div class="relative pl-12 border-l border-outline-variant">
+<span class="absolute -left-3 top-0 bg-white text-[#241E20] font-black text-xs px-2 py-1 border border-[#241E20]">03</span>
+<h2 class="text-3xl font-extrabold text-[#241E20] mb-6">The Execution</h2>
+<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+<p>Over a rigorous 14-week sprint, Gmax Digital oversaw the complete refactoring of the core transaction engine. We migrated 4TB of legacy data without a single second of downtime using a 'Blue-Green' deployment strategy.</p>
+<p>Security hardening was paramount. We integrated zero-trust architecture at every endpoint, ensuring that every internal request was authenticated with the same rigor as an external gateway entry.</p>
+</div>
+</div>
+<!-- 04 The Results -->
+<div class="relative pl-12 border-l border-outline-variant">
+<span class="absolute -left-3 top-0 bg-white text-[#241E20] font-black text-xs px-2 py-1 border border-[#241E20]">04</span>
+<h2 class="text-3xl font-extrabold text-[#241E20] mb-6">The Results</h2>
+<!-- Before/After Comparison Chart -->
+<div class="bg-surface-container mt-12 overflow-hidden">
+<div class="grid grid-cols-2">
+<div class="p-8 border-r border-outline-variant/30">
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest block mb-4">Before Gmax</span>
+<div class="space-y-4">
+<div class="h-2 bg-error/20 w-full rounded-full">
+<div class="h-full bg-error w-3/4 rounded-full"></div>
+</div>
+<div class="text-xs font-bold text-error uppercase">3.2s Average Latency</div>
+<div class="h-2 bg-error/20 w-full rounded-full">
+<div class="h-full bg-error w-1/2 rounded-full"></div>
+</div>
+<div class="text-xs font-bold text-error uppercase">Manual Server Scaling</div>
+</div>
+</div>
+<div class="p-8 bg-primary/5">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest block mb-4">After Transformation</span>
+<div class="space-y-4">
+<div class="h-2 bg-primary/20 w-full rounded-full">
+<div class="h-full bg-primary w-[5%] rounded-full"></div>
+</div>
+<div class="text-xs font-bold text-primary uppercase">140ms Average Latency</div>
+<div class="h-2 bg-primary/20 w-full rounded-full">
+<div class="h-full bg-primary w-[95%] rounded-full"></div>
+</div>
+<div class="text-xs font-bold text-primary uppercase">100% Automated Mesh</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Block -->
+<section class="bg-[#241E20] py-32 overflow-hidden relative">
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[20rem] font-thin">format_quote</span>
+</div>
+<div class="max-w-4xl mx-auto px-8 relative z-10 text-center">
+<h2 class="text-white text-3xl md:text-5xl font-light italic leading-snug mb-12">
+                    "Gmax Digital didn't just fix our code; they reimagined our business model through the lens of technical infrastructure. We are now prepared for the next decade of growth, not just the next quarter."
+                </h2>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary-container mb-4 flex items-center justify-center text-white font-bold text-xl">MT</div>
+<div class="text-white font-bold text-lg">Marcus Thorne</div>
+<div class="text-[#F84343] font-bold text-xs uppercase tracking-widest">CTO, Vanguard Payments</div>
+</div>
+</div>
+</section>
+<!-- Next Case Study Preview -->
+<section class="max-w-7xl mx-auto px-8 py-24 border-b border-outline-variant/30">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h3 class="text-xs font-black uppercase tracking-[0.2em] text-on-surface-variant mb-4">Up Next</h3>
+<h2 class="text-4xl font-extrabold text-[#241E20]">Sustainable Energy Logistix</h2>
+</div>
+<a class="group flex items-center gap-2 text-primary font-bold" href="#">
+                    View Case Study 
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="h-[400px] w-full bg-surface-container-low overflow-hidden relative group">
+<img class="w-full h-full object-cover grayscale group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" data-alt="Modern wind turbines on a green rolling hill with clear blue sky and a sleek architectural minimalist house in the distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRJEH3HbIJ8eN-6i5ldm_jo7cBve1BUXYpHimu2KbY-3yXBuODhxKlVwLQa51rAK5aCqkEeNaflKoBNHLTlfNrQTzcuAwg657G1_t4CWe31pjEKgxDM_1Ybo9lUNkIQPpg1NdT0BIMoyBQdi5LKh5GrO4N-1inUKVPgU4X6aAzMujp73QEBc4GwYureRYwMhGz5K7ChGsS2GUh5g3FS4ejcsmAyJir0Mdl1WSxWtn2ythwRXcaIgiVin3ep8Q8_-BWOYyJFbtHEAk"/>
+</div>
+</section>
+<!-- Footer CTA -->
+<section class="max-w-4xl mx-auto px-8 py-32 text-center">
+<h2 class="text-4xl md:text-5xl font-black text-[#241E20] tracking-tighter mb-8 leading-none">Want similar growth for your business?</h2>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-[#F84343] text-white px-10 py-5 rounded-lg text-lg font-bold tracking-tight hover:brightness-110 active:scale-95 transition-all">Book a Strategy Call</button>
+<button class="border-2 border-[#241E20] text-[#241E20] px-10 py-5 rounded-lg text-lg font-bold tracking-tight hover:bg-[#241E20] hover:text-white active:scale-95 transition-all">View More Results</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#241E20] py-16">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start">
+<div class="text-lg font-bold text-white mb-2">Gmax Digital</div>
+<p class="font-['Inter'] text-xs uppercase tracking-[0.05em] text-white/60">© 2024 Gmax Digital. Small Businesses. Big Solutions.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs uppercase tracking-[0.05em] text-white/60 hover:text-[#F84343] transition-all" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs uppercase tracking-[0.05em] text-white/60 hover:text-[#F84343] transition-all" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs uppercase tracking-[0.05em] text-white/60 hover:text-[#F84343] transition-all" href="#">Cookie Policy</a>
+<a class="font-['Inter'] text-xs uppercase tracking-[0.05em] text-white/60 hover:text-[#F84343] transition-all" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>

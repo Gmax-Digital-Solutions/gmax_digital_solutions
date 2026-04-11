@@ -6,13 +6,17 @@ import Footer from "@/components/sections/Footer";
 import CtaClose from "@/components/insights/CtaClose";
 import QuotesSection from "@/components/insights/QuotesSection";
 import Newsletter from "@/components/sections/Newsletter";
+import { getInsights } from "@/lib/api/content";
 
-export default function page() {
+export default async function page() {
+  const insights = await getInsights();
+  console.log(insights);
+
   return (
     <main>
       <InsightHero />
       <FeaturedPerspective />
-      <ArchiveSection />
+      <ArchiveSection initialInsights={insights} />
       <CategoriesSection />
       <QuotesSection />
       <Newsletter />

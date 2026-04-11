@@ -32,7 +32,7 @@ export default async function SingleInsightPage({
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
               <img
-                src={insight?.featured_image}
+                src={insight?.hero_image}
                 alt="Gmax Editorial"
                 className="w-full h-full object-cover"
               />
@@ -40,7 +40,7 @@ export default async function SingleInsightPage({
 
             <div>
               <p className="text-sm font-bold text-[#241E20]">
-                {insight?.author}
+                {insight?.author_name}
               </p>
               <p className="text-xs text-on-surface-variant">
                 Strategic Insight Series
@@ -66,7 +66,7 @@ export default async function SingleInsightPage({
         <article className="lg:col-span-9 order-1 lg:order-2">
           <figure className="mb-12 rounded-2xl overflow-hidden bg-[#241E20]">
             <img
-              src={insight?.featured_image}
+              src={insight?.hero_image}
               alt="Strategic digital architecture"
               className="w-full aspect-[21/9] object-cover opacity-80 mix-blend-overlay"
             />
@@ -78,7 +78,7 @@ export default async function SingleInsightPage({
           </figure>
 
           {/* Intro */}
-          <ContentBlocks blocks={insight?.content_blocks} />
+          <ContentBlocks block={insight.content} />
         </article>
       </div>
 
@@ -120,9 +120,9 @@ export default async function SingleInsightPage({
                   </h4>
 
                   <div className="flex items-center gap-2 text-xs text-on-surface-variant font-medium">
-                    <span>{insight.author}</span>
+                    <span>{insight.author_name}</span>
                     <span>•</span>
-                    <span>{insight.read_time}</span>
+                    <span>{`${insight.read_time} minutes`}</span>
                   </div>
                 </a>
               ))}

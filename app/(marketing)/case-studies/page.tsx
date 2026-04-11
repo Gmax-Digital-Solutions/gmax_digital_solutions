@@ -4,13 +4,16 @@ import FeaturedCase from "@/components/casestudies/FeaturedCase";
 import SolutionBridge from "@/components/casestudies/SolutionBridge";
 import CTABanner from "@/components/sections/CTABanner";
 import Footer from "@/components/sections/Footer";
+import { getCaseStudies } from "@/lib/api/content";
 
-const page = () => {
+const page = async () => {
+  const caseStudies = await getCaseStudies();
+
   return (
     <main>
       <CaseHero />
       <FeaturedCase />
-      <CaseStudyGrid />
+      <CaseStudyGrid initialData={caseStudies} />
       <SolutionBridge />
       <CTABanner />
       <Footer />
