@@ -7,8 +7,12 @@ import CaseStudies from "@/components/sections/CaseStudies";
 import CTABanner from "@/components/sections/CTABanner";
 import Footer from "@/components/sections/Footer";
 import Newsletter from "@/components/sections/Newsletter";
+import TestimonialSection from "@/components/sections/Testmonials";
+import { getTestimonials } from "@/lib/api/content";
 
-export default function Home() {
+export default async function Home() {
+  const testimonials = await getTestimonials();
+
   return (
     <div className="flex flex-1 flex-col h-full w-[100%] text-on-surface">
       <Hero />
@@ -16,6 +20,7 @@ export default function Home() {
       <Services />
       <SolutionBridge />
       <CaseStudies />
+      <TestimonialSection testimonialData={testimonials} />
       <Newsletter />
       <CTABanner />
       <Footer />

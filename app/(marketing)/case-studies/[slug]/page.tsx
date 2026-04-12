@@ -133,7 +133,6 @@ export default async function CaseStudyPage({
 }) {
   const { slug } = await params;
   const caseStudy = await getSingleCaseStudy(slug);
-  console.log(caseStudy);
   return (
     <main className="bg-background text-on-background">
       {/* Hero */}

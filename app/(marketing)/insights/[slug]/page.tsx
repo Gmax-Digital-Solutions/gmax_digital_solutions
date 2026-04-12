@@ -14,6 +14,7 @@ export default async function SingleInsightPage({
   const insight = await getSingleInsight(slug);
   const relatedInsights = await getRelatedInsights(slug, insight?.category);
 
+  console.log(insight.hero_image);
   return (
     <main className="pt-32 bg-background text-on-background antialiased">
       {/* Hero */}
@@ -32,7 +33,7 @@ export default async function SingleInsightPage({
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
               <img
-                src={insight?.hero_image}
+                src={insight.hero_image}
                 alt="Gmax Editorial"
                 className="w-full h-full object-cover"
               />
@@ -66,9 +67,9 @@ export default async function SingleInsightPage({
         <article className="lg:col-span-9 order-1 lg:order-2">
           <figure className="mb-12 rounded-2xl overflow-hidden bg-[#241E20]">
             <img
-              src={insight?.hero_image}
+              src={insight.hero_image}
               alt="Strategic digital architecture"
-              className="w-full aspect-[21/9] object-cover opacity-80 mix-blend-overlay"
+              className="w-full aspect-[21/9] object-cover opacity-70 mix-blend-overlay"
             />
 
             <figcaption className="p-4 text-xs text-zinc-400 bg-zinc-900 italic">
