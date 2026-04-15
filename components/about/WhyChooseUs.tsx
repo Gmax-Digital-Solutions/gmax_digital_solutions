@@ -6,15 +6,15 @@ export default function WhyChooseUs() {
     <section className="relative flex items-center bg-on-background px-8 py-32">
       <div className="absolute w-full h-full top-0 left-0">
         <DotGrid
-          dotSize={2}
-          gap={11}
+          dotSize={4}
+          gap={16}
           baseColor="#271E37"
           activeColor="#eeb4bd"
-          proximity={70}
-          shockRadius={80}
-          shockStrength={2}
-          resistance={250}
-          returnDuration={0.6}
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={2}
         />
       </div>
       <div className="mx-auto max-w-7xl z-40">
