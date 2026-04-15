@@ -74,7 +74,7 @@ const TestimonialSection = ({ testimonialData }: Props) => {
           </div>
 
           {/* Controls */}
-          <div className="flex gap-4">
+          <div className="flex gap-4 z-40">
             <button
               onClick={handlePrev}
               disabled={current === 0}

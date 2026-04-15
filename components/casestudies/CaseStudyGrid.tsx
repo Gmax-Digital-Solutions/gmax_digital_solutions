@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-import { getCaseStudies } from "@/lib/api/content";
 import { useCaseStudies } from "@/hooks/useCaseStudies";
 import { LoadingSpinner } from "../animations";
 

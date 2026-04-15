@@ -161,7 +161,7 @@ export async function getHomeCaseStudies(): Promise<CaseStudy[]> {
 
     return results;
   } catch (error) {
-    console.error("Home case studies error:", error);
+    console.log("Home case studies error:", error);
 
     return []; // never break UI
   }
@@ -194,7 +194,7 @@ export async function getSingleFeaturedInsight() {
 
     return latest ?? null;
   } catch (error) {
-    console.error("Single featured insight error:", error);
+    console.log("Single featured insight error:", error);
     return null;
   }
 }
@@ -203,7 +203,9 @@ export async function getTestimonials(): Promise<Testimonial[]> {
   try {
     const { data, error } = await supabaseServer
       .from("testimonials")
-      .select("*");
+      .select("*")
+      .order("created_at", { ascending: false })
+      .limit(5);
 
     if (error) {
       console.log(error);

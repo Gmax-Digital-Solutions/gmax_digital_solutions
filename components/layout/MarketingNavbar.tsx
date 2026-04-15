@@ -45,6 +45,9 @@ const Navbar = () => {
             height={32}
             className="rounded-xl"
           />
+          <Link href={"/"} className="text-on-surface font-bold">
+            GMAX DIGITAL
+          </Link>
         </div>
         <div className="flex items-center justify-end mr-6 gap-4">
           <nav className="hidden lg:flex items-center gap-4">

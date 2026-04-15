@@ -1,4 +1,6 @@
 import Grainient from "../Grainient";
+import WomenHero from "@/public/images/women_business.jpg";
+import Image from "next/image";
 
 export default function AboutHero() {
   return (
@@ -57,11 +59,11 @@ export default function AboutHero() {
         <div className="relative hidden lg:block aspect-square w-full rounded-2xl overflow-hidden border-8 border-white shadow-2xl">
           <div className="aspect-square bg-surface-container rounded-full relative overflow-hidden flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
-            <img
+            <Image
               alt="Abstract digital composition"
               className="w-full h-full object-cover opacity-80 mix-blend-multiply"
               data-alt="Minimal premium abstract digital geometric composition with blue tones"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEjK0bMrvywdeoCOrEWfjUgfxi4zqFtpCwxQCOpJTdeI1p4EqVwIqh8YWcVJzZLvYCphZHvEEORMKBz0hqh3o3JMgSm5XJ3fDdSRaB_IWoUPafqVGkzXjilwGVJosV4ZTqLotg1wOCWodbOb33mg43qRjcH22Fr5RPbHlhoFGb9iPyXfxBFXIjUW1aBR4a5-lg9N-6oct_RBjOljk3cKJJz-nJtsg-0XjUTSJrZp42rGeOegzZVIgVaVkPjTDridptieSJX4ByVtk"
+              src={WomenHero}
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-64 h-64 border border-primary/20 rounded-full animate-pulse"></div>
