@@ -98,16 +98,16 @@ const TestimonialSection = ({ testimonialData }: Props) => {
       </header>
 
       {/* Carousel */}
-      <section className="relative">
+      <section id="testimonials" className="relative">
         <div className="overflow-hidden pl-8">
           <div
             ref={trackRef}
-            className="flex gap-8 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
+            className=" flex gap-8 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
           >
             {testimonialData.map((t) => (
               <div
                 key={t.id}
-                className="w-[600px] min-w-[85vw] md:min-w-[600px] flex-shrink-0"
+                className="w-[600px] mr-6 min-w-[85vw] md:min-w-[600px] flex-shrink-0"
               >
                 <div
                   className="p-10 md:p-12 h-full flex flex-col justify-between transition-all duration-500 hover:bg-[#2e292b]"
@@ -180,7 +180,7 @@ const TestimonialSection = ({ testimonialData }: Props) => {
       {/* Impact Section */}
       <section className="mt-32 max-w-7xl mx-auto px-8">
         <div className="relative h-px bg-white/5 w-full">
-          <div className="absolute -top-32 right-0 bg-[#585DE1] p-10 max-w-md rounded-lg">
+          <div className="absolute -top-24 right-0 bg-[#585DE1] p-10 max-w-md rounded-lg">
             <p className="text-sm uppercase tracking-widest font-bold mb-4">
               The Impact
             </p>

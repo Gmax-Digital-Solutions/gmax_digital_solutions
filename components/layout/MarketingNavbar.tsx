@@ -31,13 +31,6 @@ const Navbar = () => {
     >
       <div className=" max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-3 px-3 text-on-surface">
-          <button
-            aria-label="Toggle menu"
-            className="p-2 rounded-md hover:bg-surface-variant lg:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
           <Image
             src={Logo}
             alt="Gmax Digital Logo"
@@ -85,7 +78,16 @@ const Navbar = () => {
               Contact
             </Link>
           </nav>
-          <RequestProposalButton />
+          <button
+            aria-label="Toggle menu"
+            className="p-2 rounded-md hover:bg-surface-variant lg:hidden text-on-surface"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+          <div className="hidden lg:flex">
+            <RequestProposalButton />
+          </div>
         </div>
         {/* Mobile Menu */}
         {isMenuOpen && <MobileMenu />}
