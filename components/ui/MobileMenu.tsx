@@ -30,7 +30,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-white/95 backdrop-blur-xl flex flex-col lg:hidden">
+    <div className="fixed h-[94vh] top-16 z-50 bg-white/95 backdrop-blur-xl flex flex-col lg:hidden">
       {/* Navigation Content */}
       <nav className="flex-1 overflow-y-auto px-6 pb-32">
         {/* Primary Section */}
