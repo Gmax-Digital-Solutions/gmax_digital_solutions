@@ -26,19 +26,19 @@ const Footer = () => {
             </span>
             <a
               className="text-white/60 hover:text-white transition-all text-sm"
-              href="#"
+              href="about"
             >
               About Us
             </a>
             <a
               className="text-white/60 hover:text-white transition-all text-sm"
-              href="#"
+              href="services"
             >
               Services
             </a>
             <a
               className="text-white/60 hover:text-white transition-all text-sm"
-              href="#"
+              href="contact"
             >
               Contact
             </a>
@@ -49,13 +49,13 @@ const Footer = () => {
             </span>
             <a
               className="text-white/60 hover:text-white transition-all text-sm"
-              href="#"
+              href="insights"
             >
               Blog
             </a>
             <a
               className="text-white/60 hover:text-white transition-all text-sm"
-              href="#"
+              href="faq"
             >
               FAQ
             </a>
@@ -127,16 +127,28 @@ const Footer = () => {
           © 2026 Gmax Digital. Small Businesses. Big Solutions.
         </div>
         <div className="flex gap-6">
-          <a className="text-white/60 hover:text-white text-xs" href="#">
+          <a
+            href="privacy-policy"
+            className="text-white/60 hover:text-white text-xs"
+          >
             Privacy Policy
           </a>
-          <a className="text-white/60 hover:text-white text-xs" href="#">
+          <a
+            href="terms-of-service"
+            className="text-white/60 hover:text-white text-xs"
+          >
             Terms of Service
           </a>
-          <a className="text-white/60 hover:text-white text-xs" href="#">
+          <a
+            href="cookie-settings"
+            className="text-white/60 hover:text-white text-xs"
+          >
             Cookie Settings
           </a>
-          <a className="text-white/60 hover:text-white text-xs" href="#">
+          <a
+            href="global-locations"
+            className="text-white/60 hover:text-white text-xs"
+          >
             Global Locations
           </a>
         </div>
