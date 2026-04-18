@@ -3487,3 +3487,1153 @@ Contact page:
 </div>
 </footer>
 </body></html>
+
+
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#ece0e2",
+                    "surface-container-high": "#f1e5e8",
+                    "surface-tint": "#484dd1",
+                    "secondary": "#b90d1d",
+                    "on-background": "#201a1c",
+                    "on-tertiary-fixed-variant": "#4c4547",
+                    "background": "#fff8f8",
+                    "tertiary": "#5b5355",
+                    "surface-container": "#f7ebed",
+                    "outline": "#767686",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#930012",
+                    "primary-container": "#585de1",
+                    "on-surface-variant": "#464554",
+                    "primary": "#3e42c7",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#ffb3ad",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "inverse-surface": "#352f31",
+                    "on-tertiary-fixed": "#201a1c",
+                    "outline-variant": "#c6c5d6",
+                    "on-primary-fixed-variant": "#2e31b9",
+                    "secondary-container": "#dd2f33",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffdad7",
+                    "primary-fixed": "#e1e0ff",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#cfc4c6",
+                    "surface": "#fff8f8",
+                    "tertiary-container": "#746b6d",
+                    "surface-dim": "#e3d7da",
+                    "on-primary-fixed": "#04006d",
+                    "on-primary-container": "#f1efff",
+                    "on-tertiary-container": "#faedf0",
+                    "inverse-primary": "#c0c1ff",
+                    "surface-container-low": "#fdf1f3",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#410004",
+                    "tertiary-fixed": "#ece0e2",
+                    "on-surface": "#201a1c",
+                    "inverse-on-surface": "#faeef0",
+                    "on-secondary-container": "#fffbff",
+                    "surface-bright": "#fff8f8",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#ece0e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+      body { font-family: 'Inter', sans-serif; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+      .tonal-transition { transition: background-color 0.3s ease; }
+      .no-line { border: none !important; }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-black text-[#241E20] tracking-tighter">Gmax Digital</div>
+<div class="hidden md:flex items-center gap-8 font-['Inter'] font-medium tracking-tight">
+<a class="text-zinc-400 hover:text-[#585DE1] transition-colors" href="#">Solutions</a>
+<a class="text-zinc-400 hover:text-[#585DE1] transition-colors" href="#">Case Studies</a>
+<a class="text-zinc-400 hover:text-[#585DE1] transition-colors" href="#">Process</a>
+<a class="text-zinc-400 hover:text-[#585DE1] transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-white px-6 py-2.5 rounded-lg font-medium text-sm scale-95 active:scale-90 transition-transform hover:opacity-80">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-on-background py-24 md:py-32">
+<div class="absolute inset-0 opacity-10" data-alt="subtle abstract pattern of dark blue dots on a charcoal black background creating a professional digital atmosphere" style="background-image: radial-gradient(circle at 2px 2px, #585DE1 1px, transparent 0); background-size: 40px 40px;"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 bg-primary/20 text-primary-fixed-dim text-xs font-bold tracking-[0.2em] uppercase rounded mb-6">Privacy Policy</span>
+<h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter mb-8 leading-[1.1]">
+                        Your Data, Handled With Intentionality
+                    </h1>
+<p class="text-lg md:text-xl text-zinc-400 leading-relaxed max-w-2xl">
+                        At Gmax Digital, transparency is not a compliance requirement—it is a foundational pillar of trust. We treat your operational data with the same rigor we apply to our own.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Intro Content: The Human Touch -->
+<section class="py-20 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-12 gap-12 items-start">
+<div class="md:col-span-8">
+<h2 class="text-2xl font-bold text-on-surface mb-6">Our Commitment</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-8">
+                            Privacy isn't just about legal jargon; it's about respecting the boundaries of the digital partnerships we build. When you work with Gmax Digital, you aren't just a "user"—you are a partner. This document outlines exactly what information flows through our systems, why it's there, and how we protect it.
+                        </p>
+<!-- Trust Block: The "No-Line" Rule Applied -->
+<div class="bg-surface-container-low p-8 md:p-12 rounded-xl mb-16 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary opacity-5 rounded-full -mr-16 -mt-16"></div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-secondary text-5xl" data-icon="shield_lock" style="font-variation-settings: 'FILL' 1;">shield_lock</span>
+<div>
+<h3 class="text-xl font-bold text-on-surface mb-2">The Gmax Guarantee</h3>
+<p class="text-2xl font-medium text-on-surface">We do not sell or misuse your data. Ever.</p>
+</div>
+</div>
+</div>
+<!-- Policy Sections: Bento-ish Editorial Layout -->
+<div class="space-y-24">
+<!-- Information We Collect -->
+<div class="scroll-mt-32" id="collect">
+<h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-6">01. Information We Collect</h3>
+<p class="text-on-surface-variant mb-6">To provide high-end consultancy services, we collect minimal but necessary data points:</p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<li class="p-6 bg-surface-container rounded-lg flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="person">person</span>
+<div>
+<span class="font-bold block mb-1">Direct Identification</span>
+<span class="text-sm text-on-surface-variant">Name, email, and business phone numbers provided during inquiry.</span>
+</div>
+</li>
+<li class="p-6 bg-surface-container rounded-lg flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="business_center">business_center</span>
+<div>
+<span class="font-bold block mb-1">Business Context</span>
+<span class="text-sm text-on-surface-variant">Industry types, employee counts, and current digital pain points.</span>
+</div>
+</li>
+</ul>
+</div>
+<!-- How We Use Your Information -->
+<div class="scroll-mt-32" id="use">
+<h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-6">02. How We Use Your Information</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                                    Data utilization at Gmax is strictly limited to service optimization. We use your inputs to generate personalized quote frameworks, schedule strategy sessions, and improve our digital interfaces through behavioral analysis.
+                                </p>
+<div class="bg-surface-container-high p-8 rounded-xl border-l-4 border-primary">
+<span class="block font-bold text-on-surface mb-2 italic">Proactive Protection:</span>
+<p class="text-sm text-on-surface-variant">We employ internal masking protocols to ensure that only team members directly assigned to your account can access sensitive business context.</p>
+</div>
+</div>
+<!-- Third Party Ecosystem -->
+<div class="scroll-mt-32" id="ecosystem">
+<h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-6">03. Digital Partners &amp; Ecosystem</h3>
+<p class="text-on-surface-variant mb-8">We integrate premium third-party tools to ensure a seamless client journey. Each partner has been vetted for enterprise-grade security.</p>
+<div class="grid gap-6">
+<div class="flex flex-col md:flex-row md:items-center justify-between p-8 bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="flex items-center gap-4 mb-4 md:mb-0">
+<div class="w-12 h-12 bg-zinc-100 rounded flex items-center justify-center font-bold text-zinc-400">PH</div>
+<div>
+<h4 class="font-bold">PostHog Analytics</h4>
+<p class="text-xs text-on-surface-variant">Behavioral patterns &amp; interface optimization</p>
+</div>
+</div>
+<span class="text-xs font-medium px-3 py-1 bg-surface-container rounded-full">Anonymized Tracking</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between p-8 bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="flex items-center gap-4 mb-4 md:mb-0">
+<div class="w-12 h-12 bg-zinc-100 rounded flex items-center justify-center font-bold text-zinc-400">CL</div>
+<div>
+<h4 class="font-bold">Calendly</h4>
+<p class="text-xs text-on-surface-variant">Strategy session scheduling &amp; automation</p>
+</div>
+</div>
+<span class="text-xs font-medium px-3 py-1 bg-surface-container rounded-full">Direct Input Only</span>
+</div>
+</div>
+</div>
+<!-- Security Measures -->
+<div class="scroll-mt-32" id="security">
+<h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-6">04. Security Measures</h3>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<h4 class="font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="lock">lock</span> 
+                                            Encryption
+                                        </h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">All data in transit is protected by 256-bit SSL encryption, ensuring a secure tunnel between your browser and our servers.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="delete_forever">delete_forever</span> 
+                                            Data Retention
+                                        </h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">We maintain records only for the duration of our professional relationship or as required by governing tax and legal frameworks.</p>
+</div>
+</div>
+</div>
+<!-- Your Rights -->
+<div class="scroll-mt-32 border-t border-surface-container-highest pt-16" id="rights">
+<h3 class="text-2xl font-bold text-on-surface mb-6">Your Rights</h3>
+<p class="text-on-surface-variant mb-8">You retain absolute control over your information. At any point, you may request:</p>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-white rounded-lg border border-surface-container-highest text-sm font-medium">Access to Data</span>
+<span class="px-4 py-2 bg-white rounded-lg border border-surface-container-highest text-sm font-medium">Correction of Errors</span>
+<span class="px-4 py-2 bg-white rounded-lg border border-surface-container-highest text-sm font-medium">Right to Deletion</span>
+<span class="px-4 py-2 bg-white rounded-lg border border-surface-container-highest text-sm font-medium">Withdraw Consent</span>
+</div>
+<p class="mt-12 text-sm text-on-surface-variant">To exercise these rights, please contact our privacy lead at <a class="text-primary font-bold hover:underline" href="mailto:privacy@gmaxdigital.com">privacy@gmaxdigital.com</a>.</p>
+</div>
+</div>
+</div>
+<!-- Sidebar Navigation (Sticky) -->
+<aside class="hidden md:block md:col-span-4 sticky top-32">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+<h4 class="text-xs font-black uppercase tracking-widest text-on-surface mb-6">On This Page</h4>
+<nav class="space-y-4">
+<a class="block text-sm font-medium text-zinc-400 hover:text-primary transition-colors" href="#collect">01. Collection</a>
+<a class="block text-sm font-medium text-zinc-400 hover:text-primary transition-colors" href="#use">02. Usage Logic</a>
+<a class="block text-sm font-medium text-zinc-400 hover:text-primary transition-colors" href="#ecosystem">03. Third Parties</a>
+<a class="block text-sm font-medium text-zinc-400 hover:text-primary transition-colors" href="#security">04. Security</a>
+<a class="block text-sm font-medium text-zinc-400 hover:text-primary transition-colors" href="#rights">05. Your Rights</a>
+</nav>
+<div class="mt-12 pt-8 border-t border-surface-container">
+<p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                                    Last Updated: October 24, 2023. Gmax Digital reserves the right to update this policy as digital standards evolve.
+                                </p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#241E20] border-t border-zinc-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-8 w-full">
+<div class="text-lg font-bold text-white mb-4 md:mb-0">Gmax Digital</div>
+<div class="text-zinc-500 font-['Inter'] text-sm tracking-wide text-center md:text-left mb-6 md:mb-0">
+                © 2024 Gmax Digital. Small Businesses. Big Solutions.
+            </div>
+<div class="flex gap-8 font-['Inter'] text-sm tracking-wide">
+<a class="text-white underline" href="#">Privacy Policy</a>
+<a class="text-zinc-500 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="text-zinc-500 hover:text-white transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</footer>
+</body></html>
+
+
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Terms of Service | Gmax Digital</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#201a1c",
+                        "secondary": "#b90d1d",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#201a1c",
+                        "on-tertiary-container": "#faedf0",
+                        "inverse-on-surface": "#faeef0",
+                        "secondary-fixed-dim": "#ffb3ad",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#930012",
+                        "on-primary-container": "#f1efff",
+                        "on-error": "#ffffff",
+                        "background": "#fff8f8",
+                        "tertiary": "#5b5355",
+                        "primary-fixed": "#e1e0ff",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#464554",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "inverse-surface": "#352f31",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#fdf1f3",
+                        "on-primary-fixed-variant": "#2e31b9",
+                        "surface-container": "#f7ebed",
+                        "surface": "#fff8f8",
+                        "surface-dim": "#e3d7da",
+                        "on-secondary-fixed": "#410004",
+                        "on-background": "#201a1c",
+                        "tertiary-fixed": "#ece0e2",
+                        "surface-container-highest": "#ece0e2",
+                        "outline": "#767686",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#585de1",
+                        "surface-container-high": "#f1e5e8",
+                        "surface-tint": "#484dd1",
+                        "primary": "#3e42c7",
+                        "inverse-primary": "#c0c1ff",
+                        "outline-variant": "#c6c5d6",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#cfc4c6",
+                        "surface-variant": "#ece0e2",
+                        "on-tertiary-fixed-variant": "#4c4547",
+                        "on-secondary-container": "#fffbff",
+                        "on-primary-fixed": "#04006d",
+                        "secondary-fixed": "#ffdad7",
+                        "surface-bright": "#fff8f8",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#746b6d",
+                        "secondary-container": "#dd2f33"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+        }
+        @media (max-width: 768px) {
+            .editorial-grid { grid-template-columns: 1fr; gap: 2rem; }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-neutral-900/70 backdrop-blur-md shadow-[0_8px_40px_-12px_rgba(32,26,28,0.06)] h-20">
+<div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-full">
+<div class="text-xl font-black text-[#241E20] dark:text-white tracking-tighter">Gmax Digital</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-neutral-400 hover:text-[#585DE1] transition-colors font-['Inter'] antialiased tracking-tight" href="#">Solutions</a>
+<a class="text-neutral-400 hover:text-[#585DE1] transition-colors font-['Inter'] antialiased tracking-tight" href="#">Case Studies</a>
+<a class="text-neutral-400 hover:text-[#585DE1] transition-colors font-['Inter'] antialiased tracking-tight" href="#">Approach</a>
+<a class="text-neutral-400 hover:text-[#585DE1] transition-colors font-['Inter'] antialiased tracking-tight" href="#">Insights</a>
+</div>
+<button class="bg-[#585DE1] text-white px-6 py-2.5 rounded-lg font-bold hover:opacity-90 transition-all scale-95 active:scale-90">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto px-8 mb-24">
+<div class="inline-block px-3 py-1 bg-surface-container text-primary font-bold text-xs tracking-[0.1em] uppercase rounded-full mb-6">
+                Terms of Service
+            </div>
+<h1 class="text-[3.5rem] leading-[1.1] font-black text-[#241E20] tracking-tight mb-8">
+                Clear Terms.<br/>Strong Partnerships.
+            </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed font-light">
+                Our engagement is built on transparency, mutual protection, and a shared commitment to digital excellence. These terms outline how we work together to deliver architectural authority in digital marketing.
+            </p>
+</header>
+<!-- Introduction -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="bg-surface-container-low p-12 rounded-xl border-l-4 border-primary">
+<p class="text-lg leading-relaxed text-on-surface italic">
+                    "At Gmax Digital, we believe the best work happens when expectations are crystal clear. These terms aren't just legal necessities—they are the blueprint for our collaboration, ensuring every project is delivered with precision and strategic depth."
+                </p>
+</div>
+</section>
+<!-- Core Sections: Editorial Layout -->
+<section class="max-w-7xl mx-auto px-8 space-y-32">
+<!-- 01 Services Overview -->
+<div class="editorial-grid">
+<div>
+<span class="text-primary font-black text-4xl opacity-20">01</span>
+<h2 class="text-2xl font-bold text-[#241E20] mt-4 uppercase tracking-wider">Services Overview</h2>
+</div>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<p class="text-lg font-medium text-on-surface">We provide architectural authority through three primary pillars:</p>
+<ul class="space-y-4">
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary shrink-0">architecture</span>
+<div>
+<strong class="text-on-surface block">Digital Strategy &amp; Roadmap</strong>
+                                High-level planning and competitive positioning to ensure long-term market dominance.
+                            </div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary shrink-0">settings_input_component</span>
+<div>
+<strong class="text-on-surface block">Infrastructure Development</strong>
+                                Building the digital engines—from high-performance web systems to automation stacks.
+                            </div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary shrink-0">record_voice_over</span>
+<div>
+<strong class="text-on-surface block">Strategic Advisory</strong>
+                                Ongoing consulting to navigate shifts in the digital landscape and emerging technologies.
+                            </div>
+</li>
+</ul>
+</div>
+</div>
+<!-- 02 Engagement Model -->
+<div class="editorial-grid">
+<div>
+<span class="text-primary font-black text-4xl opacity-20">02</span>
+<h2 class="text-2xl font-bold text-[#241E20] mt-4 uppercase tracking-wider">Engagement Model</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container p-8 rounded-xl">
+<h3 class="font-bold text-on-surface mb-3">Project-Based</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Defined scopes with clear milestones and fixed deliverables, ideal for singular infrastructure builds or specific launches.</p>
+</div>
+<div class="bg-surface-container p-8 rounded-xl">
+<h3 class="font-bold text-on-surface mb-3">Retainer-Based</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Long-term strategic partnership providing dedicated resources and priority support for continuous growth cycles.</p>
+</div>
+</div>
+</div>
+<!-- 03 Client Responsibilities -->
+<div class="editorial-grid">
+<div>
+<span class="text-primary font-black text-4xl opacity-20">03</span>
+<h2 class="text-2xl font-bold text-[#241E20] mt-4 uppercase tracking-wider">Responsibilities</h2>
+</div>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<p>Partnership requires active participation. To maintain project momentum, clients agree to:</p>
+<div class="grid grid-cols-1 gap-4">
+<div class="flex items-center gap-3 p-4 bg-white shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary">speed</span>
+<span class="text-sm">Provide timely feedback (typically within 48-72 hours)</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-white shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary">folder_shared</span>
+<span class="text-sm">Grant necessary access to brand assets and technical systems</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-white shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary">groups</span>
+<span class="text-sm">Designate a single point of contact for streamlined communication</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 04 Payments & Billing -->
+<div class="editorial-grid">
+<div>
+<span class="text-primary font-black text-4xl opacity-20">04</span>
+<h2 class="text-2xl font-bold text-[#241E20] mt-4 uppercase tracking-wider">Payments &amp; Billing</h2>
+</div>
+<div class="space-y-6">
+<div class="border-b border-outline-variant/20 pb-6">
+<h4 class="font-bold text-on-surface mb-2">Billing Cycles</h4>
+<p class="text-on-surface-variant text-sm">Project fees are typically structured as 50% upfront and 50% upon completion. Retainers are billed monthly in advance.</p>
+</div>
+<div class="border-b border-outline-variant/20 pb-6">
+<h4 class="font-bold text-on-surface mb-2">Late Payments</h4>
+<p class="text-on-surface-variant text-sm">To maintain our service standards, late payments may result in a temporary suspension of work and a 5% late fee after 15 days.</p>
+</div>
+</div>
+</div>
+<!-- 05 Intellectual Property -->
+<div class="editorial-grid">
+<div>
+<span class="text-primary font-black text-4xl opacity-20">05</span>
+<h2 class="text-2xl font-bold text-[#241E20] mt-4 uppercase tracking-wider">Intellectual Property</h2>
+</div>
+<div class="space-y-4 text-on-surface-variant leading-relaxed">
+<p>Upon full payment of all fees, the ownership of the final deliverables is transferred to the Client. Gmax Digital retains ownership of all pre-existing tools, proprietary methodologies, and background technology used in the project.</p>
+</div>
+</div>
+<!-- 06 Legal Clauses (Grouped) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 pt-12 border-t border-outline-variant/20">
+<div>
+<h3 class="font-black text-[#241E20] mb-4 text-sm tracking-widest uppercase">Confidentiality</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Both parties agree to maintain strict confidentiality regarding all trade secrets, business plans, and sensitive data shared during the engagement.</p>
+</div>
+<div>
+<h3 class="font-black text-[#241E20] mb-4 text-sm tracking-widest uppercase">Liability</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Gmax Digital's total liability is limited to the amount paid for the specific project or three months of the current retainer fees.</p>
+</div>
+<div>
+<h3 class="font-black text-[#241E20] mb-4 text-sm tracking-widest uppercase">Termination</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Either party may terminate the agreement with 30 days' written notice. Outstanding fees remain payable for work performed up to the termination date.</p>
+</div>
+</div>
+</section>
+<!-- Strategic Positioning Callout -->
+<section class="max-w-7xl mx-auto px-8 mt-40">
+<div class="relative overflow-hidden bg-[#241E20] rounded-2xl p-16 text-center">
+<!-- Background visual texture -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="abstract technological circuit board pattern with blue glowing lines and high-tech digital grid texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwOZyENo6Y3BM21N7AhtE5BU9tu2pS8Wb-dnqnlbIda3t6m-uKKY1rUOHOJ1IQzm0iKEvHbkr8SQn_XBQ-wzndaeUpNBpbvAhE8ms7reaIWjKc8i9AFZpI4dfdBmiHvuExRAROHgzWCBMofQCXHjSlGzlw5EQa8xbWRoUG8uvlMjyhPDZUfPaE7D5uIYsbGFy5J0nKAAuJqc3OpWNohNiLv3W9F7pTl6ywacXCCurLsN86RSbn7A8wiuAkDZoiVc8QdNLK0_-IE2c"/>
+</div>
+<div class="relative z-10">
+<p class="text-[#585DE1] font-bold text-sm tracking-[0.2em] uppercase mb-6">Strategic Partnership</p>
+<h2 class="text-4xl md:text-5xl font-black text-white mb-10 tracking-tight leading-tight">
+                        We operate as a strategic partner,<br/>not just a service provider.
+                    </h2>
+<button class="bg-[#F84343] text-white px-10 py-4 rounded-lg font-bold text-lg hover:opacity-90 transition-all">
+                        Discuss Your Strategy
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#241E20] dark:bg-black w-full pt-20 pb-10 border-t border-neutral-800">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-white mb-2">Gmax Digital</div>
+<p class="text-neutral-400 text-sm font-['Inter'] leading-relaxed">Architectural Authority in Digital Marketing.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="text-white underline text-sm" href="#">Privacy Policy</a>
+<a class="text-neutral-400 hover:text-white transition-colors text-sm" href="#">Terms of Service</a>
+<a class="text-neutral-400 hover:text-white transition-colors text-sm" href="#">Cookie Policy</a>
+<a class="text-neutral-400 hover:text-white transition-colors text-sm" href="#">Sitemap</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-neutral-800/50 text-center md:text-left">
+<p class="text-neutral-500 text-xs">© 2024 Gmax Digital. All Rights Reserved. Architectural Authority in Digital Marketing.</p>
+</div>
+</footer>
+</body></html>
+
+
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#fff8f8",
+                        "on-tertiary-fixed-variant": "#4c4547",
+                        "surface-container-low": "#fdf1f3",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-surface": "#201a1c",
+                        "background": "#fff8f8",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#5b5355",
+                        "secondary": "#b90d1d",
+                        "outline": "#767686",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "on-surface-variant": "#464554",
+                        "tertiary-fixed-dim": "#cfc4c6",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#352f31",
+                        "primary-container": "#585de1",
+                        "tertiary-container": "#746b6d",
+                        "on-primary-fixed": "#04006d",
+                        "surface-container": "#f7ebed",
+                        "secondary-fixed": "#ffdad7",
+                        "outline-variant": "#c6c5d6",
+                        "on-tertiary-container": "#faedf0",
+                        "on-secondary-fixed-variant": "#930012",
+                        "surface-variant": "#ece0e2",
+                        "surface-dim": "#e3d7da",
+                        "secondary-fixed-dim": "#ffb3ad",
+                        "on-secondary-fixed": "#410004",
+                        "surface-tint": "#484dd1",
+                        "surface-container-highest": "#ece0e2",
+                        "primary": "#3e42c7",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#2e31b9",
+                        "surface-bright": "#fff8f8",
+                        "primary-fixed": "#e1e0ff",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#f1e5e8",
+                        "on-tertiary-fixed": "#201a1c",
+                        "secondary-container": "#dd2f33",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#fffbff",
+                        "on-primary-container": "#f1efff",
+                        "on-background": "#201a1c",
+                        "inverse-on-surface": "#faeef0",
+                        "tertiary-fixed": "#ece0e2",
+                        "inverse-primary": "#c0c1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
+<div class="text-xl font-black tracking-tighter text-on-surface">Gmax Digital</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-medium text-sm antialiased" href="#">Solutions</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-medium text-sm antialiased" href="#">Case Studies</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-medium text-sm antialiased" href="#">Approach</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 text-sm antialiased" href="#">Global Locations</a>
+<button class="bg-primary text-white px-7 py-2.5 font-bold hover:brightness-110 transition-all text-sm tracking-tight">
+                Get a Quote
+            </button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-[80px]">
+<!-- Hero Section -->
+<section class="relative min-h-[60vh] flex items-center overflow-hidden bg-on-background py-32">
+<div class="absolute inset-0 opacity-25 pointer-events-none">
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,_#585de1_1px,_transparent_1px)] [background-size:48px_48px]"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-on-background"></div>
+</div>
+<div class="relative max-w-7xl mx-auto px-8 w-full z-10">
+<div class="max-w-4xl">
+<span class="inline-block text-primary-fixed-dim text-xs tracking-[0.4em] uppercase font-bold mb-8">Global Presence</span>
+<h1 class="text-6xl md:text-8xl font-black text-white tracking-tighter mb-10 leading-[0.95]">
+                    Strategic Reach.<br/>Global Perspective.
+                </h1>
+<p class="text-xl md:text-2xl text-zinc-400 leading-relaxed max-w-2xl font-light">
+                    Gmax Digital works with founders and businesses across multiple regions, providing strategic growth foundations that transcend borders.
+                </p>
+</div>
+</div>
+</section>
+<!-- Full-Width High-Impact Bleed Section (Canary Wharf) -->
+<section class="relative h-[85vh] w-full overflow-hidden">
+<img alt="Modern architectural shot of London's Canary Wharf at dusk with sophisticated cool blue lighting and clean lines" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg5OBk0YnhCG1gukJ7qDbA04V8Ykm88eHtjDvONms4dE5hCO0tsGJVrKxti2kOhZGN_hlyvzeVJAmaYSkSsyDehen-FTsP5DkhZmibBDXI1ob1tyxU45dedD4xsWH-z6mSqoh4TycW4HdJSAbzsUduv3Ljk3WilXfX2CwCSnQ5N01x-9MpJgOa7mW-9f97ZuhstkwLZSqtBC4Ujlafurgsfew8jjbI1cE7WyQaKSoP4RvFn39PGobncAhfIdKg8GihK9WgDGuUJ4Y"/>
+<!-- Architectural Overlay Overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-on-background/80 via-on-background/20 to-transparent"></div>
+<!-- Content Bridge -->
+<div class="absolute bottom-0 left-0 w-full md:w-auto md:max-w-2xl px-8 pb-20 md:ml-12 z-20">
+<div class="bg-surface-container-highest p-10 md:p-16 shadow-2xl border-l-[12px] border-primary">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="text-primary font-black tracking-[0.2em] uppercase text-xs">Headquarters</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-black text-on-surface tracking-tighter mb-4">London, United Kingdom</h2>
+<p class="text-primary font-semibold text-lg mb-10">Main Strategic Positioning Hub</p>
+<div class="space-y-8 text-on-surface-variant leading-relaxed">
+<p class="text-xl italic font-light">"Our strategic positioning hub, connecting us to global markets and enterprise ecosystems."</p>
+<div class="bg-surface-container-low p-8 border border-outline-variant/30">
+<address class="not-italic text-sm tracking-widest font-mono uppercase leading-loose">
+                            One Canada Square, Canary Wharf<br/>
+                            London, E14 5AB<br/>
+                            United Kingdom
+                        </address>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Coverage Section -->
+<section class="bg-on-background py-32 text-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-24 gap-12">
+<div class="max-w-2xl">
+<span class="text-secondary text-xs tracking-[0.3em] font-black uppercase mb-6 block">Our Footprint</span>
+<h2 class="text-5xl md:text-6xl font-black tracking-tighter">A Globally Distributed Network</h2>
+</div>
+<p class="text-zinc-500 max-w-sm text-lg font-light border-l-2 border-primary/30 pl-8">We leverage localized expertise with a unified global strategy to deliver consistent excellence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 divide-x divide-y md:divide-y-0 divide-zinc-800 border border-zinc-800">
+<!-- Region 1 -->
+<div class="group p-12 bg-transparent hover:bg-zinc-900 transition-all duration-500 border-b-4 border-transparent hover:border-primary">
+<div class="mb-10 w-14 h-14 bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">euro_symbol</span>
+</div>
+<h3 class="text-2xl font-bold mb-6 tracking-tight">Europe</h3>
+<p class="text-zinc-500 text-base leading-relaxed font-light">Strategic alignment for high-growth ecosystems.</p>
+</div>
+<!-- Region 2 -->
+<div class="group p-12 bg-transparent hover:bg-zinc-900 transition-all duration-500 border-b-4 border-transparent hover:border-primary">
+<div class="mb-10 w-14 h-14 bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">public</span>
+</div>
+<h3 class="text-2xl font-bold mb-6 tracking-tight">North America</h3>
+<p class="text-zinc-500 text-base leading-relaxed font-light">Scalable infrastructure for the world's most competitive markets.</p>
+</div>
+<!-- Region 3 -->
+<div class="group p-12 bg-transparent hover:bg-zinc-900 transition-all duration-500 border-b-4 border-transparent hover:border-primary">
+<div class="mb-10 w-14 h-14 bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">potted_plant</span>
+</div>
+<h3 class="text-2xl font-bold mb-6 tracking-tight">Africa</h3>
+<p class="text-zinc-500 text-base leading-relaxed font-light">Positioning for emerging technological opportunities.</p>
+</div>
+<!-- Region 4 -->
+<div class="group p-12 bg-transparent hover:bg-zinc-900 transition-all duration-500 border-b-4 border-transparent hover:border-primary">
+<div class="mb-10 w-14 h-14 bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">all_inclusive</span>
+</div>
+<h3 class="text-2xl font-bold mb-6 tracking-tight">Remote / Global</h3>
+<p class="text-zinc-500 text-base leading-relaxed font-light">24/7 delivery through integrated digital workflows.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How We Work Globally -->
+<section class="bg-surface py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+<div>
+<h2 class="text-5xl font-black text-on-surface tracking-tighter mb-20 leading-tight">Global Operations.<br/>Local Impact.</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-16">
+<div class="relative pl-10 border-l border-primary/20">
+<span class="absolute left-0 top-0 text-primary font-black text-xs tracking-tighter opacity-50">01</span>
+<h4 class="font-black text-lg mb-4 uppercase tracking-tight">Remote-First</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">Operating at the speed of digital founders. Our infrastructure is built for boundary-less collaboration.</p>
+</div>
+<div class="relative pl-10 border-l border-primary/20">
+<span class="absolute left-0 top-0 text-primary font-black text-xs tracking-tighter opacity-50">02</span>
+<h4 class="font-black text-lg mb-4 uppercase tracking-tight">Async Communication</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">Clear, documented strategic alignment across any timezone. We eliminate friction through process clarity.</p>
+</div>
+<div class="relative pl-10 border-l border-primary/20">
+<span class="absolute left-0 top-0 text-primary font-black text-xs tracking-tighter opacity-50">03</span>
+<h4 class="font-black text-lg mb-4 uppercase tracking-tight">Delivery Infrastructure</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">Integrated toolstacks for seamless international execution. Single source of truth for all global projects.</p>
+</div>
+<div class="relative pl-10 border-l border-primary/20">
+<span class="absolute left-0 top-0 text-primary font-black text-xs tracking-tighter opacity-50">04</span>
+<h4 class="font-black text-lg mb-4 uppercase tracking-tight">Timezone Flexibility</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">Focused on project momentum, not office hours. Our global talent pool ensures continuous progress.</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -right-32 -top-32 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl"></div>
+<div class="relative bg-surface p-6 shadow-2xl border border-outline-variant/10">
+<img alt="Sophisticated modern co-working space with clean lines, high-end furniture, and a panoramic view of a global city skyline through floor-to-ceiling windows" class="w-full grayscale hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCREd5QAk8mzzWD3j-XXgnIJ4S1AARa4dhKcJ4sIMiEkXO3o6t0yKFdPBGt_I7kieTpimKUMEKfOJKIk2mXSsPyLkws-XZf3v51P4Max-PMOMBwMLsUjxjgUkfAP6RQ8TmcLaxx1E-Z2bNGkAH0GfT8AZ29bOZ2-K9OXIxPCuBeNgO1enBh0gy2whSg00rMV1umIgWfMCsodITU3L5Flfm6BTR9p_Q9s3GSMNTJlqYVH7cFzImZGDQlmDDb3GCJbNQavCfQPjXjo7I"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Signal / Callout -->
+<section class="bg-primary py-40">
+<div class="max-w-5xl mx-auto px-8 text-center">
+<blockquote class="text-4xl md:text-7xl font-black text-white tracking-tighter leading-[0.95] italic">
+                "We work with founders building globally, not just locally."
+            </blockquote>
+<div class="mt-16 h-1.5 w-32 bg-secondary mx-auto"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-background w-full border-t border-zinc-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-20 w-full max-w-7xl mx-auto">
+<div class="mb-12 md:mb-0">
+<div class="text-2xl font-black text-white mb-6 tracking-tighter">Gmax Digital</div>
+<p class="text-xs uppercase tracking-[0.3em] text-zinc-600 font-bold">
+                © 2024 Gmax Digital. Small Businesses. Big Solutions.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-primary transition-colors font-bold" href="#">Privacy Policy</a>
+<a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-primary transition-colors font-bold" href="#">Terms of Service</a>
+<a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-primary transition-colors font-bold" href="#">Careers</a>
+<a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-primary transition-colors font-bold" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
+
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cookie Policy | Gmax Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fff8f8",
+                    "inverse-surface": "#352f31",
+                    "on-primary-fixed-variant": "#2e31b9",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "surface-variant": "#ece0e2",
+                    "surface-container": "#f7ebed",
+                    "surface": "#fff8f8",
+                    "primary": "#3e42c7",
+                    "on-secondary-fixed-variant": "#930012",
+                    "primary-container": "#585de1",
+                    "outline-variant": "#c6c5d6",
+                    "on-surface-variant": "#464554",
+                    "tertiary-fixed-dim": "#cfc4c6",
+                    "on-primary-fixed": "#04006d",
+                    "surface-tint": "#484dd1",
+                    "tertiary-container": "#746b6d",
+                    "secondary": "#b90d1d",
+                    "inverse-primary": "#c0c1ff",
+                    "tertiary": "#5b5355",
+                    "secondary-fixed-dim": "#ffb3ad",
+                    "surface-container-low": "#fdf1f3",
+                    "on-secondary-container": "#fffbff",
+                    "on-tertiary-fixed-variant": "#4c4547",
+                    "inverse-on-surface": "#faeef0",
+                    "background": "#fff8f8",
+                    "tertiary-fixed": "#ece0e2",
+                    "secondary-container": "#dd2f33",
+                    "surface-container-highest": "#ece0e2",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdad7",
+                    "on-surface": "#201a1c",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#e3d7da",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#faedf0",
+                    "on-background": "#201a1c",
+                    "on-tertiary-fixed": "#201a1c",
+                    "primary-fixed": "#e1e0ff",
+                    "outline": "#767686",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#f1e5e8",
+                    "on-secondary-fixed": "#410004",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#f1efff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-zinc-950/70 backdrop-blur-xl shadow-sm dark:shadow-none font-['Inter'] antialiased tracking-tight">
+<div class="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto">
+<div class="text-xl font-black tracking-tighter text-zinc-900 dark:text-white">Gmax Digital</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Solutions</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Case Studies</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Insights</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">About</a>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-bold hover:opacity-90 active:scale-95 transition-all duration-200">Get a Quote</button>
+</div>
+<!-- Mobile Menu Icon (Placeholder) -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-on-background py-24 md:py-40">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute inset-0 bg-gradient-to-br from-primary via-on-background to-secondary"></div>
+<div class="h-full w-full opacity-30" data-alt="subtle abstract geometric pattern with fine white dots on a deep charcoal background with royal blue and red highlights" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block text-secondary-fixed text-xs font-bold tracking-[0.2em] uppercase mb-6">Cookie Policy</span>
+<h1 class="text-5xl md:text-7xl font-black text-white leading-[1.1] tracking-tight mb-8">
+                        Transparent Tracking. <br/>
+<span class="text-primary-fixed-dim">Intentional Data Use.</span>
+</h1>
+<p class="text-lg md:text-xl text-surface-variant leading-relaxed opacity-90 max-w-2xl">
+                        At Gmax Digital, we believe in clarity. We use cookies not to monitor, but to measure performance, refine our strategy, and provide a seamless architectural experience for your small business.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Introduction & Overview -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="editorial-grid">
+<div class="col-span-12 md:col-span-4">
+<h2 class="text-sm font-bold tracking-widest text-on-surface-variant uppercase">Foundation</h2>
+</div>
+<div class="col-span-12 md:col-span-8">
+<p class="text-2xl md:text-3xl font-light text-on-surface leading-tight mb-12">
+                            Cookies are small text files that act as digital memory. They help us remember your preferences and understand how you interact with our solutions, ensuring every visit is more relevant than the last.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-8 bg-surface-container-low border-l-4 border-primary">
+<h3 class="text-lg font-bold mb-3">Our Promise</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                    We never sell your data. We use it exclusively to improve the architecture of our services and your user experience.
+                                </p>
+</div>
+<div class="p-8 bg-surface-container-low border-l-4 border-secondary">
+<h3 class="text-lg font-bold mb-3">Clarity First</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                    No dense legal jargon. We explain what each cookie does and why it's necessary for our partnership.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What Cookies We Use -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-3xl md:text-4xl font-black text-on-surface tracking-tight mb-4">Our Tech Stack</h2>
+<p class="text-on-surface-variant max-w-xl">A breakdown of the specific tracking technologies we utilize to maintain peak performance.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Essential -->
+<div class="bg-surface p-8 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-6" style="font-size: 40px;">lock</span>
+<h3 class="text-lg font-bold mb-4">Essential Cookies</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Critical for site security and navigation. Without these, our portal cannot function correctly.</p>
+<div class="text-[10px] font-bold uppercase tracking-wider text-outline">Category: Mandatory</div>
+</div>
+<!-- Analytics -->
+<div class="bg-surface p-8 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-secondary mb-6" style="font-size: 40px;">analytics</span>
+<h3 class="text-lg font-bold mb-4">Analytics Cookies</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">We use PostHog to understand user behavior, identifying friction points to refine our interface.</p>
+<div class="text-[10px] font-bold uppercase tracking-wider text-outline">Category: Performance</div>
+</div>
+<!-- Functional -->
+<div class="bg-surface p-8 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-6" style="font-size: 40px;">settings</span>
+<h3 class="text-lg font-bold mb-4">Functional Cookies</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Remembering your choices, like language preferences or region, to personalize your journey.</p>
+<div class="text-[10px] font-bold uppercase tracking-wider text-outline">Category: Preference</div>
+</div>
+<!-- Third Party -->
+<div class="bg-surface p-8 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-secondary mb-6" style="font-size: 40px;">extension</span>
+<h3 class="text-lg font-bold mb-4">Third-Party Tools</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">External integrations like Calendly or Hubspot that enable direct communication and scheduling.</p>
+<div class="text-[10px] font-bold uppercase tracking-wider text-outline">Category: Integration</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution Bridge (Signature Component) -->
+<section class="relative">
+<div class="h-48 bg-surface-container-low"></div>
+<div class="h-48 bg-on-background"></div>
+<div class="absolute inset-0 flex items-center justify-center px-8">
+<div class="max-w-5xl w-full bg-surface-container-highest p-12 md:p-20 shadow-2xl relative">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl md:text-4xl font-black text-on-surface leading-tight mb-6">Why Intentional Tracking Matters.</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                                Data without context is noise. We use cookies to gain the context needed to build better digital solutions for small businesses.
+                            </p>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-bold block">Performance Analysis</span>
+<span class="text-sm text-on-surface-variant">Real-time site health monitoring.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-bold block">UX Optimization</span>
+<span class="text-sm text-on-surface-variant">Streamlining user navigation flows.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-bold block">Strategic Strategy</span>
+<span class="text-sm text-on-surface-variant">Informed decision-making for our roadmaps.</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Control & User Choices -->
+<section class="py-24 bg-on-background text-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="editorial-grid">
+<div class="col-span-12 md:col-span-5">
+<h2 class="text-3xl md:text-4xl font-black tracking-tight mb-8">Take Command of Your Data.</h2>
+<p class="text-surface-variant opacity-80 leading-relaxed mb-10">
+                            You have full control over your cookie preferences. Most browsers allow you to refuse cookies through their settings menu. Note that disabling certain cookies may impact the site functionality.
+                        </p>
+<div class="flex flex-col gap-4">
+<a class="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 transition-colors border border-white/10" href="#">
+<span>Browser Settings Guide</span>
+<span class="material-symbols-outlined">north_east</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 transition-colors border border-white/10" href="#">
+<span>Cookie Preference Center</span>
+<span class="material-symbols-outlined">tune</span>
+</a>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7">
+<div class="space-y-12">
+<div>
+<h3 class="text-xl font-bold mb-4 text-primary-fixed-dim">Session vs. Persistent</h3>
+<p class="text-surface-variant opacity-80 leading-relaxed">
+                                    Session cookies expire once you close your browser. Persistent cookies remain on your device for a set period or until manually deleted, allowing us to recognize returning partners.
+                                </p>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4 text-secondary-fixed">Policy Updates</h3>
+<p class="text-surface-variant opacity-80 leading-relaxed">
+                                    This policy is reviewed annually. Any significant changes in how we handle tracking will be communicated directly via our primary digital channels.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Callout -->
+<section class="py-24 bg-surface">
+<div class="max-w-5xl mx-auto px-8">
+<div class="bg-surface-container-low p-12 text-center relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined" style="font-size: 120px;">verified_user</span>
+</div>
+<h2 class="text-2xl font-bold text-on-surface mb-4">The Ethical Commitment</h2>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto font-light leading-relaxed">
+                        "We do not use cookies to exploit data — only to improve <span class="text-primary font-semibold">clarity</span>, <span class="text-primary font-semibold">performance</span>, and the <span class="text-primary font-semibold">user experience</span> for every business we serve."
+                    </p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 bg-surface-bright">
+<div class="max-w-7xl mx-auto px-8 text-center">
+<h2 class="text-4xl md:text-6xl font-black text-on-surface tracking-tighter mb-12">Questions About Your Data?</h2>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="bg-on-background text-white px-10 py-5 font-bold hover:opacity-90 active:scale-95 transition-all text-lg">
+                        Contact Us
+                    </button>
+<button class="bg-secondary text-white px-10 py-5 font-bold hover:opacity-90 active:scale-95 transition-all text-lg">
+                        Request a Strategy Call
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full pt-20 pb-10 bg-zinc-900 dark:bg-black font-['Inter'] text-sm leading-relaxed border-t border-zinc-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-white mb-2">Gmax Digital</div>
+<div class="text-zinc-400">© 2024 Gmax Digital. Architectural Solutions for Small Business.</div>
+</div>
+<div class="flex space-x-8">
+<a class="text-white underline" href="#">Privacy Policy</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#">Cookie Settings</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

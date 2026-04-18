@@ -21,16 +21,24 @@ const CTABanner = () => {
             rel="noopener noreferrer"
             onClick={() =>
               posthog.capture("Clicked Strategy Call", {
-                source: "homepage-hero",
+                source: "homepage_cta",
               })
             }
             className="bg-[#F84343] text-white px-10 py-5 rounded-lg font-black text-lg shadow-xl shadow-black/10"
           >
             Book A Free Strategy Call
           </a>
-          <button className="bg-white text-[#241E20] px-10 py-5 rounded-lg font-black text-lg">
+          <a
+            href="/gmax-digital-services.pdf"
+            onClick={() =>
+              posthog.capture("Clicked download services", {
+                source: "homepage_cta",
+              })
+            }
+            className="bg-white text-[#241E20] px-10 py-5 rounded-lg font-black text-lg"
+          >
             Download Services Guide
-          </button>
+          </a>
         </div>
       </div>
       <div className="h-full w-full absolute top-0 left-0">

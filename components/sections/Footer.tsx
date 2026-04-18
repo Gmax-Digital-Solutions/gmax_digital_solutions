@@ -140,10 +140,10 @@ const Footer = () => {
             Terms of Service
           </a>
           <a
-            href="cookie-settings"
+            href="cookie-policy"
             className="text-white/60 hover:text-white text-xs"
           >
-            Cookie Settings
+            Cookie Policy
           </a>
           <a
             href="global-locations"
