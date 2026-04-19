@@ -1,5 +1,10 @@
+"use client";
+
 import HeroImage from "@/public/images/insights_hero.jpg";
 import Image from "next/image";
+import Link from "next/link";
+import { trackEvent } from "@/lib/analytics/posthog";
+
 const InsightHero = () => {
   return (
     <section className="relative min-h-[716px] flex items-center px-6 overflow-hidden bg-surface text-on-surface">
@@ -24,9 +29,19 @@ const InsightHero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold transition-transform hover:-translate-y-1 active:scale-95">
+            <Link
+              href="contact#proposal"
+              onClick={() =>
+                trackEvent("proposal_btn_clicked", {
+                  location: "insigh_hero",
+                  label: "request proposal",
+                  source: "insights",
+                })
+              }
+              className="bg-primary text-white px-8 py-4 rounded-lg font-bold transition-transform hover:-translate-y-1 active:scale-95"
+            >
               Request a Proposal
-            </button>
+            </Link>
           </div>
         </div>
 

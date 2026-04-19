@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { contactSchema } from "@/lib/validations/contact-schema";
+import { trackEvent } from "@/lib/analytics/posthog";
 
 const ContactFullSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -87,6 +88,10 @@ const ContactFullSection: React.FC = () => {
         helpWith: "Strategic Consultation",
         message: "",
       });
+
+      trackEvent("contact_form_submitted", {
+        form: "contact_page",
+      });
     } catch {
       setErrors({
         api: ["Network error. Please try again."],
@@ -122,7 +127,7 @@ const ContactFullSection: React.FC = () => {
                   <p className="text-sm font-bold uppercase tracking-wider text-outline mb-1">
                     Email
                   </p>
-                  <p className="text-lg font-medium">hello@gmaxdigital.com</p>
+                  <p className="text-lg font-medium">hello@gmaxdigitals.com</p>
                 </div>
               </a>
 

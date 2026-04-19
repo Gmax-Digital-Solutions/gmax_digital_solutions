@@ -2,6 +2,7 @@
 
 import { newsletterSchema } from "@/lib/validations/newsletter-schema";
 import { useEffect, useState } from "react";
+import { trackEvent } from "@/lib/analytics/posthog";
 
 export function useNewsletter() {
   const [formData, setFormData] = useState({ email: "", first_name: "" });
@@ -63,6 +64,9 @@ export function useNewsletter() {
       setSubmitted(true);
 
       setFormData({ email: "", first_name: "" });
+      trackEvent("newsletter_form_submitted", {
+        form: "newsletter_form",
+      });
     } catch (error) {
       setErrors({
         api: ["An unexpected error occurred. Please try again later."],

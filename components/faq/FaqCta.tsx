@@ -1,5 +1,8 @@
-// components/FAQCTA.tsx
+"use client";
+
 import React from "react";
+import Link from "next/link";
+import { trackEvent } from "@/lib/analytics/posthog";
 
 const FAQCTA: React.FC = () => {
   return (
@@ -19,9 +22,17 @@ const FAQCTA: React.FC = () => {
 
           {/* Button Section */}
           <div className="md:w-1/3 flex justify-end">
-            <button className="bg-primary-container text-white px-10 py-5 rounded-md text-lg font-bold hover:scale-[1.02] transition-transform shadow-lg shadow-primary-container/20">
+            <Link
+              href="contact#proposal"
+              onClick={() =>
+                trackEvent("contact_btn_clicked", {
+                  source: "faqHero",
+                })
+              }
+              className="bg-primary-container text-white px-10 py-5 rounded-md text-lg font-bold hover:scale-[1.02] transition-transform shadow-lg shadow-primary-container/20"
+            >
               Contact Gmax Digital
-            </button>
+            </Link>
           </div>
         </div>
       </div>

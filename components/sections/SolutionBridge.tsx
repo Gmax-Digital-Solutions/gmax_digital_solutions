@@ -1,5 +1,8 @@
+"use client";
+
 import { CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics/posthog";
 
 const SolutionBridge = () => {
   return (
@@ -117,6 +120,12 @@ const SolutionBridge = () => {
             </ul>
             <Link
               href="contact#proposal"
+              onClick={() =>
+                trackEvent("secure_blueprint_btn", {
+                  location: "homepage_blueprint_section",
+                  label: "secure_blueprint",
+                })
+              }
               className="bg-[#241E20] text-white px-8 py-4 rounded-lg font-bold flex items-center gap-3 w-max hover:bg-[#241E20]/90 transition-all active:scale-95"
             >
               Secure Your Blueprint

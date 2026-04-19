@@ -53,7 +53,7 @@ export default async function SingleInsightPage({
 
           <div className="flex items-center gap-2 text-on-surface-variant">
             <span className="material-symbols-outlined text-sm">schedule</span>
-            <span className="text-sm font-medium">{insight?.read_time}</span>
+            <span className="text-sm font-medium">{`${insight?.read_time} minutes`}</span>
           </div>
         </div>
       </header>

@@ -1,5 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Beauty from "@/public/images/BeautyProfile.jpg";
+import Link from "next/link";
+import { trackEvent } from "@/lib/analytics/posthog";
+
 const CtaClose = () => {
   return (
     <section className="py-24 px-6 bg-surface">
@@ -17,10 +22,22 @@ const CtaClose = () => {
               clarifying your digital direction.
             </p>
 
-            <button className="bg-secondary text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:opacity-90 transition-all flex items-center gap-3 active:scale-95">
+            <Link
+              href="https://calendly.com/hello-gmaxdigitals/strategic-discovery-call"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() =>
+                trackEvent("call_btn_clicked", {
+                  location: "insights_page",
+                  source: "insights_page",
+                  label: "Book Strategy Call",
+                })
+              }
+              className="bg-secondary text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:opacity-90 transition-all flex items-center gap-3 active:scale-95"
+            >
               <span className="material-symbols-outlined">calendar_today</span>
               Schedule a Call
-            </button>
+            </Link>
           </div>
 
           {/* Visual */}

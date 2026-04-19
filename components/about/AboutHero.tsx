@@ -1,6 +1,10 @@
+"use client";
+
 import Grainient from "../Grainient";
 import WomenHero from "@/public/images/women_business.jpg";
 import Image from "next/image";
+import Link from "next/link";
+import { trackEvent } from "@/lib/analytics/posthog";
 
 export default function AboutHero() {
   return (
@@ -49,12 +53,24 @@ export default function AboutHero() {
             relevance, and market momentum.
           </p>
 
-          <button className="group inline-flex items-center rounded-lg bg-primary-container px-8 py-4 text-lg font-bold text-white transition-all hover:scale-[1.02]">
+          <Link
+            href="https://calendly.com/hello-gmaxdigitals/strategic-discovery-call"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() =>
+              trackEvent("discovery_btn_clicked", {
+                location: "cta_section",
+                source: "cta_section",
+                label: "Book Strategy Call",
+              })
+            }
+            className="group inline-flex items-center rounded-lg bg-primary-container px-8 py-4 text-lg font-bold text-white transition-all hover:scale-[1.02]"
+          >
             Start a Conversation
             <span className="ml-2 transition-transform group-hover:translate-x-1">
               →
             </span>
-          </button>
+          </Link>
         </div>
         <div className="relative hidden lg:block aspect-square w-full rounded-2xl overflow-hidden border-8 border-white shadow-2xl">
           <div className="aspect-square bg-surface-container rounded-full relative overflow-hidden flex items-center justify-center">

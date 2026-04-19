@@ -1,8 +1,7 @@
 "use client";
 
 import FloatingLines from "../FloatingLines";
-import posthog from "posthog-js";
-
+import { trackEvent } from "@/lib/analytics/posthog";
 const CTABanner = () => {
   return (
     <section className="relative flex bg-[#585DE1] py-20 px-8">
@@ -16,12 +15,14 @@ const CTABanner = () => {
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <a
-            href="https://calendly.com/gmax-digital/strategy-call"
+            href="https://calendly.com/hello-gmaxdigitals/strategic-discovery-call"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() =>
-              posthog.capture("Clicked Strategy Call", {
-                source: "homepage_cta",
+              trackEvent("call_btn_clicked", {
+                location: "cta_section",
+                source: "cta_section",
+                label: "Book Strategy Call",
               })
             }
             className="bg-[#F84343] text-white px-10 py-5 rounded-lg font-black text-lg shadow-xl shadow-black/10"
@@ -30,9 +31,11 @@ const CTABanner = () => {
           </a>
           <a
             href="/gmax-digital-services.pdf"
+            target="_blank"
             onClick={() =>
-              posthog.capture("Clicked download services", {
-                source: "homepage_cta",
+              trackEvent("cta_clicked", {
+                location: "cta_section",
+                label: "Download Services btn",
               })
             }
             className="bg-white text-[#241E20] px-10 py-5 rounded-lg font-black text-lg"

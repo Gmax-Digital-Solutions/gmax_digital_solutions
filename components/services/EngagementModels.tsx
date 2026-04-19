@@ -1,4 +1,8 @@
+"use client";
+
+import Link from "next/link";
 import React from "react";
+import { trackEvent } from "@/lib/analytics/posthog";
 
 const EngagementModels = () => {
   return (
@@ -24,9 +28,19 @@ const EngagementModels = () => {
               One-off sessions focused on solving immediate strategic
               bottlenecks and gaining rapid clarity.
             </p>
-            <button className="w-full py-4 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-colors">
+            <Link
+              href="https://calendly.com/hello-gmaxdigitals/30min"
+              onClick={() =>
+                trackEvent("request_consultation_btn_clicked", {
+                  location: "services_models_section",
+                  label: "requesting a consultation",
+                  source: "engagement_models",
+                })
+              }
+              className="w-full py-4 px-4 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-colors"
+            >
               Request Consultation
-            </button>
+            </Link>
           </div>
 
           {/* Featured */}
@@ -39,9 +53,19 @@ const EngagementModels = () => {
               Comprehensive execution for websites, brand messaging, or product
               launches with defined timelines.
             </p>
-            <button className="w-full py-4 bg-secondary text-white font-bold rounded-lg hover:opacity-90 transition-opacity">
+            <Link
+              href="contact#proposal"
+              onClick={() =>
+                trackEvent("request_proposal_clicked", {
+                  location: "services_models_section",
+                  label: "requesting a consultation",
+                  source: "engagement_models",
+                })
+              }
+              className="w-full py-4 px-4 bg-secondary text-white font-bold rounded-lg hover:opacity-90 transition-opacity"
+            >
               Request Proposal
-            </button>
+            </Link>
           </div>
 
           {/* Model 3 */}
@@ -51,9 +75,18 @@ const EngagementModels = () => {
               Retainer-based partnership providing continuous strategic
               direction and marketing oversight.
             </p>
-            <button className="w-full py-4 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-colors">
+            <Link
+              href="https://calendly.com/hello-gmaxdigitals/strategic-partnerships"
+              target="_blank"
+              onClick={() =>
+                trackEvent("partnership_call_clicked", {
+                  source: "engagement_models",
+                })
+              }
+              className="w-full py-4 px-4 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-colors"
+            >
               Discuss Partnership
-            </button>
+            </Link>
           </div>
         </div>
       </div>

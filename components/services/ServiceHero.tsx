@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { BadgeCheck } from "lucide-react";
 import Grainient from "../Grainient";
+import { trackEvent } from "@/lib/analytics/posthog";
+import Link from "next/link";
 
 export default function ServicesHero() {
   return (
@@ -52,9 +56,18 @@ export default function ServicesHero() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="rounded-lg bg-primary px-8 py-4 text-lg font-bold text-on-secondary transition-all duration-300 hover:opacity-90 active:scale-95">
+            <Link
+              href="contact#proposal"
+              onClick={() =>
+                trackEvent("proposal_requested_btn", {
+                  location: "service_hero",
+                  label: "request proposal btn",
+                })
+              }
+              className="rounded-lg bg-primary px-8 py-4 text-lg font-bold text-on-secondary transition-all duration-300 hover:opacity-90 active:scale-95"
+            >
               Request a Proposal
-            </button>
+            </Link>
           </div>
         </div>
 

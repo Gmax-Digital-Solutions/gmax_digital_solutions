@@ -2,6 +2,8 @@
 
 "use client";
 import React from "react";
+import Link from "next/link";
+import { trackEvent } from "@/lib/analytics/posthog";
 
 const ContactHero: React.FC = () => {
   return (
@@ -24,15 +26,24 @@ const ContactHero: React.FC = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button
+            <Link
+              href="https://calendly.com/hello-gmaxdigitals/strategic-discovery-call"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() =>
+                trackEvent("call_btn_clicked", {
+                  location: "cta_section",
+                  source: "cta_section",
+                  label: "Book Strategy Call",
+                })
+              }
               className="bg-primary text-white px-8 py-4 font-bold rounded shadow-sm hover:bg-primary-container transition-all active:scale-95 flex items-center gap-2"
-              onClick={() => alert("Book a strategy call clicked!")} // placeholder for now
             >
               Book a Strategy Call
               <span className="material-symbols-outlined text-sm">
                 arrow_forward
               </span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

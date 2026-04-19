@@ -49,3 +49,4 @@ next-env.d.ts
 design_code.md
 admin_design_code.md
 
+.env.local
