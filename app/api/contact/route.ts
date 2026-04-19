@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 import { contactSchema } from "@/lib/validations/contact-schema";
 import { supabaseServer } from "@/lib/supabase/server";
+import { Resend } from "resend";
+import { trackEvent } from "@/lib/analytics/posthog";
+
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_KEY);
 
 export async function POST(req: Request) {
   try {
@@ -39,6 +43,29 @@ export async function POST(req: Request) {
         { status: 500 },
       );
     }
+
+    // 2. Send Email via Resend
+    await resend.emails.send({
+      from: "Gmax Digital <hello@gmaxdigitals.com>",
+      to: ["hello@gmaxdigitals.com"],
+      subject: "New Contact Form Submission",
+      html: `
+        <h2>New Inquiry</h2>
+        <p><strong>Name:</strong> ${fullName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Compaby:</strong> ${company}</p>
+        <p><strong>Need:</strong> ${helpWith}</p>
+
+      `,
+    });
+
+    // Auto reply to user
+    await resend.emails.send({
+      from: "Gmax Digital <hello@gmaxdigitals.com>",
+      to: [email],
+      subject: "We received your message",
+      html: `<p>Hi ${fullName}, thanks for trusting us, we’ll get back to you shortly.</p>`,
+    });
 
     return NextResponse.json({
       success: true,
