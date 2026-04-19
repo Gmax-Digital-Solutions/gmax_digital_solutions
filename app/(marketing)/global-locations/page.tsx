@@ -74,9 +74,9 @@ export default function GlobalLocationsPage() {
 
                 <div className="bg-surface-container-low p-6 border border-outline-variant/30">
                   <address className="not-italic text-xs md:text-sm tracking-widest font-mono uppercase leading-loose">
-                    One Canada Square, Canary Wharf
+                    71–75 Shelton Street, Covent Garden.
                     <br />
-                    London, E14 5AB
+                    London, WC2H 9JQ
                     <br />
                     United Kingdom
                   </address>
