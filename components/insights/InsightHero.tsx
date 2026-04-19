@@ -8,7 +8,7 @@ import { trackEvent } from "@/lib/analytics/posthog";
 const InsightHero = () => {
   return (
     <section className="relative min-h-[716px] flex items-center px-6 overflow-hidden bg-surface text-on-surface">
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="max-w-7xl mx-auto my-24 lg:my-0 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         {/* Left Content */}
         <div className="lg:col-span-8">
           <span className="inline-block py-1 px-3 bg-surface-container text-primary text-xs font-bold tracking-widest uppercase mb-6 rounded">

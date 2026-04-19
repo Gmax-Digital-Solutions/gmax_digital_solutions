@@ -14,6 +14,7 @@ const primaryLinks = [
   { name: "Case Studies", link: "/case-studies" },
   { name: "About", link: "/about" },
   { name: "Contact", link: "/contact" },
+  { name: "FAQ", link: "/faq" },
 ];
 
 const secondaryLinks = [
