@@ -34,7 +34,7 @@ const Hero = () => {
           className="h-full"
         />
       </div>
-      <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center z-10">
+      <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto my-24 md:my-0 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center z-10">
         <div className="z-10 order-2 md:order-1">
           <span className="inline-block px-3 py-1 bg-surface-container-low text-primary font-bold text-[10px] uppercase tracking-widest mb-6">
             Small Businesses. Big Solutions.
@@ -49,7 +49,7 @@ const Hero = () => {
             Help businesses grow with strategies that combine Marketing,
             Psychology & Sales Strategies.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex sm:flex-row gap-4">
             <RequestProposalButton />
             <SubscribeBtn />
           </div>

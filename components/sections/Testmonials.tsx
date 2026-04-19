@@ -9,7 +9,6 @@ type Props = {
   testimonialData: any[];
 };
 
-const CARD_WIDTH = 600;
 const GAP = 32;
 
 const TestimonialSection = ({ testimonialData }: Props) => {
@@ -18,7 +17,8 @@ const TestimonialSection = ({ testimonialData }: Props) => {
 
   const goTo = (index: number) => {
     if (!trackRef.current) return;
-    trackRef.current.style.transform = `translateX(-${index * (CARD_WIDTH + GAP)}px)`;
+    const cardWidth = trackRef.current.children[0].clientWidth;
+    trackRef.current.style.transform = `translateX(-${index * (cardWidth + GAP)}px)`;
     setCurrent(index);
   };
 
@@ -102,12 +102,12 @@ const TestimonialSection = ({ testimonialData }: Props) => {
         <div className="overflow-hidden pl-8">
           <div
             ref={trackRef}
-            className=" flex gap-8 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
+            className="flex gap-8 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
           >
             {testimonialData.map((t) => (
               <div
                 key={t.id}
-                className="w-[600px] mr-6 min-w-[85vw] md:min-w-[600px] flex-shrink-0"
+                className="w-[85vw] md:w-[600px] md:min-w-[600px] flex-shrink-0"
               >
                 <div
                   className="p-10 md:p-12 h-full flex flex-col justify-between transition-all duration-500 hover:bg-[#2e292b]"
