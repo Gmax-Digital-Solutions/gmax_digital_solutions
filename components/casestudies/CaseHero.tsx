@@ -1,4 +1,8 @@
+"use client";
+
 import React from "react";
+import Link from "next/link";
+import { trackEvent } from "@/lib/analytics/posthog";
 
 const CaseHero = () => {
   return (
@@ -21,12 +25,24 @@ const CaseHero = () => {
           </p>
 
           <div className="pt-4">
-            <button className="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg flex items-center group transition-transform active:scale-95">
+            <Link
+              href="https://calendly.com/hello-gmaxdigitals/strategic-discovery-call"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() =>
+                trackEvent("discovery_btn_clicked", {
+                  location: "case_study_hero",
+                  source: "case_study",
+                  label: "Book Strategy Call",
+                })
+              }
+              className="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center group transition-transform active:scale-95"
+            >
               Discuss Your Project
               <span className="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">
                 arrow_forward
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 

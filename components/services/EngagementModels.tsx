@@ -30,6 +30,7 @@ const EngagementModels = () => {
             </p>
             <Link
               href="https://calendly.com/hello-gmaxdigitals/30min"
+              target="_blank"
               onClick={() =>
                 trackEvent("request_consultation_btn_clicked", {
                   location: "services_models_section",
