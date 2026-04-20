@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
-import RequestProposalButton from "../ui/RequestProposalButton";
 import SubscribeBtn from "../ui/SubscribeBtn";
 import HomeHero from "@/public/images/BusinessGathering.jpg";
 import Grainient from "../Grainient";
+import Link from "next/link";
+import { trackEvent } from "@/lib/analytics/posthog";
 
 const Hero = () => {
   return (
@@ -49,8 +52,20 @@ const Hero = () => {
             Help businesses grow with strategies that combine Marketing,
             Psychology & Sales Strategies.
           </p>
-          <div className="flex sm:flex-row gap-4">
-            <RequestProposalButton />
+          <div className="flex flex-col lg:flex-row flex-wrap gap-4">
+            <Link
+              href="contact#proposal"
+              onClick={() =>
+                trackEvent("proposal_btn_clicked", {
+                  location: "insigh_hero",
+                  label: "request proposal",
+                  source: "insights",
+                })
+              }
+              className="bg-primary text-white px-8 py-4 rounded-lg font-bold transition-transform hover:-translate-y-1 active:scale-95"
+            >
+              Request a Proposal
+            </Link>
             <SubscribeBtn />
           </div>
         </div>
