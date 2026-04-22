@@ -52,6 +52,7 @@ export async function POST(req: Request) {
     });
 
     // 3. Send notification email (TO YOU)
+    
     await resend.emails.send({
       from: "Gmax Digital <noreply@gmaxdigitals.com>",
       to: ["hello@gmaxdigitals.com"],
