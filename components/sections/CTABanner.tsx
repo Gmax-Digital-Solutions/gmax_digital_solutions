@@ -10,7 +10,7 @@ const CTABanner = () => {
           Ready for a big solution?
         </h2>
         <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-          Join the 200+ businesses who transitioned from noise to authority with
+          Join the 50+ businesses who transitioned from noise to authority with
           Gmax Digital.
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center">

@@ -87,7 +87,7 @@ const FeaturedInsights = ({ insights }: Props) => {
               </div>
 
               <Link
-                href={item.slug}
+                href={`insights/${item.slug}`}
                 className="flex items-center gap-2 group cursor-pointer"
               >
                 <span className="text-sm font-bold tracking-tight group-hover:text-primary transition">
