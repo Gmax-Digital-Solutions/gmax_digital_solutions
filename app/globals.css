@@ -76,6 +76,16 @@
   --breakpoint-desktop: 1024px;
 }
 
+/* Hide scrollbar but keep scroll functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE + Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;

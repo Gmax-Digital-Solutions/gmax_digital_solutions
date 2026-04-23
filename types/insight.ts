@@ -17,6 +17,7 @@ export type Insight = {
   subtitle: string;
   excerpt: string;
   hero_image: string;
+  theme: string;
   content: ContentSection;
   key_takeaways: string[];
   author_name: string;
