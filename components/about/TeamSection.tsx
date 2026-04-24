@@ -1,4 +1,7 @@
 import Image from "next/image";
+import FounderPotraite from "@/public/images/Founder_Gmax.png";
+import CmoPotraite from "@/public/images/CMO.png";
+import FemaleBoss from "@/public/images/female_bos.png";
 
 export default function TeamSection() {
   return (
@@ -19,15 +22,17 @@ export default function TeamSection() {
           {/* Founder */}
           <div className="group">
             <div className="relative mb-6 aspect-[4/5] overflow-hidden bg-surface-container">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_3hugsQfilDgFj_KzKvVOfwL1x681d1hj9m6ZYHK9WBYI0lVWlBGGB-_3U5oChrzIKzbnmd_lNUq8PLP0LE1JkP5ZYW46WQDMR8gc7Q-JFOlAu5XQld5p3scmeDvZ2TDE_Mm7409XHXvYfGYATVM4jz208O_QP9KRyxxCUGWauf8aUzCGTIZT6QfDst8Af3UwT7NzsVdvU-BJU9XzjIooAa4nJ43VyZ2NstcHw4A53g3kkD_w77TiXuXtPT9TIwrLHxQqklc3GPA"
-                alt="Founder portrait"
+              <Image
+                src={FounderPotraite}
+                alt="founder"
                 className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
               />
             </div>
 
-            <h3 className="text-xl font-bold">Strategic Lead</h3>
-            <p className="mb-2 font-medium text-primary">Founder</p>
+            <h3 className="text-xl font-bold">Lamfih B.</h3>
+            <p className="mb-2 font-medium text-primary">
+              Founder, Strategic Lead
+            </p>
             <p className="text-sm text-on-surface-variant">
               Focused on bridging the gap between technical complexity and
               market relevance.
@@ -37,15 +42,16 @@ export default function TeamSection() {
           {/* Collaborator 1 */}
           <div className="group">
             <div className="relative mb-6 aspect-[4/5] overflow-hidden bg-surface-container">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjFsV7QuVQSUwfY1T6hb7FxBpqF4Q-I82w2vrE6aFmPWBMRUBDAWj7SdIywArO_kJHw1P1Pecoa22qAO9qwQcgoZ5DF01UMP2WwOR8nTGJTFvbES7QlypJQo8EUsPLWTiwt2CRwZACAYPsghjEtQa4uMDPlP9fwInEI0b_U1-ITIEqO1vjRAwwIDLI6NWITKc72w69Ah4QIqj_ba0byf7Z4Ms3_eTc8XEXLH_uzCPMJoJUJpGQLKrNu5BpF7OWUjTyrM3jn-lugYI"
+              <Image
+                src={CmoPotraite}
                 alt="Growth strategy collaborator"
+                fill
                 className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
               />
             </div>
 
-            <h3 className="text-xl font-bold">Growth Strategy</h3>
-            <p className="mb-2 font-medium text-primary">Collaborator</p>
+            <h3 className="text-xl font-bold">James A Powell</h3>
+            <p className="mb-2 font-medium text-primary">Collaborator, CMO</p>
             <p className="text-sm text-on-surface-variant">
               Expertise in multi-channel scaling and audience psychology.
             </p>
@@ -54,14 +60,15 @@ export default function TeamSection() {
           {/* Collaborator 2 */}
           <div className="group">
             <div className="relative mb-6 aspect-[4/5] overflow-hidden bg-surface-container">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK3TLCsrvlfEFyt-FM2GMvmPiKtZK4yZlo1PRi32HXuA9AJcAzI9SwWhSG8qeFg5XPZUZIcf3N3ZPEEbG9rko-O-T8y_LViz-ezHvXpzOhclUsWyatG0d_R91tCkj3f8s6Wm6UrGY0whdfT-IwJl6gk2ZEpDNQwmTl-39yBJ83uB3zxi-uhNTYCpfn_zGEt8ErwbjMfmZwXEx6rNTVCQEBVxRwDruZ9-s9iRTHpoWSNZ8EFnlHwT8cXADmk0N9Sw_WoUXOswC3ZWQ"
+              <Image
+                src={FemaleBoss}
                 alt="Technical design collaborator"
+                fill
                 className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
               />
             </div>
 
-            <h3 className="text-xl font-bold">Technical Design</h3>
+            <h3 className="text-xl font-bold">Teresa Hansén</h3>
             <p className="mb-2 font-medium text-primary">Collaborator</p>
             <p className="text-sm text-on-surface-variant">
               Specializing in high-performance digital architecture and user

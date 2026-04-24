@@ -4637,3 +4637,235 @@ Contact page:
 </div>
 </footer>
 </body></html>
+
+
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#5b5355",
+                    "tertiary-fixed-dim": "#cfc4c6",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "outline": "#767686",
+                    "on-secondary-fixed": "#410004",
+                    "on-tertiary-fixed-variant": "#4c4547",
+                    "surface-bright": "#fff8f8",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#746b6d",
+                    "on-secondary-fixed-variant": "#930012",
+                    "surface-container": "#f7ebed",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "on-surface-variant": "#464554",
+                    "secondary-fixed-dim": "#ffb3ad",
+                    "on-primary-fixed": "#04006d",
+                    "on-background": "#201a1c",
+                    "on-primary-container": "#f1efff",
+                    "tertiary-fixed": "#ece0e2",
+                    "primary-container": "#585de1",
+                    "surface-dim": "#e3d7da",
+                    "surface-container-low": "#fdf1f3",
+                    "surface": "#fff8f8",
+                    "secondary": "#b90d1d",
+                    "primary": "#3e42c7",
+                    "on-primary-fixed-variant": "#2e31b9",
+                    "background": "#fff8f8",
+                    "inverse-surface": "#352f31",
+                    "outline-variant": "#c6c5d6",
+                    "on-surface": "#201a1c",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#e1e0ff",
+                    "secondary-container": "#dd2f33",
+                    "inverse-on-surface": "#faeef0",
+                    "inverse-primary": "#c0c1ff",
+                    "surface-variant": "#ece0e2",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#f1e5e8",
+                    "secondary-fixed": "#ffdad7",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#201a1c",
+                    "surface-tint": "#484dd1",
+                    "on-tertiary-container": "#faedf0",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#fffbff",
+                    "surface-container-highest": "#ece0e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "display": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .snap-x-mandatory { scroll-snap-type: x mandatory; }
+        .snap-start { scroll-snap-align: start; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar from Shared Components JSON -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-zinc-950/70 backdrop-blur-xl no-border shadow-sm shadow-[0_8px_40px_-12px_rgba(32,26,28,0.06)]">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<span class="text-2xl font-black text-[#241E20] dark:text-white tracking-tighter">Gmax Digital</span>
+<div class="hidden md:flex gap-8 items-center font-inter tracking-tight">
+<a class="text-[#241E20] dark:text-zinc-400 font-medium hover:text-[#585DE1] transition-colors duration-200" href="#">Solutions</a>
+<a class="text-[#241E20] dark:text-zinc-400 font-medium hover:text-[#585DE1] transition-colors duration-200" href="#">Case Studies</a>
+<a class="text-[#585DE1] dark:text-[#585DE1] font-bold border-b-2 border-[#585DE1] pb-1" href="#">Insights</a>
+<a class="text-[#241E20] dark:text-zinc-400 font-medium hover:text-[#585DE1] transition-colors duration-200" href="#">Agency</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-semibold active:scale-95 transition-transform">Get a Quote</button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Section Header -->
+<header class="max-w-7xl mx-auto px-8 mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-2xl">
+<span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">Strategic Architecture</span>
+<h1 class="text-5xl md:text-6xl font-black tracking-tighter text-on-surface leading-none">
+                        Feature <span class="text-primary-container">Insights</span>
+</h1>
+<p class="mt-6 text-xl text-on-surface-variant font-light leading-relaxed">
+                        Precision-engineered strategies for small businesses ready to operate at enterprise scale. We don't just market; we architect growth.
+                    </p>
+</div>
+<div class="flex gap-4">
+<button class="w-14 h-14 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container-low transition-colors active:scale-90">
+<span class="material-symbols-outlined text-on-surface">arrow_back</span>
+</button>
+<button class="w-14 h-14 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container-low transition-colors active:scale-90">
+<span class="material-symbols-outlined text-on-surface">arrow_forward</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Carousel Container -->
+<div class="relative w-full overflow-x-auto no-scrollbar snap-x-mandatory px-8 flex gap-8 pb-12">
+<!-- Card 1 -->
+<div class="flex-none w-[90vw] md:w-[70vw] lg:w-[60vw] snap-start bg-white rounded-[24px] overflow-hidden shadow-[0_32px_64px_-16px_rgba(32,26,28,0.08)] flex flex-col md:flex-row h-[500px]">
+<div class="md:w-1/2 p-12 flex flex-col justify-between bg-surface-container-lowest">
+<div>
+<span class="text-[0.65rem] font-black uppercase tracking-widest text-primary mb-8 block">Conversion Logic</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tighter text-[#241E20] leading-[1.1]">
+                            Traffic without conversion is noise.
+                        </h2>
+</div>
+<div class="flex items-center gap-2 group cursor-pointer">
+<span class="text-sm font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors">Read Strategic Deep-dive</span>
+<span class="material-symbols-outlined text-lg translate-y-[1px] group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+<div class="md:w-1/2 relative bg-surface-container">
+<img class="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700" data-alt="Abstract minimalist 3D render of digital glass spheres floating in a high-contrast charcoal and white studio environment with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC9DZ1xD95gadbCN_sy1TELyWGaYMfOzCM_uQciMZ2imVPhHowkjRBNMMg1t0Joc5HDG7Wi5nrd5drfrKoJTlHgqGgLzwJroSWU-sXIXhfOTlWYELQKUQbA4mr7BXQ2OcnNe0NzrPKHSMXWaf8jW1PebUCHiv0eUoPQj-Nc3TivwKK-lmkSWSZsqyNwjDR32S_TfF3V0P_kqFizFHwconmaZmFFpN6CcbB2fQEVpCyrNYTTvgdAYnBkeK5bGVhLzN6cl2eiGEtN4M"/>
+<div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent hidden md:block"></div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex-none w-[90vw] md:w-[70vw] lg:w-[60vw] snap-start bg-white rounded-[24px] overflow-hidden shadow-[0_32px_64px_-16px_rgba(32,26,28,0.08)] flex flex-col md:flex-row h-[500px]">
+<div class="md:w-1/2 p-12 flex flex-col justify-between bg-on-background">
+<div>
+<span class="text-[0.65rem] font-black uppercase tracking-widest text-secondary mb-8 block">Growth Framework</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tighter text-white leading-[1.1]">
+                            Growth is engineered, not guessed.
+                        </h2>
+</div>
+<div class="flex items-center gap-2 group cursor-pointer">
+<span class="text-sm font-bold tracking-tight text-white/70 group-hover:text-white transition-colors">Explore the Blueprint</span>
+<span class="material-symbols-outlined text-lg text-white translate-y-[1px] group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+<div class="md:w-1/2 relative">
+<img class="w-full h-full object-cover" data-alt="Symmetrical architectural shot of a brutalist concrete staircase with sharp angles and dramatic high-key lighting, representing structural precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0mklJzQtHqer-JPKGIMcCecfyXJJYCnGGt7VR9E0DvkfVihGpLiqhf8OZxSOOT9j0pGN3ijiEzwpERVxHq3n-4IElnr2-s0fptoR7_iWa1A6gYwiO72XwfxV4FPhlm2vFuRMeKTV-WLR5sIPqPaMGvW0FU1TyuijcU7kie1_NB3FkLsAyv5oftYxTR6mYpG64q3QCYgw4bb6RqumrN3yAb_3Go4nCRKqPuHNKgrcAnasAnK2Awe7SqHxNncqhOMmFQpwRAp_a--s"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#201A1C] via-transparent to-transparent hidden md:block"></div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex-none w-[90vw] md:w-[70vw] lg:w-[60vw] snap-start bg-white rounded-[24px] overflow-hidden shadow-[0_32px_64px_-16px_rgba(32,26,28,0.08)] flex flex-col md:flex-row h-[500px]">
+<div class="md:w-1/2 p-12 flex flex-col justify-between bg-surface-container-low">
+<div>
+<span class="text-[0.65rem] font-black uppercase tracking-widest text-primary-container mb-8 block">Market Dynamics</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tighter text-[#241E20] leading-[1.1]">
+                            Positioning drives acquisition efficiency.
+                        </h2>
+</div>
+<div class="flex items-center gap-2 group cursor-pointer">
+<span class="text-sm font-bold tracking-tight text-on-surface group-hover:text-primary-container transition-colors">Efficiency Analysis</span>
+<span class="material-symbols-outlined text-lg translate-y-[1px] group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+<div class="md:w-1/2 relative bg-surface-container-highest">
+<img class="w-full h-full object-cover contrast-125" data-alt="Macro photography of blue and black metallic liquid ripples merging together, representing fluid and efficient market positioning" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG6HdXQuWRIeCpQz3NYYHjTojc0la6U0R4H2OmonpvBdXw5dDaC0ka-ZpIQPecLyvU_bdtYAOydqx8dxmJihGN-ZM8ZPglsXTvfgBQnWwo8ivJhclHsBqC_fAB3SlKEceBUGHo-sn7v4rseppsKdgD8i3wzW1NPqHHJjl0P66kskWUQL6jXz8aBI2dSw4hk2C43LJfaHeaEMDbwT0hPjcTnq6IRvrCDP8KK-vReVXiC7XwVuNsn-cntmUQHmRSjXUoLIOfgsDcdMg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-low via-transparent to-transparent hidden md:block"></div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex-none w-[90vw] md:w-[70vw] lg:w-[60vw] snap-start bg-white rounded-[24px] overflow-hidden shadow-[0_32px_64px_-16px_rgba(32,26,28,0.08)] flex flex-col md:flex-row h-[500px]">
+<div class="md:w-1/2 p-12 flex flex-col justify-between bg-[#241E20]">
+<div>
+<span class="text-[0.65rem] font-black uppercase tracking-widest text-primary-fixed-dim mb-8 block">Product Strategy</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tighter text-white leading-[1.1]">
+                            Your funnel is your real product.
+                        </h2>
+</div>
+<div class="flex items-center gap-2 group cursor-pointer">
+<span class="text-sm font-bold tracking-tight text-white/50 group-hover:text-white transition-colors">The Funnel Model</span>
+<span class="material-symbols-outlined text-lg text-white/50 group-hover:text-white translate-y-[1px] group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+<div class="md:w-1/2 relative">
+<img class="w-full h-full object-cover brightness-75" data-alt="Dramatic perspective of a long, dark tunnel with rhythmic patterns of light at the end, symbolizing a high-converting digital funnel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2Ig8UB388ouU_IKMkxjrkahHDC4kiK8Ti9wordXYHz0Tf-v0vixxCCoLETa6t0mRK184XlcNFSSxRtOJBsperQnnF8C-U2QKBChUbr2d4N97Or5woTNBpenxg80dMbFXPwjSWN7YU6vZqFCMyUYSJw46aD1xJlZvBQAZ3bryjw8UPtWa24avudxRZ8Cq2OoaIW_I6fRLvxDUKcWAVryFofbcOqkACrFR3XWz-dwqU175SMhsV0gi5QpkOKMjsnYAP3JY2pRClZ9E"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#241E20] via-transparent to-transparent hidden md:block"></div>
+</div>
+</div>
+</div>
+<!-- Progress Indicator -->
+<div class="max-w-7xl mx-auto px-8 mt-12">
+<div class="w-full h-[2px] bg-outline-variant relative overflow-hidden">
+<div class="absolute h-full w-1/4 bg-primary transition-all duration-500 left-0"></div>
+</div>
+<div class="flex justify-between mt-4 text-[0.65rem] font-bold uppercase tracking-widest text-on-surface-variant">
+<span>01 / Perspective</span>
+<span>Insight Archive 2024</span>
+</div>
+</div>
+</main>
+<!-- Footer from Shared Components JSON -->
+<footer class="w-full py-12 bg-[#241E20] dark:bg-black text-white">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto">
+<span class="text-white font-bold mb-4 md:mb-0">Gmax Digital</span>
+<div class="flex gap-8 items-center">
+<a class="text-zinc-400 font-inter text-sm uppercase tracking-widest hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-zinc-400 font-inter text-sm uppercase tracking-widest hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="text-zinc-400 font-inter text-sm uppercase tracking-widest hover:text-white transition-colors" href="#">Contact</a>
+<a class="text-zinc-400 font-inter text-sm uppercase tracking-widest hover:text-white transition-colors" href="#">LinkedIn</a>
+</div>
+<p class="mt-8 md:mt-0 text-zinc-400 font-inter text-xs uppercase tracking-widest">© 2024 Gmax Digital. Small Businesses. Big Solutions.</p>
+</div>
+</footer>
+</body></html>

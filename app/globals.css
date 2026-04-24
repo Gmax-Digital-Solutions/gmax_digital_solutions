@@ -71,7 +71,7 @@
   --radius-xl: 0.5rem;
   --radius-full: 0.75rem;
 
-  /* Breakpoints */
+  /* Breakpoints differenciate between small, medium and large screens */
   --breakpoint-tablet: 768px;
   --breakpoint-desktop: 1024px;
 }
