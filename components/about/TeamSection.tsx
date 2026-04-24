@@ -50,7 +50,7 @@ export default function TeamSection() {
               />
             </div>
 
-            <h3 className="text-xl font-bold">James A Powell</h3>
+            <h3 className="text-xl font-bold">James A. Powell</h3>
             <p className="mb-2 font-medium text-primary">Collaborator, CMO</p>
             <p className="text-sm text-on-surface-variant">
               Expertise in multi-channel scaling and audience psychology.
