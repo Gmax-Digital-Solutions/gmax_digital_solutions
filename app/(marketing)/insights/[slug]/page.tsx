@@ -24,6 +24,7 @@ export default async function SingleInsightPage({
             {insight?.category}
           </span>
 
+          {/* H1 — one per page, the article title */}
           <h1 className="text-4xl md:text-6xl font-black text-[#241E20] leading-[1.1] tracking-tighter max-w-5xl">
             {insight?.title}
           </h1>
@@ -78,8 +79,8 @@ export default async function SingleInsightPage({
             </figcaption>
           </figure>
 
-          {/* Intro */}
-          <ContentBlocks block={insight.content} />
+          {/* Content — passes the full sections array */}
+          <ContentBlocks blocks={insight.content} />
         </article>
       </div>
 
