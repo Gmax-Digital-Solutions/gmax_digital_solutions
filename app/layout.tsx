@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://gmaxdigitals.com",
     images: [
       {
-        url: "https://gmaxdigitals.com/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
       },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gmax Digital Solutions",
     description: "We architect scalable growth systems.",
-    images: ["https://gmaxdigitals.com/og-image.png"],
+    images: ["/og-image.png"],
   },
 };
 
