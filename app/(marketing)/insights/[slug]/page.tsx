@@ -15,6 +15,7 @@ export default async function SingleInsightPage({
   const relatedInsights = await getRelatedInsights(slug, insight?.category);
 
   console.log(insight.hero_image);
+
   return (
     <main className="pt-32 bg-background text-on-background antialiased">
       {/* Hero */}
@@ -143,4 +144,24 @@ export default async function SingleInsightPage({
       <Footer />
     </main>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const { slug } = await params;
+
+  const insight = await getSingleInsight(slug);
+
+  return {
+    title: insight.title,
+    description: insight.excerpt,
+    openGraph: {
+      title: insight.title,
+      description: insight.excerpt,
+      images: [insight.hero_image],
+    },
+  };
 }

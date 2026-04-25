@@ -88,7 +88,7 @@ const FeaturedInsights = ({ insights }: Props) => {
 
               <Link
                 href={`insights/${item.slug}`}
-                className="flex items-center gap-2 group cursor-pointer"
+                className="flex items-center gap-2 group cursor-pointer mt-8"
               >
                 <span className="text-sm font-bold tracking-tight group-hover:text-primary transition">
                   read insight
