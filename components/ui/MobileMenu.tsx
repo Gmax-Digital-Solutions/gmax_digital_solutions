@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SlideIn } from "../animations";
 
 type MobileMenuProps = {
   onClose?: () => void;
@@ -26,17 +27,27 @@ const secondaryLinks = [
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
 
-  // Lock body scroll while menu is open, restore on close
   useEffect(() => {
+    setMounted(true);
     document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = "";
     };
   }, []);
 
-  return (
-    <SlideIn className="fixed top-16 left-0 right-0 bottom-0 z-50 bg-white flex flex-col lg:hidden">
+  if (!mounted) return null;
+
+  const menu = (
+    <motion.div
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "100%" }}
+      transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
+      style={{ zIndex: 9999 }}
+      className="fixed top-16 left-0 right-0 bottom-0 bg-white flex flex-col lg:hidden"
+    >
       {/* Scrollable Navigation Content */}
       <nav className="flex-1 overflow-y-auto px-6 pt-4 pb-28">
         {/* Primary Section */}
@@ -47,7 +58,6 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
 
           {primaryLinks.map((item, index) => {
             const isActive = pathname === item.link;
-
             return (
               <Link
                 key={index}
@@ -64,7 +74,6 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
                 >
                   {item.name}
                 </span>
-
                 <span
                   className={`material-symbols-outlined transition-all ${
                     isActive
@@ -88,11 +97,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
             <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-outline mb-4">
               Deep Dive
             </p>
-
             <ul className="space-y-4">
               {secondaryLinks.map((link, index) => {
                 const isActive = pathname === link.link;
-
                 return (
                   <li key={index}>
                     <Link
@@ -124,7 +131,6 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
               business doesn&apos;t just survive, but thrive.
             </p>
           </div>
-
           <div className="absolute -right-4 -bottom-4 opacity-10">
             <span className="material-symbols-outlined text-[120px]">
               architecture
@@ -133,7 +139,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
         </div>
       </nav>
 
-      {/* Footer CTA — sits naturally at the bottom of the flex column */}
+      {/* Footer CTA */}
       <div className="flex-shrink-0 p-6 bg-white shadow-[0_-8px_40px_-12px_rgba(32,26,28,0.06)]">
         <Link
           href="/contact#proposal"
@@ -143,8 +149,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
           <span>Request Proposal</span>
         </Link>
       </div>
-    </SlideIn>
+    </motion.div>
   );
+
+  return createPortal(menu, document.body);
 };
 
 export default MobileMenu;
