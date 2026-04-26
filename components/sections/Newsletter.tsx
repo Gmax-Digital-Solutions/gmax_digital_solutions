@@ -35,6 +35,11 @@ const Newsletter = () => {
               <p className="text-2xl text-on-surface-variant font-light leading-relaxed max-w-xl">
                 Occasional reflections on trust, positioning, digital clarity,
                 and the small decisions that often shape growth.
+                <br />
+                <span className="text-primary font-bold italic">
+                  Subscribe for the free AI marketing playbook, we promise you
+                  will love it...
+                </span>
               </p>
             </div>
           </div>
@@ -118,6 +123,7 @@ const Newsletter = () => {
 
                   <button
                     type="submit"
+                    disabled={loading}
                     className="w-full bg-primary-container text-on-primary py-5 px-8 rounded-lg text-lg font-bold tracking-tight flex items-center justify-between group hover:shadow-xl transition-all duration-300"
                   >
                     {loading ? (

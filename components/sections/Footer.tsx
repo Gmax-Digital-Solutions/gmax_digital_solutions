@@ -78,7 +78,8 @@ const Footer = () => {
             className="w-full max-w-sm px-8 py-12 rounded-xl"
           >
             <h3 className="text-xl font-black text-white mb-3">
-              Subscribe to Our Newsletter
+              Subscribe to get the AI marketing playbook built for
+              founders.{" "}
             </h3>
             {submitted && (
               <div className="text-green-800 px-4 py-3 rounded mb-4">

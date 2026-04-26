@@ -85,7 +85,7 @@ const getEmailTemplate = ({
   playbookUrl: string;
 }) => {
   return `
-  <div style="background:#0f0f14;padding:40px;font-family:Inter,Arial,sans-serif;">
+  <div style="background:#241e20;padding:40px;font-family:Inter,Arial,sans-serif;">
     <div style="max-width:600px;margin:auto;background:#15151d;border-radius:12px;padding:40px;color:#ffffff;">
 
       <!-- Brand -->

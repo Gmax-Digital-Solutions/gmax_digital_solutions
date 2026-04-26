@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -26,14 +26,18 @@ const secondaryLinks = [
 const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
   const pathname = usePathname();
 
-  const handleLinkClick = () => {
-    onClose?.();
-  };
+  // Lock body scroll while menu is open, restore on close
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
 
   return (
-    <div className="fixed h-[94vh] top-16 z-50 bg-white/95 backdrop-blur-xl flex flex-col lg:hidden">
-      {/* Navigation Content */}
-      <nav className="flex-1 overflow-y-auto px-6 pb-32">
+    <div className="fixed top-16 left-0 right-0 bottom-0 z-50 bg-white flex flex-col lg:hidden">
+      {/* Scrollable Navigation Content */}
+      <nav className="flex-1 overflow-y-auto px-6 pt-4 pb-28">
         {/* Primary Section */}
         <div className="space-y-1 mb-10">
           <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-outline mb-6">
@@ -47,7 +51,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
               <Link
                 key={index}
                 href={item.link}
-                onClick={handleLinkClick}
+                onClick={() => onClose?.()}
                 className="flex items-center justify-between group py-3"
               >
                 <span
@@ -92,7 +96,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
                   <li key={index}>
                     <Link
                       href={link.link}
-                      onClick={handleLinkClick}
+                      onClick={() => onClose?.()}
                       className={`text-lg font-bold transition-colors ${
                         isActive
                           ? "text-primary-container"
@@ -109,7 +113,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
         </div>
 
         {/* Contextual Card */}
-        <div className="p-6 bg-surface-container-low rounded-xl relative overflow-hidden group">
+        <div className="p-6 bg-surface-container-low rounded-xl relative overflow-hidden">
           <div className="relative z-10">
             <h4 className="text-xl font-black text-on-background tracking-tight mb-2 uppercase">
               Ready for Growth?
@@ -128,11 +132,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
         </div>
       </nav>
 
-      {/* Footer CTA */}
-      <div className="fixed bottom-0 left-0 w-full p-6 bg-white shadow-[0_-8px_40px_-12px_rgba(32,26,28,0.06)]">
+      {/* Footer CTA — sits naturally at the bottom of the flex column */}
+      <div className="flex-shrink-0 p-6 bg-white shadow-[0_-8px_40px_-12px_rgba(32,26,28,0.06)]">
         <Link
           href="/contact#proposal"
-          onClick={handleLinkClick}
+          onClick={() => onClose?.()}
           className="w-full bg-primary-container text-on-secondary-container py-5 rounded-xl font-black text-sm uppercase tracking-widest shadow-lg hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-center gap-3"
         >
           <span>Request Proposal</span>

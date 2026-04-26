@@ -1,12 +1,18 @@
 type Quote = {
   text: string;
-  author: string;
+  author?: string;
+};
+
+export type SubSection = {
+  subheading: string; // renders as <h3>
+  paragraphs: string[];
 };
 
 export type ContentSection = {
-  heading: string;
-  paragraphs: string[];
-  quote: Quote;
+  heading: string; // renders as <h2>
+  intro_paragraphs?: string[]; // paragraphs before any subsections
+  subsections?: SubSection[]; // optional <h3>-level blocks
+  quote?: Quote; // optional pull-quote after subsections
 };
 
 export type Insight = {
@@ -18,7 +24,7 @@ export type Insight = {
   excerpt: string;
   hero_image: string;
   theme: string;
-  content: ContentSection;
+  content: ContentSection[]; // ← now an array of sections
   key_takeaways: string[];
   author_name: string;
   author_role: string;

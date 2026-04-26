@@ -36,9 +36,9 @@ export function useNewsletter() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
 
     const result = newsletterSchema.safeParse(formData);
-
     console.log(result);
 
     if (!result.success) {
@@ -53,14 +53,6 @@ export function useNewsletter() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      });
-
-      await fetch("/api/send-playbook", {
-        method: "POST",
-        body: JSON.stringify({
-          email,
-          name,
-        }),
       });
 
       const data = await response.json();
