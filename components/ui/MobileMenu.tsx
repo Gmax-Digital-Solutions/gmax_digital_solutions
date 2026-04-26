@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { SlideIn } from "../animations";
 
 type MobileMenuProps = {
   onClose?: () => void;
@@ -35,7 +36,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
   }, []);
 
   return (
-    <div className="fixed top-16 left-0 right-0 bottom-0 z-50 bg-white flex flex-col lg:hidden">
+    <SlideIn className="fixed top-16 left-0 right-0 bottom-0 z-50 bg-white flex flex-col lg:hidden">
       {/* Scrollable Navigation Content */}
       <nav className="flex-1 overflow-y-auto px-6 pt-4 pb-28">
         {/* Primary Section */}
@@ -142,7 +143,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
           <span>Request Proposal</span>
         </Link>
       </div>
-    </div>
+    </SlideIn>
   );
 };
 

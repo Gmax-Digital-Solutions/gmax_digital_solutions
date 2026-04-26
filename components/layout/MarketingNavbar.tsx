@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import Logo from "@/public/images/gm-logo.jpg";
 import RequestProposalButton from "@/components/ui/RequestProposalButton";
 import MobileMenu from "../ui/MobileMenu";
+import { SlideIn } from "../animations";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -90,7 +91,14 @@ const Navbar = () => {
           </div>
         </div>
         {/* Mobile Menu */}
-        {isMenuOpen && <MobileMenu onClose={() => setIsMenuOpen(false)} />}
+        <SlideIn
+          direction="right"
+          duration={0.4}
+          isVisible={isMenuOpen}
+          className="fixed top-16 left-0 right-0 bottom-0 z-50"
+        >
+          <MobileMenu onClose={() => setIsMenuOpen(false)} />
+        </SlideIn>
       </div>
     </div>
   );
