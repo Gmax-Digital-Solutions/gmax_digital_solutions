@@ -3,6 +3,8 @@
 import { newsletterSchema } from "@/lib/validations/newsletter-schema";
 import { useEffect, useState } from "react";
 import { trackEvent } from "@/lib/analytics/posthog";
+import { PostHog } from "posthog-js";
+import { email } from "zod";
 
 export function useNewsletter() {
   const [formData, setFormData] = useState({ email: "", first_name: "" });
@@ -51,6 +53,14 @@ export function useNewsletter() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
+      });
+
+      await fetch("/api/send-playbook", {
+        method: "POST",
+        body: JSON.stringify({
+          email,
+          name,
+        }),
       });
 
       const data = await response.json();
