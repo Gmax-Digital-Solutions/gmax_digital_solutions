@@ -5,11 +5,10 @@ import { usePathname } from "next/navigation";
 import { useAuditStore } from "@/lib/audit/auditStore";
 import { Inter } from "next/font/google";
 import clsx from "clsx";
+import AuditNavbar from "@/components/layout/AuditNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
-/**
- * Define your steps in order
- */
+
 const steps = [
   "/audit/q1",
   "/audit/q2",
@@ -17,32 +16,28 @@ const steps = [
   "/audit/q4",
   "/audit/q5",
   "/audit/q6",
+  "/audit/q7",
   "/audit/loading",
   "/audit/results",
 ];
+
+const TOTAL_QUESTIONS = 7;
 
 export default function AuditLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const answers = useAuditStore((s) => s.answers);
 
-  /**
-   * Calculate progress
-   */
   const currentStepIndex = steps.indexOf(pathname);
-  const totalQuestions = 6;
 
   const progress =
-    currentStepIndex >= 0 && currentStepIndex < totalQuestions
-      ? ((currentStepIndex + 1) / totalQuestions) * 100
+    currentStepIndex >= 0 && currentStepIndex < TOTAL_QUESTIONS
+      ? ((currentStepIndex + 1) / TOTAL_QUESTIONS) * 100
       : pathname === "/audit/loading"
         ? 95
         : pathname === "/audit/results"
           ? 100
           : 0;
 
-  /**
-   * Determine if we should show progress bar
-   */
   const showProgress =
     pathname.includes("/audit/q") || pathname === "/audit/loading";
 
@@ -50,17 +45,14 @@ export default function AuditLayout({ children }: { children: ReactNode }) {
     <div>
       {/* TOP BAR */}
       <div className="w-full pt-6">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          {/* Logo / Back */}
-
-          {/* Optional reset */}
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
           {Object.keys(answers).length > 0 && (
             <button
               onClick={() => {
                 useAuditStore.getState().reset();
                 window.location.href = "/audit/q1";
               }}
-              className="text-xs text-white/60 hover:text-white transition"
+              className="text-xs text-white/60 hover:text-white transition ml-auto"
             >
               Restart
             </button>
@@ -81,11 +73,9 @@ export default function AuditLayout({ children }: { children: ReactNode }) {
                 style={{ width: `${progress}%` }}
               />
             </div>
-
-            {/* Step indicator */}
             {pathname.includes("/audit/q") && (
               <p className="mt-2 text-xs text-white/50">
-                Step {currentStepIndex + 1} of {totalQuestions}
+                Step {currentStepIndex + 1} of {TOTAL_QUESTIONS}
               </p>
             )}
           </div>
@@ -93,6 +83,7 @@ export default function AuditLayout({ children }: { children: ReactNode }) {
       )}
 
       {/* MAIN CONTENT */}
+      <AuditNavbar />
       <main className="flex-1 flex items-center justify-center">
         <div className="w-full">{children}</div>
       </main>

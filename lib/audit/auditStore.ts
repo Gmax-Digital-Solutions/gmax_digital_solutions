@@ -12,6 +12,20 @@ export type AuditAnswers = {
   website_clarity?: string;
   growth_bottleneck?: string;
   website_url?: string;
+  competitor_url?: string;
+};
+
+/**
+ * Competitor Analysis Structure
+ */
+export type CompetitorAnalysis = {
+  competitor_url: string;
+  competitor_name: string;
+  competitive_score: number;
+  their_strengths: string[];
+  your_advantages: string[];
+  gaps_to_close: string[];
+  verdict: string;
 };
 
 /**
@@ -22,10 +36,11 @@ export type AuditResult = {
   summary: string;
   strengths: string[];
   gaps: string[];
-  quick_wins: string[];
-  long_term: string[];
   opportunities: string[];
+  quick_wins?: string[];
+  long_term?: string[];
   visibility_outlook?: string;
+  competitor_analysis?: CompetitorAnalysis;
 };
 
 /**
@@ -68,45 +83,21 @@ export const useAuditStore = create<AuditState>()(
 
       sessionId: crypto.randomUUID(),
 
-      /**
-       * Set a single answer
-       */
       setAnswer: (key, value) =>
         set((state) => ({
-          answers: {
-            ...state.answers,
-            [key]: value,
-          },
+          answers: { ...state.answers, [key]: value },
         })),
 
-      /**
-       * Set all answers (useful for hydration)
-       */
       setAnswers: (answers) => set({ answers }),
 
-      /**
-       * Store AI result
-       */
       setResult: (result) => set({ result }),
 
-      /**
-       * Loading state (for API calls)
-       */
       setLoading: (loading) => set({ isLoading: loading }),
 
-      /**
-       * Error handling
-       */
       setError: (error) => set({ error }),
 
-      /**
-       * Clear only result
-       */
       clearResult: () => set({ result: null }),
 
-      /**
-       * Full reset (new audit session)
-       */
       reset: () =>
         set({
           answers: {},
@@ -116,12 +107,8 @@ export const useAuditStore = create<AuditState>()(
           sessionId: crypto.randomUUID(),
         }),
 
-      /**
-       * Check if all required questions are answered
-       */
       isComplete: () => {
         const a = get().answers;
-
         return (
           !!a.traffic_source &&
           !!a.ai_visibility &&
@@ -132,13 +119,9 @@ export const useAuditStore = create<AuditState>()(
         );
       },
 
-      /**
-       * Calculate progress percentage
-       */
       getProgress: () => {
         const a = get().answers;
-        const total = 6;
-
+        const total = 7;
         const answered = [
           a.traffic_source,
           a.ai_visibility,
@@ -146,13 +129,11 @@ export const useAuditStore = create<AuditState>()(
           a.intent_coverage,
           a.website_clarity,
           a.growth_bottleneck,
+          a.website_url,
         ].filter(Boolean).length;
-
         return Math.round((answered / total) * 100);
       },
     }),
-    {
-      name: "audit-storage",
-    },
+    { name: "audit-storage" },
   ),
 );

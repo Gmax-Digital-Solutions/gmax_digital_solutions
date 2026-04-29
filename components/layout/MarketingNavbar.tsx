@@ -8,6 +8,7 @@ import Logo from "@/public/images/gm-logo.jpg";
 import RequestProposalButton from "@/components/ui/RequestProposalButton";
 import MobileMenu from "../ui/MobileMenu";
 import { SlideIn } from "../animations";
+import RequestAuditButton from "../ui/AuditBtn";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,6 +87,9 @@ const Navbar = () => {
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+          <div className="hidden lg:flex">
+            <RequestAuditButton />
+          </div>
           <div className="hidden lg:flex">
             <RequestProposalButton />
           </div>
