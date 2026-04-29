@@ -101,6 +101,12 @@ export default function RootLayout({
           {children}
           <CookieBanner />
         </PostHogProvider>
+
+        {/* BACKGROUND EFFECT */}
+        <div className="pointer-events-none fixed inset-0 -z-10">
+          <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-violet-500/10 blur-3xl rounded-full" />
+          <div className="absolute bottom-[-150px] right-[-100px] w-[500px] h-[500px] bg-blue-500/10 blur-3xl rounded-full" />
+        </div>
       </body>
     </html>
   );
