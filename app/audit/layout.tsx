@@ -4,9 +4,7 @@ import { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { useAuditStore } from "@/lib/audit/auditStore";
 import { Inter } from "next/font/google";
-import AuditNavbar from "@/components/layout/AuditNavbar";
 import clsx from "clsx";
-import AuditFooter from "@/components/layout/AuditFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 /**
@@ -51,7 +49,6 @@ export default function AuditLayout({ children }: { children: ReactNode }) {
   return (
     <div>
       {/* TOP BAR */}
-      <AuditNavbar />
       <div className="w-full pt-6">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo / Back */}

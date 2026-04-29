@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuditStore } from "@/lib/audit/auditStore";
 
@@ -8,10 +8,37 @@ export default function ResultsPage() {
   const router = useRouter();
   const { result } = useAuditStore();
 
+  const [displayScore, setDisplayScore] = useState(0);
+  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
     if (!result) {
       router.push("/audit/q1");
     }
+  }, [result]);
+
+  useEffect(() => {
+    if (!result) return;
+
+    let start = 0;
+    const end = result.score || 72;
+    const duration = 900;
+    const increment = end / (duration / 16);
+
+    const counter = setInterval(() => {
+      start += increment;
+
+      if (start >= end) {
+        setDisplayScore(end);
+        clearInterval(counter);
+      } else {
+        setDisplayScore(Math.floor(start));
+      }
+    }, 16);
+
+    setMounted(true);
+
+    return () => clearInterval(counter);
   }, [result]);
 
   if (!result) return null;
@@ -31,10 +58,10 @@ export default function ResultsPage() {
   };
 
   return (
-    <div className="relative min-h-screen flex">
+    <div className="relative min-h-screen flex text-[#241E20]">
       {/* Background */}
       <div
-        className="fixed inset-0 opacity-[0.03]"
+        className="fixed inset-0 opacity-[0.03] "
         style={{
           backgroundImage:
             "linear-gradient(#241E20 1px, transparent 1px), linear-gradient(90deg, #241E20 1px, transparent 1px)",
@@ -43,9 +70,9 @@ export default function ResultsPage() {
       />
 
       {/* SIDEBAR */}
-      <aside className="hidden md:flex w-72 flex-col px-8 py-10 border-r bg-white/50 backdrop-blur-md">
+      <aside className="hidden md:flex w-72 flex-col px-8 py-10 border-r bg-white/70 backdrop-blur-md">
         <div className="mb-16">
-          <span className="text-xs font-black tracking-[0.3em] uppercase">
+          <span className="text-xs font-black tracking-[0.3em] uppercase text-gray-600">
             AI Visibility Monolith
           </span>
           <div className="h-[2px] w-12 bg-[#585DE1] mt-2" />
@@ -62,7 +89,7 @@ export default function ResultsPage() {
           </div>
         </nav>
 
-        <button className="mt-auto py-4 bg-[#585DE1] text-white text-xs uppercase font-bold tracking-widest">
+        <button className="mt-auto py-4 bg-[#585DE1] text-white text-xs uppercase font-bold tracking-widest hover:opacity-90 transition">
           Schedule Review
         </button>
       </aside>
@@ -71,24 +98,29 @@ export default function ResultsPage() {
       <main className="flex-grow">
         {/* HEADER */}
         <header className="sticky top-0 bg-white/80 backdrop-blur border-b h-20 flex items-center justify-between px-12">
-          <span className="text-xs font-black uppercase tracking-[0.4em]">
+          <span className="text-xs font-black uppercase tracking-[0.4em] text-gray-500">
             Report ID: AI_{Date.now()}
           </span>
 
-          <button className="text-xs uppercase text-gray-500">
+          <button className="text-xs uppercase text-gray-500 hover:text-black transition">
             Download PDF
           </button>
         </header>
 
         <div className="max-w-6xl mx-auto px-12 py-24 space-y-24">
           {/* HERO */}
-          <section className="grid lg:grid-cols-12 gap-16">
+          <section
+            className={`grid lg:grid-cols-12 gap-16 transition-all duration-700 ${
+              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            }`}
+          >
             <div className="lg:col-span-8">
-              <h1 className="text-5xl font-extrabold mb-6">
-                Your AI Visibility Audit is Complete.
+              <h1 className="text-5xl font-extrabold mb-6 leading-tight">
+                Your AI Visibility Audit is Complete
+                <span className="text-[#585DE1]">.</span>
               </h1>
 
-              <p className="text-gray-500 max-w-2xl">
+              <p className="text-gray-600 max-w-2xl text-lg leading-relaxed">
                 {summary ||
                   "We analyzed your infrastructure and identified key visibility gaps affecting AI discovery."}
               </p>
@@ -96,15 +128,19 @@ export default function ResultsPage() {
 
             {/* SCORE */}
             <div className="lg:col-span-4 flex justify-center">
-              <div className="border p-8 w-60 text-center">
-                <p className="text-xs uppercase mb-2">Score</p>
-                <div className="text-6xl font-black">{score}</div>
-                <p className="text-sm text-gray-500">{getLabel(score)}</p>
+              <div className="border bg-white p-8 w-60 text-center shadow-sm">
+                <p className="text-xs uppercase mb-2 text-gray-500">Score</p>
 
-                <div className="mt-6 h-1 bg-gray-200">
+                <div className="text-6xl font-black tracking-tight">
+                  {displayScore}
+                </div>
+
+                <p className="text-sm text-gray-500 mt-1">{getLabel(score)}</p>
+
+                <div className="mt-6 h-1 bg-gray-200 overflow-hidden">
                   <div
-                    className="h-full bg-[#585DE1]"
-                    style={{ width: `${score}%` }}
+                    className="h-full bg-[#585DE1] transition-all duration-1000"
+                    style={{ width: `${displayScore}%` }}
                   />
                 </div>
               </div>
@@ -113,60 +149,57 @@ export default function ResultsPage() {
 
           {/* INSIGHTS */}
           <section className="grid md:grid-cols-3 gap-8 border-t border-b py-12">
-            {/* Strengths */}
-            <div>
-              <h3 className="text-sm uppercase text-[#585DE1] mb-4">
-                Strengths
-              </h3>
+            {[strengths, gaps, opportunities].map((group, idx) => {
+              const titles = ["Strengths", "Gaps", "Opportunities"];
 
-              <ul className="space-y-3">
-                {strengths.map((item: string, i: number) => (
-                  <li key={i} className="text-sm font-medium">
-                    / {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+              return (
+                <div
+                  key={idx}
+                  className={`transition-all duration-700 delay-${idx * 150} ${
+                    mounted
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-6"
+                  }`}
+                >
+                  <h3
+                    className={`text-sm uppercase mb-4 ${
+                      idx === 0 ? "text-[#585DE1]" : "text-gray-400"
+                    }`}
+                  >
+                    {titles[idx]}
+                  </h3>
 
-            {/* Gaps */}
-            <div>
-              <h3 className="text-sm uppercase text-gray-400 mb-4">Gaps</h3>
-
-              <ul className="space-y-3">
-                {gaps.map((item: string, i: number) => (
-                  <li key={i} className="text-sm text-gray-500">
-                    / {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Opportunities */}
-            <div>
-              <h3 className="text-sm uppercase text-gray-400 mb-4">
-                Opportunities
-              </h3>
-
-              <ul className="space-y-3">
-                {opportunities.map((item: string, i: number) => (
-                  <li key={i} className="text-sm text-gray-500">
-                    / {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+                  <ul className="space-y-3">
+                    {group.map((item: string, i: number) => (
+                      <li
+                        key={i}
+                        className="text-sm text-gray-700 leading-relaxed"
+                      >
+                        / {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
           </section>
 
           {/* CTA */}
-          <section className="text-center space-y-6">
+          <section
+            className={`text-center space-y-6 transition-all duration-700 delay-300 ${
+              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            }`}
+          >
             <h2 className="text-2xl font-bold">Turn this into growth.</h2>
 
             <div className="flex justify-center gap-4">
-              <button className="px-8 py-4 bg-[#585DE1] text-white font-bold text-sm">
+              <button className="px-8 py-4 bg-[#585DE1] text-white font-bold text-sm shadow-lg hover:scale-[1.02] active:scale-95 transition">
                 Request Strategy
               </button>
 
-              <button className="px-8 py-4 border text-sm">Book Call</button>
+              <button className="px-8 py-4 border text-sm hover:bg-gray-50 transition">
+                Book Call
+              </button>
             </div>
           </section>
         </div>

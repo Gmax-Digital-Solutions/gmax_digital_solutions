@@ -5,7 +5,7 @@ import { FC } from "react";
 
 const HeroSection: FC = () => {
   return (
-    <header className="relative pt-32 pb-20 px-8 overflow-hidden">
+    <header className="relative my-6 pt-32 pb-20 px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         {/* LEFT CONTENT */}
         <div className="z-10">
