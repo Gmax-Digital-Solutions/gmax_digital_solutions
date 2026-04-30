@@ -24,15 +24,19 @@ const columns: FooterColumn[] = [
   {
     heading: "Legal",
     links: [
-      { label: "Privacy", href: "#" },
-      { label: "Terms", href: "#" },
+      { label: "Privacy", href: "privacy-policy" },
+      { label: "Terms", href: "terms-of-service" },
     ],
   },
   {
     heading: "Connect",
     links: [
-      { label: "LinkedIn", href: "#", external: true },
-      { label: "Contact", href: "#" },
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/company/102247546/admin/dashboard/",
+        external: true,
+      },
+      { label: "Contact", href: "contact#proposal" },
     ],
   },
 ];
@@ -46,6 +50,8 @@ function FooterLinkItem({ link }: { link: FooterLink }) {
       <Link
         href={link.href}
         className={`${linkClass} inline-flex items-center gap-2 group`}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         {link.label}
         <span className="material-symbols-outlined text-[10px] transition-transform group-hover:translate-x-1">
@@ -56,7 +62,12 @@ function FooterLinkItem({ link }: { link: FooterLink }) {
   }
 
   return (
-    <Link href={link.href} className={linkClass}>
+    <Link
+      href={link.href}
+      className={linkClass}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {link.label}
     </Link>
   );

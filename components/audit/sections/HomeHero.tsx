@@ -29,9 +29,9 @@ const HeroSection: FC = () => {
 
           {/* Description */}
           <p className="text-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
-            LLMs like ChatGPT and Perplexity are changing how the world finds
-            answers. Get your personalized Answer Engine Readiness Score in 60
-            seconds.
+            ChatGPT, Gemini, and Perplexity are replacing Google for millions of
+            buyers. We analyze your digital infrastructure and generate a scored
+            report — covering your strengths, gaps, and competitive positioning.
           </p>
 
           {/* CTA Buttons */}
