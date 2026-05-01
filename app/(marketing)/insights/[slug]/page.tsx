@@ -14,8 +14,6 @@ export default async function SingleInsightPage({
   const insight = await getSingleInsight(slug);
   const relatedInsights = await getRelatedInsights(slug, insight?.category);
 
-  console.log(insight.hero_image);
-
   return (
     <main className="pt-32 bg-background text-on-background antialiased">
       {/* Hero */}

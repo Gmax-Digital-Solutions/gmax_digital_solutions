@@ -33,7 +33,7 @@ const CtaClose = () => {
                   label: "Book Strategy Call",
                 })
               }
-              className="bg-secondary text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:opacity-90 transition-all flex items-center gap-3 active:scale-95"
+              className="bg-secondary max-w-xs text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:opacity-90 transition-all flex items-center gap-3 active:scale-95"
             >
               <span className="material-symbols-outlined">calendar_today</span>
               Schedule a Call
