@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { newsletterSchema } from "@/lib/validations/newsletter-schema";
 import { supabaseServer } from "@/lib/supabase/server";
 import { Resend } from "resend";
+import { identifyServerUser } from "@/lib/analytics/posthog-server";
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_KEY);
 
@@ -48,6 +49,12 @@ export async function POST(req: Request) {
       to: [email],
       subject: "Your AI Marketing Playbook is ready",
       html: getEmailTemplate({ first_name, playbookUrl: PLAYBOOK_URL }),
+    });
+
+    await identifyServerUser(email, {
+      email,
+      first_name,
+      form: "newsletter_form",
     });
 
     // =========================

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { contactSchema } from "@/lib/validations/contact-schema";
-import { trackEvent } from "@/lib/analytics/posthog";
+import { identifyUser, trackEvent } from "@/lib/analytics/posthog";
 
 const ContactFullSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -80,6 +80,15 @@ const ContactFullSection: React.FC = () => {
       console.log(data);
 
       setSubmitted(true);
+
+      identifyUser(formData.email, {
+        full_name: formData.fullName,
+        email: formData.email,
+        company: formData.company,
+        help_with: formData.helpWith,
+        message: formData.message,
+        form: "contact_page",
+      });
 
       setFormData({
         fullName: "",

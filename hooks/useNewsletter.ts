@@ -2,9 +2,7 @@
 
 import { newsletterSchema } from "@/lib/validations/newsletter-schema";
 import { useEffect, useState } from "react";
-import { trackEvent } from "@/lib/analytics/posthog";
-import { PostHog } from "posthog-js";
-import { email } from "zod";
+import { identifyUser, trackEvent } from "@/lib/analytics/posthog";
 
 export function useNewsletter() {
   const [formData, setFormData] = useState({ email: "", first_name: "" });
@@ -64,6 +62,12 @@ export function useNewsletter() {
       }
 
       setSubmitted(true);
+
+      identifyUser(formData.email, {
+        email: formData.email,
+        first_name: formData.first_name,
+        form: "newsletter_form",
+      });
 
       setFormData({ email: "", first_name: "" });
       trackEvent("newsletter_form_submitted", {
