@@ -9,7 +9,6 @@ export async function getInsights(): Promise<Insight[]> {
 
     if (error) {
       console.log(error.message);
-
       return [];
     }
 
@@ -17,6 +16,67 @@ export async function getInsights(): Promise<Insight[]> {
   } catch (error) {
     console.error(error);
     throw new Error("Error fetching insights data");
+  }
+}
+
+export async function getPublishedInsights(): Promise<Insight[]> {
+  try {
+    const { data, error } = await supabaseServer
+      .from("insights")
+      .select("*")
+      .eq("published", true);
+
+    if (error) {
+      console.log(error.message);
+      return [];
+    }
+
+    return data || [];
+  } catch (error) {
+    console.error(error);
+    throw new Error("Error fetching published insights data");
+  }
+}
+
+export async function getInsightsByCategory(
+  category: string,
+): Promise<Insight[]> {
+  try {
+    const { data, error } = await supabaseServer
+      .from("insights")
+      .select("*")
+      .eq("category", category);
+
+    if (error) {
+      console.log(error.message);
+      return [];
+    }
+
+    return data || [];
+  } catch (error) {
+    console.error(error);
+    throw new Error("Error fetching insights by category");
+  }
+}
+
+export async function getFeaturedInsights(): Promise<Insight[]> {
+  try {
+    const { data, error } = await supabaseServer
+      .from("insights")
+      .select("*")
+      .eq("featured", true)
+      .limit(4)
+      .order("published_at", { ascending: false });
+
+    if (error) {
+      console.log(error.message);
+      return [];
+    }
+
+    return data || [];
+  } catch (error) {
+    console.error(error);
+    throw new Error("Error fetching featured insights data");
   }
 }
 
@@ -50,8 +110,7 @@ export async function getRelatedInsights(
     const { data, error } = await supabaseServer
       .from("insights")
       .select("*")
-      .eq("slug", currentSlug)
-      .neq("category", category)
+      .eq("category", category)
       .limit(3);
 
     if (error) {

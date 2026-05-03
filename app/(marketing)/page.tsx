@@ -8,12 +8,17 @@ import CTABanner from "@/components/sections/CTABanner";
 import Footer from "@/components/sections/Footer";
 import Newsletter from "@/components/sections/Newsletter";
 import TestimonialSection from "@/components/sections/Testmonials";
-import { getInsights, getTestimonials } from "@/lib/api/content";
+import {
+  getInsights,
+  getTestimonials,
+  getFeaturedInsights,
+} from "@/lib/api/content";
 import FeaturedInsights from "@/components/sections/FeatureInsights";
 
 export default async function Home() {
   const testimonials = await getTestimonials();
   const insights = await getInsights();
+  const featuredInsights = await getFeaturedInsights();
 
   return (
     <div className="flex flex-1 flex-col h-full w-[100%] text-on-surface">
@@ -24,7 +29,7 @@ export default async function Home() {
       <CaseStudies />
       <TestimonialSection testimonialData={testimonials} />
       <Newsletter />
-      <FeaturedInsights insights={insights} />
+      <FeaturedInsights insights={featuredInsights} />
       <CTABanner />
       <Footer />
     </div>
