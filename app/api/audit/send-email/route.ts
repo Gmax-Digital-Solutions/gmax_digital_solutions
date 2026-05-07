@@ -179,7 +179,7 @@ function buildEmailHTML({
     <div style="background:#f9fafb;padding:32px 40px;text-align:center;border-top:1px solid #f3f4f6;">
       <p style="font-size:16px;font-weight:700;color:#241E20;margin:0 0 8px;">Ready to turn this into growth?</p>
       <p style="font-size:13px;color:#6b7280;margin:0 0 24px;">Book a 60-minute strategy session and we'll build your AI visibility roadmap.</p>
-      <a href="#" style="display:inline-block;background:#585DE1;color:#ffffff;font-size:13px;font-weight:700;padding:14px 32px;border-radius:8px;text-decoration:none;letter-spacing:0.05em;">
+      <a href="https://calendly.com/gmax-digital/strategy-call" style="display:inline-block;background:#585DE1;color:#ffffff;font-size:13px;font-weight:700;padding:14px 32px;border-radius:8px;text-decoration:none;letter-spacing:0.05em;">
         Schedule Your Strategy Call
       </a>
     </div>
