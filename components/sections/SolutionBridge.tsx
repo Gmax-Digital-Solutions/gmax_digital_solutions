@@ -12,10 +12,10 @@ const SolutionBridge = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           <div className="bg-surface-container-low p-12 rounded-2xl shadow-sm border border-outline-variant/20 -mt-32 relative z-10">
             <span className="text-[0.75rem] font-bold text-[#F84343] tracking-widest uppercase mb-4 block">
-              Our Strategic Process
+              Your AI Search Visibility Audit
             </span>
             <h2 className="text-3xl font-black text-[#241E20] mb-8">
-              Our 4-step Blueprint Structure
+              What You'll Discover in 90 Days
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6">
@@ -23,10 +23,12 @@ const SolutionBridge = () => {
                   01
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#241E20]">Discover</h4>
+                  <h4 className="font-bold text-[#241E20]">
+                    Google Ranking Gaps
+                  </h4>
                   <p className="text-on-surface-variant text-sm mt-1">
-                    We understand your business, market realities, audience
-                    behavior, and growth barriers.
+                    Where you rank, where competitors rank, and which keywords
+                    are worth £2K+/month in traffic.
                   </p>
                 </div>
               </div>
@@ -35,11 +37,12 @@ const SolutionBridge = () => {
                   02
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#241E20]">Position</h4>
+                  <h4 className="font-bold text-[#241E20]">
+                    AI Search Visibility
+                  </h4>
                   <p className="text-on-surface-variant text-sm mt-1">
-                    We define messaging, value clarity, and strategic direction
-                    so your business becomes easier to trust and easier to
-                    choose.
+                    Whether you appear in ChatGPT, Perplexity, and Gemini. (Most
+                    e-commerce brands don't.)
                   </p>
                 </div>
               </div>
@@ -48,22 +51,26 @@ const SolutionBridge = () => {
                   03
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#241E20]">Build</h4>
+                  <h4 className="font-bold text-[#241E20]">
+                    Competitor Comparison
+                  </h4>
                   <p className="text-on-surface-variant text-sm mt-1">
-                    We create the digital assets, systems, and experiences that
-                    support credibility and conversion.
+                    Exactly what your top 5 competitors are doing on Google and
+                    AI that you're missing.
                   </p>
                 </div>
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm text-[#585DE1] font-bold">
-                  03
+                  04
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#241E20]">Grow</h4>
+                  <h4 className="font-bold text-[#241E20]">
+                    3 Actionable Fixes
+                  </h4>
                   <p className="text-on-surface-variant text-sm mt-1">
-                    We help strengthen visibility, engagement, and long-term
-                    relevance.
+                    Your priority actions for the next 90 days, ranked by impact
+                    and ROI.
                   </p>
                 </div>
               </div>
@@ -71,13 +78,12 @@ const SolutionBridge = () => {
           </div>
           <div className="pt-12">
             <h3 className="text-4xl font-black text-[#241E20] mb-6 leading-tight">
-              Bridging the gap between what you build and what the market is
-              ready to embrace.
+              Your store is invisible on Google AND AI search.
             </h3>
             <p className="text-lg text-on-surface-variant mb-8 leading-relaxed">
-              Success rarely depends on product quality alone, it depends on how
-              clearly your value fits real demand, real users, and real market
-              expectations.
+              E-commerce brands lose 40%+ in potential revenue to competitors
+              who rank higher. Our free audit shows exactly where you're missing
+              and how to fix it.
             </p>
             <ul className="space-y-4 mb-10 text-on-surface-variant">
               <li className="flex items-center gap-3">
@@ -86,7 +92,7 @@ const SolutionBridge = () => {
                   className="text-[#F84343] flex-shrink-0"
                 />
                 <span className="font-medium">
-                  Identify where market demand and product value disconnect
+                  See where you rank on Google for high-value keywords
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -95,7 +101,7 @@ const SolutionBridge = () => {
                   className="text-[#F84343] flex-shrink-0"
                 />
                 <span className="font-medium">
-                  Refine positioning so your offer becomes easier to trust
+                  Check if you appear in ChatGPT, Perplexity, and Gemini
                 </span>
               </li>
 
@@ -105,7 +111,7 @@ const SolutionBridge = () => {
                   className="text-[#F84343] flex-shrink-0"
                 />
                 <span className="font-medium">
-                  Build digital infrastructure that supports credibility
+                  Compare your visibility against competitors
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -114,7 +120,7 @@ const SolutionBridge = () => {
                   className="text-[#F84343] flex-shrink-0"
                 />
                 <span className="font-medium">
-                  Create growth foundations designed for long-term relevance
+                  Get 3 actionable fixes you can implement immediately
                 </span>
               </li>
             </ul>
@@ -123,12 +129,12 @@ const SolutionBridge = () => {
               onClick={() =>
                 trackEvent("secure_blueprint_btn", {
                   location: "homepage_blueprint_section",
-                  label: "secure_blueprint",
+                  label: "audit_btn",
                 })
               }
               className="bg-[#241E20] text-white px-8 py-4 rounded-lg font-bold flex items-center gap-3 w-max hover:bg-[#241E20]/90 transition-all active:scale-95"
             >
-              Secure Your Blueprint
+              Get Free AI Search Audit
               <span className="material-symbols-outlined">trending_up</span>
             </Link>
           </div>

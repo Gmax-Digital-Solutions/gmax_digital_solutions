@@ -15,8 +15,8 @@ const Footer = () => {
             Gmax Digital
           </div>
           <p className="text-white/40 max-w-xs text-sm font-inter leading-relaxed">
-            Small Businesses. Big Solutions. We engineer digital growth through
-            architectural design and strategy.
+            Marketing for e-commerce brands. We help brands get found on Google
+            and AI search with measurable results.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-2 lg:mt-8 gap-8 lg:gap-12">
@@ -78,8 +78,7 @@ const Footer = () => {
             className="w-full max-w-sm px-8 py-12 rounded-xl"
           >
             <h3 className="text-xl font-black text-white mb-3">
-              Subscribe to get the AI marketing playbook built for
-              founders.{" "}
+              Get our free playbook for e-commerce marketing.
             </h3>
             {submitted && (
               <div className="text-green-800 px-4 py-3 rounded mb-4">
@@ -92,8 +91,8 @@ const Footer = () => {
               </div>
             )}
             <p className="text-white/70 text-sm leading-relaxed mb-6 font-inter">
-              Stay updated with our latest insights. No spam. Only
-              high-conviction perspectives for builders.
+              Rank higher on Google. Appear in ChatGPT, Perplexity, and Gemini.
+              Reduce your ad spend. No spam.
             </p>
             <input
               type="text"

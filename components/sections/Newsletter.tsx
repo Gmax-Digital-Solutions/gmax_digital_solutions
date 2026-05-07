@@ -22,23 +22,22 @@ const Newsletter = () => {
             <div className="space-y-6">
               <span className="text-xs uppercase tracking-[0.2em] font-extrabold text-primary flex items-center gap-3">
                 <span className="h-px w-8 bg-primary"></span>
-                The Digest
+                SEO + AEO Insights
               </span>
 
               <h2 className="text-5xl md:text-6xl font-black tracking-tighter text-on-surface leading-[1.1]">
-                Ideas that help businesses grow <br />
+                How UK e-commerce brands get found <br />
                 <span className="text-zinc-400 font-light italic">
-                  with more clarity
+                  on Google and AI search
                 </span>
               </h2>
 
               <p className="text-2xl text-on-surface-variant font-light leading-relaxed max-w-xl">
-                Occasional reflections on trust, positioning, digital clarity,
-                and the small decisions that often shape growth.
+                Practical strategies for ranking higher, appearing in AI tools,
+                and reducing ad spend.
                 <br />
                 <span className="text-primary font-bold italic">
-                  Subscribe for the free AI marketing playbook, we promise you
-                  will love it...
+                  Get our free AI Search Visibility Audit guide...
                 </span>
               </p>
             </div>

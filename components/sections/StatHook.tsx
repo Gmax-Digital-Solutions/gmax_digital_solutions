@@ -27,17 +27,16 @@ const StatHook = () => {
             <div className="w-16 h-[3px] bg-secondary mb-6" />
 
             <h3 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-secondary mb-2">
-              95%
+              73%
             </h3>
 
             <p className="text-sm sm:text-base font-bold uppercase tracking-widest mb-4">
-              Of Small Businesses Fail
+              Of E-commerce brands miss AI
             </p>
 
             <p className="text-white/60 text-sm sm:text-base max-w-xs leading-relaxed">
-              Most lack the digital infrastructure to compete in today&apos;s
-              market. We provide the tools and strategies for sustainable
-              growth.
+              They don't appear in ChatGPT, Perplexity, or Gemini. Their
+              competitors do. This costs them 40%+ in lost traffic.
             </p>
           </CardHover>
 
@@ -46,16 +45,16 @@ const StatHook = () => {
             <div className="w-16 h-[3px] bg-primary mb-6" />
 
             <h3 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-primary mb-2">
-              42%
+              £2.5K+
             </h3>
 
             <p className="text-sm sm:text-base font-bold uppercase tracking-widest mb-4">
-              No Market Need
+              Monthly from Organic Search
             </p>
 
             <p className="text-white/60 text-sm sm:text-base max-w-xs leading-relaxed">
-              42% of startups fail because they solve problems customers don’t
-              urgently need solved.
+              Brands that rank on Google and appear in AI get 90+ days of
+              sustainable organic revenue. No ad spend.
             </p>
           </CardHover>
 
@@ -64,16 +63,16 @@ const StatHook = () => {
             <div className="w-16 h-[3px] bg-on-primary mb-6" />
 
             <h3 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-on-primary mb-2">
-              38%
+              90 Days
             </h3>
 
             <p className="text-sm sm:text-base font-bold uppercase tracking-widest mb-4">
-              Cash Flow Failure
+              To Measurable Results
             </p>
 
             <p className="text-white/60 text-sm sm:text-base max-w-xs leading-relaxed">
-              38% of startups fail because poor traction and bad marketing burns
-              runway before revenue arrives.
+              Our SEO + AEO strategy is built for quick wins. First Google
+              rankings in 6 weeks, AI visibility in 8.
             </p>
           </CardHover>
         </div>

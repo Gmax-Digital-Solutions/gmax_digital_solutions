@@ -7,11 +7,12 @@ const CTABanner = () => {
     <section className="relative flex bg-[#585DE1] py-20 px-8">
       <div className="max-w-4xl mx-auto text-center z-10 ">
         <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
-          Ready for a big solution?
+          Your e-commerce store is invisible on AI search.
         </h2>
         <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-          Join the 50+ businesses who transitioned from noise to authority with
-          Gmax Digital.
+          Discover where you rank on Google and whether customers can find you
+          on ChatGPT, Perplexity, or Gemini. Get a free audit with 3 actionable
+          fixes.
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <a
@@ -22,12 +23,12 @@ const CTABanner = () => {
               trackEvent("call_btn_clicked", {
                 location: "cta_section",
                 source: "cta_section",
-                label: "Book Strategy Call",
+                label: "audit_btn",
               })
             }
             className="bg-[#F84343] text-white px-10 py-5 rounded-lg font-black text-lg shadow-xl shadow-black/10"
           >
-            Book A Free Strategy Call
+            Get Your Free AI Search Visibility Audit
           </a>
           <a
             href="/gmax-digital-services.pdf"
@@ -40,7 +41,7 @@ const CTABanner = () => {
             }
             className="bg-white text-[#241E20] px-10 py-5 rounded-lg font-black text-lg"
           >
-            Download Services Guide
+            Download Our Services Guide
           </a>
         </div>
       </div>

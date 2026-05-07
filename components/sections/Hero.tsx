@@ -40,17 +40,17 @@ const Hero = () => {
       <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto my-24 md:my-0 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center z-10">
         <div className="z-10 order-2 md:order-1">
           <span className="inline-block px-3 py-1 bg-surface-container-low text-primary font-bold text-[10px] uppercase tracking-widest mb-6">
-            Small Businesses. Big Solutions.
+            E-Commerce Growth
           </span>
           <h1 className="text-editorial-lg text-[#241E20] mb-8">
-            Small Businesses,{" "}
+            We help e-commerce brands{" "}
             <span className="text-primary-container">
-              Smart Growth Solutions
+              get found on Google and AI search
             </span>
           </h1>
           <p className="text-lg text-on-surface-variant max-w-lg mb-10 leading-relaxed">
-            Help businesses grow with strategies that combine Marketing,
-            Psychology & Sales Strategies.
+            Stop relying only on paid ads. Discover exactly where your store is
+            invisible, and how to fix it in 90 days.
           </p>
           <div className="flex flex-col lg:flex-row flex-wrap gap-4">
             <Link
@@ -58,13 +58,13 @@ const Hero = () => {
               onClick={() =>
                 trackEvent("proposal_btn_clicked", {
                   location: "insigh_hero",
-                  label: "request proposal",
+                  label: "audit_btn",
                   source: "insights",
                 })
               }
               className="bg-primary text-white px-8 py-4 rounded-lg font-bold transition-transform hover:-translate-y-1 active:scale-95"
             >
-              Request a Proposal
+              Get a Free AI Search Audit
             </Link>
             <SubscribeBtn />
           </div>
@@ -81,10 +81,12 @@ const Hero = () => {
             <div className="absolute inset-0 bg-primary-container/10 mix-blend-multiply"></div>
           </div>
           <div className="absolute -bottom-10 -left-10 bg-on-background text-white p-8 rounded-xl max-w-xs shadow-2xl hidden lg:block">
-            <h4 className="font-bold text-xl mb-2">97% of Startups Fail.</h4>
+            <h4 className="font-bold text-xl mb-2">
+              E-commerce brands are invisible.
+            </h4>
             <p className="text-sm text-white/70">
-              Most focus on features. We focus on market positioning and unit
-              economics.
+              On Google AND AI search. Our free audit shows exactly where you're
+              missing out with 3 actionable fixes.
             </p>
           </div>
         </div>

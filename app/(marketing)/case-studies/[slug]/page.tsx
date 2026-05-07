@@ -2,130 +2,6 @@ import CTABanner from "@/components/sections/CTABanner";
 import Footer from "@/components/sections/Footer";
 import { getSingleCaseStudy } from "@/lib/api/content";
 
-// type Metric = {
-//   label: string;
-//   value: string;
-//   description: string;
-// };
-
-// type Insight = {
-//   title: string;
-//   description: string;
-// };
-
-// type Section = {
-//   title: string;
-//   body: string[];
-// };
-
-// type CaseStudy = {
-//   category: string;
-//   title: string;
-//   subtitle: string;
-//   metrics: Metric[];
-//   heroImage: string;
-//   insights: Insight[];
-//   deliverables: string[];
-//   sections: Section[];
-//   transformation: string;
-//   testimonial: {
-//     quote: string;
-//     author: string;
-//     role: string;
-//     initials: string;
-//   };
-// };
-
-// const caseStudy: CaseStudy = {
-//   category: "Fintech Case Study",
-//   title: "Scaling Hyper-Growth: The FinTech Infrastructure Overhaul",
-//   subtitle:
-//     "How Gmax Digital engineered resilient infrastructure for a payment platform under extreme transaction pressure.",
-
-//   metrics: [
-//     {
-//       label: "Growth Velocity",
-//       value: "+142%",
-//       description: "ROI Achieved",
-//     },
-//     {
-//       label: "Efficiency Gap",
-//       value: "-38%",
-//       description: "OpEx Reduction",
-//     },
-//     {
-//       label: "Reliability Score",
-//       value: "99.9%",
-//       description: "System Uptime",
-//     },
-//   ],
-
-//   heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-
-//   insights: [
-//     {
-//       title: "Decoupled Scaling",
-//       description:
-//         "Infrastructure must scale ahead of demand, not after pressure arrives.",
-//     },
-//     {
-//       title: "Security by Design",
-//       description: "Trust systems fail once — and markets remember forever.",
-//     },
-//     {
-//       title: "Operational Agility",
-//       description: "Automation releases technical leadership capacity.",
-//     },
-//   ],
-
-//   deliverables: [
-//     "Infrastructure Modernization",
-//     "Security Hardening",
-//     "Growth Systems",
-//   ],
-
-//   sections: [
-//     {
-//       title: "The Challenge",
-//       body: [
-//         "A rapidly expanding fintech platform reached the limits of its monolithic architecture.",
-//         "Latency spikes during peak transaction periods directly impacted retention.",
-//       ],
-//     },
-//     {
-//       title: "The Strategy",
-//       body: [
-//         "Gmax Digital introduced distributed service architecture.",
-//         "Cloud elasticity replaced static provisioning.",
-//       ],
-//     },
-//     {
-//       title: "The Execution",
-//       body: [
-//         "Over 14 weeks, transaction systems were rebuilt with zero downtime migration.",
-//         "Security layers were embedded at every internal touchpoint.",
-//       ],
-//     },
-//     {
-//       title: "The Results",
-//       body: [
-//         "Average latency dropped from 3.2s to 140ms.",
-//         "Scaling became fully autonomous.",
-//       ],
-//     },
-//   ],
-
-//   transformation: "From fragile infrastructure to a resilient growth engine.",
-
-//   testimonial: {
-//     quote:
-//       "Gmax Digital transformed our technical limits into strategic leverage.",
-//     author: "Marcus Thorne",
-//     role: "CTO, Vanguard Payments",
-//     initials: "MT",
-//   },
-// };
-
 export default async function CaseStudyPage({
   params,
 }: {
@@ -139,7 +15,7 @@ export default async function CaseStudyPage({
       <section className="max-w-7xl mx-auto px-8 pt-20 mb-24">
         <div className="max-w-3xl">
           <span className="inline-block bg-surface-container-low text-primary font-bold text-xs uppercase tracking-[0.1em] px-3 py-1 mb-6">
-            {caseStudy.category}
+            SEO + AEO Case Study
           </span>
 
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter text-[#241E20] leading-[1.05] mb-8">
@@ -207,7 +83,7 @@ export default async function CaseStudyPage({
           <div className="flex items-center gap-4 text-white/60">
             <span className="h-px w-12 bg-white/30" />
             <span className="text-xs uppercase tracking-[0.2em]">
-              Strategic Technical Blueprint
+              SEO + AEO Technical Blueprint
             </span>
             <span className="h-px w-12 bg-white/30" />
           </div>
@@ -222,7 +98,7 @@ export default async function CaseStudyPage({
             <div className="bg-surface-container-low p-8 sticky top-32">
               {/* Strategic Insights */}
               <h3 className="text-sm font-black uppercase tracking-widest mb-6 border-b border-outline-variant pb-4">
-                Strategic Insights
+                SEO + AEO Strategy
               </h3>
 
               <ul className="space-y-6">
@@ -241,7 +117,7 @@ export default async function CaseStudyPage({
               {/* Deliverables */}
               <div className="mt-12 pt-8 border-t border-outline-variant">
                 <h3 className="text-sm font-black uppercase tracking-widest mb-4">
-                  Strategic Deliverables
+                  SEO + AEO Deliverables
                 </h3>
 
                 <div className="flex flex-wrap gap-2">

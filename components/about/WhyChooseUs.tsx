@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
       </div>
       <div className="mx-auto max-w-7xl z-40">
         <h2 className="mb-20 text-4xl font-bold tracking-tight text-white">
-          Why businesses choose Gmax Digital
+          Why e-commerce brands choose Gmax Digital
         </h2>
 
         <div className="grid gap-8 md:grid-cols-3">
@@ -30,12 +30,13 @@ export default function WhyChooseUs() {
             </div>
 
             <h3 className="mb-4 text-2xl font-bold text-white">
-              Strategic Thinking First
+              Google + AI Visibility
             </h3>
 
             <p className="leading-relaxed text-white/60">
-              We look beyond common marketing metrics to identify the structural
-              growth barriers holding your business back.
+              We don't just get you ranking on Google. We ensure you appear in
+              ChatGPT, Perplexity, and Gemini where 40% of e-commerce searches
+              now happen.
             </p>
           </div>
 
@@ -46,12 +47,12 @@ export default function WhyChooseUs() {
             </div>
 
             <h3 className="mb-4 text-2xl font-bold text-white">
-              Real Market Conditions
+              E-Commerce Focus
             </h3>
 
             <p className="leading-relaxed text-white/60">
-              Strategy built for the world as it exists today, not as it appears
-              in generic business templates or textbook models.
+              We specialize in brands doing 500K-10M/year. Not agencies that try
+              everything. Specialists who know the e-commerce market inside out.
             </p>
           </div>
 
@@ -62,12 +63,13 @@ export default function WhyChooseUs() {
             </div>
 
             <h3 className="mb-4 text-2xl font-bold text-white">
-              Multi-Disciplinary
+              Measurable Results in 90 Days
             </h3>
 
             <p className="leading-relaxed text-white/60">
-              A synthesis of marketing, engineering, psychology, and design to
-              solve complex business challenges holistically.
+              First rankings in 6 weeks. AI visibility in 8. We don't do
+              long-term speculation. You get real revenue gains you can measure
+              immediately.
             </p>
           </div>
         </div>

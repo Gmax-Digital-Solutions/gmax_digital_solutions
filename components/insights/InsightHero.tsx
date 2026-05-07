@@ -16,7 +16,7 @@ const InsightHero = () => {
           </span>
 
           <h1 className="text-5xl md:text-7xl font-black text-on-surface tracking-tight leading-[0.95] mb-8 max-w-4xl">
-            Insights for founders building products that need
+            Insights for SMEs navigating modern competition with{" "}
             <span className="italic text-primary">
               {" "}
               trust, relevance, and market clarity{" "}
@@ -24,8 +24,9 @@ const InsightHero = () => {
           </h1>
 
           <p className="text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
-            Perspectives on positioning, digital credibility, and strategic
-            visibility built for businesses navigating modern competition.
+            Perspectives on positioning, marketing in the era of AI, and
+            strategic visibility built for businesses navigating modern
+            competition.
           </p>
 
           <div className="flex flex-wrap gap-4">

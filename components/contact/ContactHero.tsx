@@ -11,18 +11,17 @@ const ContactHero: React.FC = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="max-w-3xl">
           <span className="inline-block px-3 py-1 mb-6 text-[10px] uppercase tracking-[0.2em] font-bold bg-surface-container text-primary border-l-2 border-primary">
-            Strategic Advisory
+            Get Your Free Audit
           </span>
 
           <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter leading-[1.05] mb-8">
-            Start the conversation that may clarify what your business needs
-            next
+            See where your store ranks on Google and AI search
           </h1>
 
           <p className="text-xl text-on-surface-variant leading-relaxed mb-10 max-w-2xl font-light">
-            Whether refining an idea, improving digital credibility, or
-            strengthening market visibility, some decisions become easier with
-            the right perspective.
+            Get a free AI Search Visibility Audit that shows your Google
+            ranking, whether you appear in ChatGPT and Perplexity, and 3
+            actionable fixes for the next 90 days.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -32,14 +31,14 @@ const ContactHero: React.FC = () => {
               rel="noopener noreferrer"
               onClick={() =>
                 trackEvent("call_btn_clicked", {
-                  location: "cta_section",
-                  source: "cta_section",
-                  label: "Book Strategy Call",
+                  location: "contact_hero",
+                  source: "contact_section",
+                  label: "audit_btn",
                 })
               }
               className="bg-primary text-white px-8 py-4 font-bold rounded shadow-sm hover:bg-primary-container transition-all active:scale-95 flex items-center gap-2"
             >
-              Book a Strategy Call
+              Start Your Free AI Search Audit
               <span className="material-symbols-outlined text-sm">
                 arrow_forward
               </span>

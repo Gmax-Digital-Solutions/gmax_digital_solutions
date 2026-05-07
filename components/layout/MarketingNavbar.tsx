@@ -87,9 +87,9 @@ const Navbar = () => {
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-          {/* <div className="hidden lg:flex">
+          <div className="hidden lg:flex">
             <RequestAuditButton />
-          </div> */}
+          </div>
           <div className="hidden lg:flex">
             <RequestProposalButton />
           </div>

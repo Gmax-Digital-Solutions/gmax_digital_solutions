@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { FC } from "react";
+import Link from "next/link";
 
 const HeroSection: FC = () => {
   return (
@@ -45,9 +46,12 @@ const HeroSection: FC = () => {
               Start Audit
             </button>
 
-            <button className="bg-transparent text-[#241E20] border-2 border-outline-variant px-8 py-4 rounded-md font-bold text-base hover:bg-surface-container-low transition-all">
-              View Methodology
-            </button>
+            <Link
+              href="/contact#proposal"
+              className="bg-transparent text-[#241E20] border-2 border-outline-variant px-8 py-4 rounded-md font-bold text-base hover:bg-surface-container-low transition-all"
+            >
+              Request Proposal
+            </Link>
           </div>
         </div>
 

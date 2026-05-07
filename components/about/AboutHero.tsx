@@ -39,18 +39,20 @@ export default function AboutHero() {
       <div className="flex flex-col lg:flex-row items-center gap-12 mx-auto max-w-7xl">
         <div className="max-w-4xl">
           <span className="label-md mb-6 block font-bold uppercase tracking-[0.2em] text-primary">
-            Why Gmax Digital
+            About Gmax Digital
           </span>
 
           <h1 className="mb-8 text-6xl font-bold tracking-tighter leading-[1.05] text-on-background md:text-7xl">
-            Built for businesses that need more than{" "}
-            <span className="italic text-primary">visibility.</span>
+            We help e-commerce brands{" "}
+            <span className="italic text-primary">
+              get found on Google and AI.
+            </span>
           </h1>
 
           <p className="mb-12 max-w-2xl text-xl leading-relaxed text-on-surface-variant md:text-2xl">
-            Gmax Digital exists to help founders and growing businesses
-            strengthen the foundations that determine whether ideas gain trust,
-            relevance, and market momentum.
+            Paid ads are expensive. Organic visibility is forever. We combine
+            SEO and Answer Engine Optimisation to reduce your ad spend while
+            increasing your real revenue.
           </p>
 
           <Link
@@ -66,7 +68,7 @@ export default function AboutHero() {
             }
             className="group inline-flex items-center rounded-lg bg-primary-container px-8 py-4 text-lg font-bold text-white transition-all hover:scale-[1.02]"
           >
-            Start a Conversation
+            Get Your Free AI Search Visibility Audit
             <span className="ml-2 transition-transform group-hover:translate-x-1">
               →
             </span>

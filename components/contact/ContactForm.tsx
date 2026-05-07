@@ -141,17 +141,17 @@ const ContactFullSection: React.FC = () => {
               </a>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary editorial-shadow">
+                <div className="w-12 h-12 rounded-xl p-3 bg-white flex items-center justify-center text-primary editorial-shadow">
                   <span className="material-symbols-outlined">public</span>
                 </div>
 
                 <div>
                   <p className="text-sm font-bold uppercase tracking-wider text-outline mb-1">
-                    Global Presence
+                    Global Presence with a focus on English-speaking markets
                   </p>
                   <p className="text-on-surface-variant leading-relaxed">
-                    Serving clients globally, with strategic focus on founders
-                    and growing businesses.
+                    Serving clients globally, with strategic focus on e-commerce
+                    brands and SMEs.
                   </p>
                 </div>
               </div>
@@ -166,16 +166,16 @@ const ContactFullSection: React.FC = () => {
             <div className="space-y-4">
               <div className="p-6 bg-white rounded-lg border-l-4 border-primary editorial-shadow">
                 <h4 className="font-bold text-lg mb-1">
-                  Founders building software products
+                  Entrepreneurs launching new ventures
                 </h4>
                 <p className="text-sm text-on-surface-variant">
-                  Translating vision into scalable technical architecture.
+                  Bringing new ideas to market with a strong digital foundation.
                 </p>
               </div>
 
               <div className="p-6 bg-white rounded-lg border-l-4 border-secondary editorial-shadow">
                 <h4 className="font-bold text-lg mb-1">
-                  Startups refining market direction
+                  E-commerce brands seeking growth
                 </h4>
                 <p className="text-sm text-on-surface-variant">
                   Aligning digital presence with commercial strategy.
@@ -291,10 +291,10 @@ const ContactFullSection: React.FC = () => {
                   onChange={handleChange}
                   className="w-full bg-transparent border-b-2 border-surface-container py-4 focus:outline-none focus:border-primary transition-colors text-on-surface appearance-none"
                 >
+                  <option>Search Engine Optimization</option>
+                  <option>AI Search Visibility</option>
+                  <option>Content Strategy</option>
                   <option>Strategic Consultation</option>
-                  <option>Product Development</option>
-                  <option>Market Positioning</option>
-                  <option>Scaling Infrastructure</option>
                 </select>
 
                 {errors.helpWith && (

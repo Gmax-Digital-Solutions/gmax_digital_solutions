@@ -11,7 +11,7 @@ const SolutionBridge = () => {
         {/* Section Title */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-white">
-            What each engagement usually examines
+            What your AI Search Visibility Audit includes
           </h2>
         </div>
 
@@ -23,11 +23,11 @@ const SolutionBridge = () => {
               01
             </div>
             <h4 className="text-lg font-bold mb-4 text-on-surface leading-tight">
-              Understanding where trust breaks
+              Google Ranking Analysis
             </h4>
             <p className="text-on-surface-variant text-sm leading-relaxed">
-              Identifying the specific moments in the user journey where
-              credibility is lost or questioned.
+              See which keywords you rank for, your current positions, and
+              exactly which high-value searches you're missing.
             </p>
           </div>
 
@@ -37,11 +37,11 @@ const SolutionBridge = () => {
               02
             </div>
             <h4 className="text-lg font-bold mb-4 text-on-surface leading-tight">
-              Identifying positioning gaps
+              AI Search Visibility
             </h4>
             <p className="text-on-surface-variant text-sm leading-relaxed">
-              Analyzing how the business compares to market expectations and
-              where the messaging falls short.
+              Check if your products appear in ChatGPT, Perplexity, and Gemini.
+              See where competitors are winning.
             </p>
           </div>
 
@@ -51,11 +51,11 @@ const SolutionBridge = () => {
               03
             </div>
             <h4 className="text-lg font-bold mb-4 text-on-surface leading-tight">
-              Structuring stronger digital clarity
+              Competitor Comparison
             </h4>
             <p className="text-on-surface-variant text-sm leading-relaxed">
-              Reorganizing the digital architecture to ensure the core value
-              proposition is impossible to miss.
+              See exactly what your top competitors are ranking for on Google
+              and appearing in on AI.
             </p>
           </div>
 
@@ -65,11 +65,11 @@ const SolutionBridge = () => {
               04
             </div>
             <h4 className="text-lg font-bold mb-4 text-on-surface leading-tight">
-              Defining practical next moves
+              3 Actionable Fixes
             </h4>
             <p className="text-on-surface-variant text-sm leading-relaxed">
-              Creating an actionable roadmap for growth that prioritizes
-              high-impact strategic adjustments.
+              Your priority moves for the next 90 days, ranked by impact and ROI
+              potential.
             </p>
           </div>
         </div>

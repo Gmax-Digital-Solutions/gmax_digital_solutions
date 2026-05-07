@@ -17,23 +17,23 @@ const Services = () => {
   const services: ServiceCard[] = [
     {
       icon: <Rocket className="w-10 h-10 text-primary" />,
-      title: "Scale Optimization",
+      title: "SEO Optimisation",
       description:
-        "Automated marketing funnels designed to capture and convert high-intent leads while you sleep.",
+        "Get your UK e-commerce store ranking on Google for high-intent search terms. We focus on visibility that drives immediate revenue.",
       borderColor: "border-primary-container",
     },
     {
       icon: <Database className="w-10 h-10 text-secondary" />,
-      title: "Data Infrastructure",
+      title: "AI Search Visibility (AEO)",
       description:
-        "Enterprise-grade analytics for local businesses. Know exactly where every dollar goes.",
+        "Ensure your products appear in ChatGPT, Perplexity, and Gemini. Capture the 40% of searches now happening on AI tools.",
       borderColor: "border-secondary",
     },
     {
       icon: <Palette className="w-10 h-10 text-on-background" />,
-      title: "Brand Authority",
+      title: "Competitive Audit & Strategy",
       description:
-        "Visual identities that command premium pricing and foster long-term customer loyalty.",
+        "See exactly where your competitors rank. Get a 90-day roadmap to beat them on Google and AI before they do.",
       borderColor: "border-on-background",
     },
   ];
@@ -43,10 +43,10 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <span className="text-xs font-black uppercase tracking-[0.2em] text-primary">
-            Capabilities
+            Our Core Services
           </span>
           <h2 className="text-3xl font-extrabold tracking-tight mt-2 text-on-background">
-            Our Solutions
+            SEO + AEO for E-Commerce Brands
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

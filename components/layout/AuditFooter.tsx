@@ -14,11 +14,11 @@ interface FooterColumn {
 
 const columns: FooterColumn[] = [
   {
-    heading: "Expertise",
+    heading: "Quick Links",
     links: [
-      { label: "Strategy", href: "#" },
-      { label: "Audit", href: "#" },
-      { label: "Semantic SEO", href: "#" },
+      { label: "Our Services", href: "/services" },
+      { label: "Case Studies", href: "/case-studies" },
+      { label: "Get Your Audit", href: "/contact" },
     ],
   },
   {
@@ -34,6 +34,11 @@ const columns: FooterColumn[] = [
       {
         label: "LinkedIn",
         href: "https://www.linkedin.com/company/102247546/admin/dashboard/",
+        external: true,
+      },
+      {
+        label: "Twitter",
+        href: "https://x.com/gmax_digital_",
         external: true,
       },
       { label: "Contact", href: "contact#proposal" },

@@ -10,8 +10,8 @@ export default function WhoWeWorkWith() {
           </h2>
 
           <p className="text-xl text-on-surface-variant">
-            We partner with businesses where strategic clarity matters as much
-            as execution.
+            We partner with e-commerce brands doing 50K-10M/year who want to
+            reduce paid ad spend and capture organic revenue.
           </p>
         </div>
 
@@ -21,12 +21,11 @@ export default function WhoWeWorkWith() {
             <Code2 className="mb-8 h-12 w-12 text-primary" />
 
             <div>
-              <h3 className="mb-4 text-2xl font-bold">
-                Founders building software products
-              </h3>
+              <h3 className="mb-4 text-2xl font-bold">Fashion Retailers</h3>
 
               <p className="text-on-surface-variant">
-                Translating complex features into compelling market narratives.
+                Getting found for seasonal trends on both Google and AI while
+                competitors burn through paid ad budgets.
               </p>
             </div>
           </div>
@@ -37,11 +36,12 @@ export default function WhoWeWorkWith() {
 
             <div>
               <h3 className="mb-4 text-2xl font-bold text-white">
-                Startups refining market direction
+                Home & Beauty Brands
               </h3>
 
               <p className="text-white/80">
-                Defining the "Why" before spending on the "How."
+                Appearing in ChatGPT and Perplexity for lifestyle and beauty
+                recommendations where customers now research.
               </p>
             </div>
           </div>
@@ -52,11 +52,12 @@ export default function WhoWeWorkWith() {
 
             <div>
               <h3 className="mb-4 text-2xl font-bold text-white">
-                Growing businesses needing foundations
+                Growing Brands Ready to Scale
               </h3>
 
               <p className="text-white/60">
-                Modernizing digital presence to match professional reputations.
+                Moving beyond Facebook ads to own your customer acquisition
+                through organic visibility.
               </p>
             </div>
           </div>

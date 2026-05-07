@@ -12,25 +12,25 @@ type ResponseStep = {
 const steps: ResponseStep[] = [
   {
     number: "01",
-    title: "We review your message",
+    title: "Submit your store details",
     description:
-      "A strategist reviews your input to understand the context and urgency of your project.",
+      "We gather your URL, industry, and current marketing approach so we can run an accurate audit.",
     bgClass: "bg-white",
     numberColorClass: "text-surface-container",
   },
   {
     number: "02",
-    title: "We understand what you may need",
+    title: "We run your free audit",
     description:
-      "We identify potential blockers and opportunities before our first conversation.",
+      "Check where you rank on Google, whether you appear in AI search tools, and compare you to competitors.",
     bgClass: "bg-surface-container-low",
     numberColorClass: "text-surface-container-highest",
   },
   {
     number: "03",
-    title: "We suggest the best next conversation",
+    title: "You get your 90-day roadmap",
     description:
-      "We propose a focused call or a specific workshop to move your priorities forward.",
+      "3 actionable fixes ranked by impact. Plus your full visibility report. All yours to keep.",
     bgClass: "bg-white",
     numberColorClass: "text-surface-container",
   },
@@ -41,7 +41,7 @@ const ResponseExpectation: React.FC = () => {
     <section className="py-24 px-8 bg-white text-on-surface-variant">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold tracking-tight mb-16">
-          What happens after you reach out
+          How your free AI Search Visibility Audit works
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/30 rounded-xl overflow-hidden">

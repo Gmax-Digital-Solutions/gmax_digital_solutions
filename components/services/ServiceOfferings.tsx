@@ -11,45 +11,45 @@ import DotGrid from "../DotGrid";
 const services = [
   {
     icon: Monitor,
-    title: "Website Design & Digital Presence",
+    title: "Google SEO & Ranking",
     description:
-      "High-conversion business websites and landing pages focused on building immediate digital trust.",
-    outcome: "Help businesses look credible.",
+      "Get your products ranking on high-intent keywords. We focus on searches that convert, not vanity metrics. First page in 6-8 weeks.",
+    outcome: "Organic visibility that drives revenue.",
   },
   {
     icon: PencilRuler,
-    title: "Brand Positioning & Messaging",
+    title: "AI Search Optimization (AEO)",
     description:
-      "Messaging refinement and offer clarity that eliminates market noise and aligns with customer needs.",
-    outcome: "Reduce confusion.",
+      "Ensure your products appear in ChatGPT, Perplexity, and Gemini. Capture 40% of e-commerce research happening on AI tools.",
+    outcome: "Appear where customers research.",
   },
   {
     icon: Rocket,
-    title: "Software Product Marketing",
+    title: "Keyword & Competitor Research",
     description:
-      "Specialized SaaS messaging and launch positioning designed specifically for technical founders.",
-    outcome: "Make software easier to choose.",
+      "Discover high-value keywords your competitors are missing. See exactly what they're ranking for on Google and AI.",
+    outcome: "Find opportunities worth thousands.",
   },
   {
     icon: TrendingUp,
-    title: "Marketing Strategy & Visibility",
+    title: "Content Strategy & Optimization",
     description:
-      "Campaign direction and audience strategy focused on building sustainable long-term visibility.",
-    outcome: "Support sustainable visibility.",
+      "Create content that ranks AND converts. We optimize for search intent and customer journey, not just keywords.",
+    outcome: "Content that earns visibility and sales.",
   },
   {
     icon: ShieldCheck,
-    title: "Digital Trust & Conversion",
+    title: "Technical SEO & Site Speed",
     description:
-      "Optimizing trust design and CTA structures to remove friction and reduce user hesitation.",
-    outcome: "Reduce hesitation.",
+      "Fix crawling issues, improve site speed, and ensure Google can fully index your store. Most e-commerce sites leave 30% of rankings on the table.",
+    outcome: "Your store ranks as well as possible.",
   },
   {
     icon: Handshake,
-    title: "Strategic Consultation",
+    title: "AI Search Visibility Audit",
     description:
-      "Clarity sessions and growth reviews to help founders make stronger decisions.",
-    outcome: "Help businesses make stronger decisions.",
+      "See where you rank on Google, compare to competitors, check AI visibility, and get 3 actionable fixes for the next 90 days.",
+    outcome: "Clear roadmap to organic revenue.",
   },
 ];
 
@@ -74,7 +74,9 @@ export default function ServiceOfferings() {
       <div className="mx-auto max-w-7xl z-10">
         {/* Header */}
         <div className="mb-20 ">
-          <h2 className="mb-4 text-4xl font-bold">What We Do</h2>
+          <h2 className="mb-4 text-4xl font-bold">
+            SEO + AEO Services for UK E-Commerce
+          </h2>
           <div className="h-1 w-20 bg-secondary" />
         </div>
 

@@ -40,19 +40,18 @@ export default function ServicesHero() {
         {/* Left Content */}
         <div className="relative z-10">
           <span className="mb-6 inline-block rounded bg-secondary/5 px-3 py-1 text-[0.75rem] font-bold uppercase tracking-widest text-secondary">
-            Strategic Digital Solutions
+            SEO + AEO for E-Commerce
           </span>
 
           <h1 className="mb-8 text-5xl font-black leading-[1.1] tracking-tight text-on-background md:text-6xl capitalize">
-            Innovative solutions designed to help businesses thrive{" "}
-            <span className="text-primary italic">in a fast pace</span>,
-            ever-evolving digital landscape.
+            Get your UK e-commerce store found on{" "}
+            <span className="text-primary italic">Google and AI search</span>
           </h1>
 
           <p className="mb-10 max-w-xl text-xl leading-relaxed text-on-surface-variant">
-            Strong businesses often need more than execution — they need
-            clarity, stronger digital foundations, and strategic visibility
-            built intentionally.
+            Reduce your reliance on paid ads. Capture organic traffic that keeps
+            earning you revenue. We'll help you rank on Google and appear in
+            ChatGPT, Perplexity, and Gemini.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -61,12 +60,12 @@ export default function ServicesHero() {
               onClick={() =>
                 trackEvent("proposal_requested_btn", {
                   location: "service_hero",
-                  label: "request proposal btn",
+                  label: "audit_btn",
                 })
               }
               className="rounded-lg bg-primary px-8 py-4 text-lg font-bold text-on-secondary transition-all duration-300 hover:opacity-90 active:scale-95"
             >
-              Request a Proposal
+              Get Your Free AI Search Visibility Audit
             </Link>
           </div>
         </div>
@@ -88,12 +87,13 @@ export default function ServicesHero() {
             <div className="mb-4 flex items-center gap-2">
               <BadgeCheck className="h-5 w-5 text-primary" />
               <span className="text-sm font-bold uppercase tracking-wider text-on-surface">
-                Proven Outcomes
+                90 Day Results
               </span>
             </div>
 
             <p className="text-sm text-on-surface-variant">
-              Strategically led digital growth for service-based founders.
+              First rankings in 6 weeks. AI visibility in 8. Measurable revenue
+              growth guaranteed.
             </p>
           </div>
         </div>

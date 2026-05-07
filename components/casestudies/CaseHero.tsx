@@ -11,17 +11,18 @@ const CaseHero = () => {
         {/* Left Content */}
         <div className="lg:col-span-7 space-y-8">
           <span className="inline-block text-xs uppercase tracking-[0.2em] font-bold text-primary px-4 py-1.5 bg-surface-container-low rounded-full">
-            Strategic Analysis
+            E-Commerce Case Studies
           </span>
 
           <h1 className="text-5xl lg:text-[4.5rem] font-black leading-[1.05] tracking-tight text-on-background">
-            How strategic <span className="text-primary">clarity</span>{" "}
-            influences business outcomes
+            How UK e-commerce brands{" "}
+            <span className="text-primary">got found on Google and AI</span>
           </h1>
 
           <p className="text-xl text-on-surface-variant max-w-2xl leading-relaxed">
-            Selected examples showing how positioning, trust, and digital
-            structure shape growth decisions.
+            Real results from real stores. These brands went from invisible to
+            ranking in 90 days, capturing organic revenue that keeps working for
+            them.
           </p>
 
           <div className="pt-4">
@@ -33,12 +34,12 @@ const CaseHero = () => {
                 trackEvent("discovery_btn_clicked", {
                   location: "case_study_hero",
                   source: "case_study",
-                  label: "Book Strategy Call",
+                  label: "audit_btn",
                 })
               }
               className="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center group transition-transform active:scale-95"
             >
-              Discuss Your Project
+              Get Your Free Audit
               <span className="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">
                 arrow_forward
               </span>

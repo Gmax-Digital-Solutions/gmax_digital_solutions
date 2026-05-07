@@ -16,10 +16,11 @@ export default function WorkingPhilosophy() {
               01
             </span>
             <h4 className="mb-4 text-lg font-bold uppercase tracking-widest">
-              Understand
+              Audit First
             </h4>
             <p className="text-sm text-on-surface-variant">
-              We understand before recommending. No generic solutions.
+              Know exactly where you rank on Google and if you appear on AI
+              before making any changes.
             </p>
           </div>
 
@@ -29,10 +30,11 @@ export default function WorkingPhilosophy() {
               02
             </span>
             <h4 className="mb-4 text-lg font-bold uppercase tracking-widest">
-              Position
+              SEO First
             </h4>
             <p className="text-sm text-on-surface-variant">
-              We position before promoting. Clarity is non-negotiable.
+              Organic visibility lasts. Paid ads stop working when you stop
+              paying.
             </p>
           </div>
 
@@ -42,10 +44,11 @@ export default function WorkingPhilosophy() {
               03
             </span>
             <h4 className="mb-4 text-lg font-bold uppercase tracking-widest">
-              Build
+              AI Visibility
             </h4>
             <p className="text-sm text-on-surface-variant">
-              We build for trust. Every interaction matters.
+              ChatGPT, Perplexity, and Gemini are where 40% of searches now
+              happen.
             </p>
           </div>
 
@@ -55,10 +58,11 @@ export default function WorkingPhilosophy() {
               04
             </span>
             <h4 className="mb-4 text-lg font-bold uppercase tracking-widest">
-              Focus
+              90-Day Results
             </h4>
             <p className="text-sm text-on-surface-variant">
-              We focus on long-term relevance, not just quick wins.
+              First rankings in 6 weeks. Measurable ROI you can track from day
+              one.
             </p>
           </div>
         </div>

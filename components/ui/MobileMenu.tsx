@@ -142,9 +142,16 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
       {/* Footer CTA */}
       <div className="flex-shrink-0 p-6 bg-white shadow-[0_-8px_40px_-12px_rgba(32,26,28,0.06)]">
         <Link
+          href="/audit"
+          onClick={() => onClose?.()}
+          className="w-full bg-secondary-container text-on-secondary-container py-5 rounded-xl font-black text-sm uppercase tracking-widest shadow-lg hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-center gap-3"
+        >
+          <span>Get Free AI Audit</span>
+        </Link>
+        <Link
           href="/contact#proposal"
           onClick={() => onClose?.()}
-          className="w-full bg-primary-container text-on-secondary-container py-5 rounded-xl font-black text-sm uppercase tracking-widest shadow-lg hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-center gap-3"
+          className="w-full mt-4 bg-primary-container text-on-secondary-container py-5 rounded-xl font-black text-sm uppercase tracking-widest shadow-lg hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-center gap-3"
         >
           <span>Request Proposal</span>
         </Link>

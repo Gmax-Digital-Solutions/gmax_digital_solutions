@@ -11,9 +11,9 @@ const Navbar: FC = () => {
 
   return (
     <nav className="fixed top-0 w-full z-50 glass-nav shadow-sm">
-      <div className="flex justify-between items-center w-full py-4 w-full max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-4 lg:mx-auto flex justify-between items-center py-4 ">
         {/* Logo */}
-        <div className="flex gap-8 items-center text-xl font-black tracking-tighter text-[#241E20] uppercase">
+        <div className="flex gap-2 items-center font-black tracking-tighter text-on-surface uppercase">
           <Image
             src={Logo}
             alt="Gmax Digital Logo"
@@ -23,6 +23,13 @@ const Navbar: FC = () => {
           />
           <Link href="/">Gmax Digital</Link>
         </div>
+
+        <Link
+          href="/contact"
+          className="bg-[#241E20] text-white px-6 py-2 rounded-lg font-bold hover:bg-[#241E20]/90 transition-all active:scale-95"
+        >
+          Contact Us
+        </Link>
       </div>
     </nav>
   );
