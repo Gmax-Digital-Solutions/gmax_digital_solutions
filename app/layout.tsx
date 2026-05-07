@@ -11,14 +11,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Gmax Digital | SEO + AEO for UK E-commerce Brands",
+  title: "Gmax Digital | SEO + AEO for E-commerce Brands",
   description:
-    "We help UK e-commerce brands get found on Google and AI search — with measurable results in 90 days. Get your free AI Search Visibility Audit.",
+    "We help e-commerce brands get found on Google and AI search — with measurable results in 90 days. Get your free AI Search Visibility Audit.",
 
   openGraph: {
     title: "SEO + AEO for E-commerce | Gmax Digital",
     description:
-      "We help UK e-commerce brands get found on Google and AI search — with measurable results in 90 days.",
+      "We help e-commerce brands get found on Google and AI search — with measurable results in 90 days.",
     url: "https://gmaxdigitals.com",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "SEO + AEO for UK E-commerce | Gmax Digital",
+    title: "SEO + AEO for E-commerce Brands | Gmax Digital",
     description:
       "We help UK e-commerce brands get found on Google and AI search — with measurable results in 90 days.",
     images: ["/og-image.png"],

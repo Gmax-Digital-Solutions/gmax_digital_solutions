@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
-import { Link } from "lucide-react";
+import Link from "next/link";
 
 const CookieBanner = () => {
   const [visible, setVisible] = useState(false);
@@ -28,14 +28,14 @@ const CookieBanner = () => {
     <div className="fixed bottom-8 transform right-1/2 translate-x-1/2 max-w-7xl rounded-xl w-full bg-on-background text-white p-6 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <p className="text-sm text-white/70 max-w-xl">
-          We use cookies to improve Gmax's site. Some cookies are necessary for
-          our website and services to function properly. Other cookies are
-          optional and help personalize your experience, including advertising
-          and analytics. You can consent to all cookies, decline all optional
-          cookies, or manage optional cookies. Without a selection, our default
-          cookie settings will apply. You can change your preferences at any
-          time. To learn more, check out our{" "}
-          <Link href="cookie-policy" className="italics hover:underline">
+          We use cookies to enhance your experience on our SEO and AI search
+          visibility platform. Essential cookies ensure our website functions
+          properly, while optional cookies help us analyze traffic, improve
+          performance, and personalize content for your business or personal
+          use. You can accept all cookies, reject optional ones, or customize
+          your preferences. Without a selection, we'll use our default settings.
+          You can update your choices anytime. Learn more in our{" "}
+          <Link href="/cookie-policy" className="italics hover:underline">
             Cookie Policy.
           </Link>
         </p>
