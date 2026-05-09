@@ -85,8 +85,8 @@ const Hero = () => {
               E-commerce brands are invisible.
             </h4>
             <p className="text-sm text-white/70">
-              On Google AND AI search. Our free audit shows exactly where you're
-              missing out with 3 actionable fixes.
+              We help e-commerce brands get found on Google AND AI search before
+              their competitors do — with results you can measure in 90 days.
             </p>
           </div>
         </div>
