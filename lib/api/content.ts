@@ -279,3 +279,25 @@ export async function getTestimonials(): Promise<Testimonial[]> {
     return [];
   }
 }
+
+export async function getSingleTestimonial(): Promise<Testimonial | null> {
+  try {
+    const { data, error } = await supabaseServer
+      .from("testimonials")
+      .select("*")
+      .eq("published", true)
+      .order("created_at", { ascending: false })
+      .limit(1)
+      .single();
+
+    if (error) {
+      console.log(error);
+      return null;
+    }
+
+    return data;
+  } catch (err) {
+    console.log(err);
+    return null;
+  }
+}

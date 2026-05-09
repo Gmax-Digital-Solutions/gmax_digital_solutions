@@ -1,4 +1,5 @@
 import React from "react";
+import { getSingleTestimonial } from "@/lib/api/content";
 
 interface OutcomesProps {
   reviewMessage?: string;
@@ -45,7 +46,8 @@ const outcomeReviews: OutcomesProps[] = [
   },
 ];
 
-const Outcomes = (props: OutcomesProps) => {
+const Outcomes = async (props: OutcomesProps) => {
+  const testimonial = await getSingleTestimonial();
   return (
     <section className="py-24 px-6 bg-white text-on-surface-variant">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
@@ -119,18 +121,27 @@ const Outcomes = (props: OutcomesProps) => {
 
           <div className="relative z-10">
             <p className="text-2xl italic font-light text-on-surface-variant mb-8 leading-relaxed">
-              "The biggest shift was clarity. Our business became easier to
-              understand, trust, and engage with."
+              "
+              {testimonial
+                ? testimonial.review_text
+                : "The biggest shift was clarity. Our business became easier to understand, trust, and engage with."}
+              "
             </p>
 
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-primary-container">
-                {/* <img src="" alt="" /> */}
+                <img
+                  src={testimonial?.image || ""}
+                  alt={testimonial?.client_name || "Client"}
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
               <div>
-                <p className="font-bold">Founder</p>
+                <p className="font-bold">
+                  {testimonial ? testimonial.client_name : "Founder"}
+                </p>
                 <p className="text-sm text-on-surface-variant">
-                  Service Business
+                  {testimonial ? testimonial.company_name : "Service Business"}
                 </p>
               </div>
             </div>
