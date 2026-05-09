@@ -26,7 +26,7 @@ const Newsletter = () => {
               </span>
 
               <h2 className="text-5xl md:text-6xl font-black tracking-tighter text-on-surface leading-[1.1]">
-                How UK e-commerce brands get found <br />
+                How e-commerce brands get found <br />
                 <span className="text-zinc-400 font-light italic">
                   on Google and AI search
                 </span>
@@ -37,7 +37,7 @@ const Newsletter = () => {
                 and reducing ad spend.
                 <br />
                 <span className="text-primary font-bold italic">
-                  Get our free AI Search Visibility Audit guide...
+                  Get our free AI Search Visibility playbook!
                 </span>
               </p>
             </div>

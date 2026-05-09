@@ -6,7 +6,8 @@ import { identifyServerUser } from "@/lib/analytics/posthog-server";
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_KEY);
 
-const PLAYBOOK_URL = "https://gmaxdigitals.com/ai-playbook.pdf"; // update if needed
+const PLAYBOOK_URL =
+  "https://gmaxdigitals.com/ecommerce_ai_visibility_playbook.pdf"; // update if needed
 
 export async function POST(req: Request) {
   try {
@@ -47,7 +48,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: "Gmax Digital <hello@gmaxdigitals.com>",
       to: [email],
-      subject: "Your AI Marketing Playbook is ready",
+      subject: "Your E-Commerce AI Search Visibility Playbook is ready",
       html: getEmailTemplate({ first_name, playbookUrl: PLAYBOOK_URL }),
     });
 
@@ -102,17 +103,16 @@ const getEmailTemplate = ({
 
       <!-- Headline -->
       <h1 style="font-size:28px;line-height:1.2;margin-bottom:20px;">
-        Your AI Marketing Playbook is ready.
+        Your E-Commerce AI Search Visibility Playbook is ready.
       </h1>
 
       <!-- Body -->
       <p style="color:#a1a1aa;font-size:16px;line-height:1.6;">
         ${first_name ? `Hey ${first_name},` : "Hey,"}
         <br/><br/>
-        You’re in.
+        You're in.
         <br/><br/>
-        This isn’t another surface-level guide.  
-        It’s the system behind how we help founders turn attention into revenue.
+        This guide reveals how to get your e-commerce brand found on Google and AI search engines—and reduce reliance on paid ads.
       </p>
 
       <!-- CTA -->
