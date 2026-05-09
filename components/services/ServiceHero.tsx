@@ -49,9 +49,10 @@ export default function ServicesHero() {
           </h1>
 
           <p className="mb-10 max-w-xl text-xl leading-relaxed text-on-surface-variant">
-            Reduce your reliance on paid ads. Capture organic traffic that keeps
-            earning you revenue. We'll help you rank on Google and appear in
-            ChatGPT, Perplexity, and Gemini.
+            If we do not improve your organic keyword rankings for at least 7 of
+            your target 10 keywords within 90 days, we will work for free until
+            we do. We track everything in a live dashboard you can see at any
+            time.
           </p>
 
           <div className="flex flex-wrap gap-4">
